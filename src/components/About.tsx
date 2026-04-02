@@ -129,13 +129,13 @@ export default function About() {
             <p>
               When I'm not designing, I'm probably{' '}
               <span className="sq-chip">
-                <img className="sq-chip-img" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=120&q=80" alt="hiking trail" />
+                <img className="sq-chip-img" src="/sq/hiking.png" alt="hiking" />
               </span>{' '}
               <span className="sq-hl sq-hl--green">hiking somewhere I shouldn't be</span>,
               or logging runs on{' '}
               <a href="https://strava.com" className="sq-chip-link sq-strava-pill" target="_blank" rel="noopener noreferrer">
-                <img className="sq-chip-img" src="https://images.unsplash.com/photo-1571008887538-b36bb32f4571?w=120&q=80" alt="running" />
-                <span className="sq-strava-label">Strava <span className="sq-arr">↗</span></span>
+                <img className="sq-chip-img" src="/sq/running.png" alt="running" />
+                <span className="sq-strava-label sq-strava-label--orange">Strava <span className="sq-arr">↗</span></span>
               </a>{' '}
               trying to convince myself I'm consistent.
             </p>
@@ -143,15 +143,15 @@ export default function About() {
             <p>
               I read{' '}
               <span className="sq-chip">
-                <img className="sq-chip-img" src="https://images.unsplash.com/photo-1612178537253-bccd437b730e?w=120&q=80" alt="manga" />
+                <img className="sq-chip-img" src="/sq/vagabond.png" alt="Vagabond" />
               </span>{' '}
               <span className="sq-hl sq-hl--purple">Vagabond</span> for the philosophy, watch{' '}
               <span className="sq-chip">
-                <img className="sq-chip-img" src="https://images.unsplash.com/photo-1635805737707-575885ab0820?w=120&q=80" alt="JoJo" />
+                <img className="sq-chip-img" src="https://i.pinimg.com/originals/e6/1c/54/e61c541a6e262c678ec0bb5a1cf74c90.gif" alt="JoJo" />
               </span>{' '}
               <span className="sq-hl sq-hl--purple">JoJo</span> for the chaos, and loop{' '}
               <span className="sq-chip">
-                <img className="sq-chip-img" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=120&q=80" alt="music" />
+                <img className="sq-chip-img" src="/sq/music.png" alt="music" />
               </span>{' '}
               <span className="sq-hl sq-hl--teal">Radiohead, Tool, and Jeff Buckley</span> like it's a personality trait.
             </p>
@@ -159,11 +159,11 @@ export default function About() {
             <p>
               Also:{' '}
               <span className="sq-chip">
-                <img className="sq-chip-img" src="https://images.unsplash.com/photo-1547153760-18fc86324498?w=120&q=80" alt="UFC" />
+                <img className="sq-chip-img" src="/sq/ufc.png" alt="UFC" />
               </span>{' '}
               <span className="sq-hl sq-hl--red">UFC</span> for reality checks,{' '}
               <span className="sq-chip">
-                <img className="sq-chip-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=120&q=80" alt="F1" />
+                <img className="sq-chip-img" src="/sq/f1.png" alt="F1" />
               </span>{' '}
               <span className="sq-hl sq-hl--amber">F1</span> for strategy — both remind me design is just controlled chaos.
             </p>
@@ -171,7 +171,7 @@ export default function About() {
             <p>
               And yes —{' '}
               <span className="sq-chip">
-                <img className="sq-chip-img" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=120&q=80" alt="gaming" />
+                <img className="sq-chip-img" src="/sq/gaming.png" alt="gaming" />
               </span>{' '}
               <span className="sq-hl sq-hl--purple">I game</span>.
               Valorant (bad aim). CS2 (trying). Minecraft (peaceful mode).
@@ -198,6 +198,68 @@ export default function About() {
               <span/><span/><span/><span/><span/><span/>
             </div>
           </a>
+        </div>
+
+        {/* ── BLOG / OPEN TABS ─────────────────────────────── */}
+        <div className="bt-section">
+          <div className="bt-header">
+            <h2 className="bt-headline">Open tabs in my brain</h2>
+          </div>
+
+          <div className="bt-stage">
+            <div className="bt-window bt-w1">
+              <div className="bt-bar">
+                <span className="bt-dot bt-dot--red"/><span className="bt-dot bt-dot--yellow"/><span className="bt-dot bt-dot--green"/>
+                <span className="bt-filename">ai-is-not-the-enemy.txt</span>
+              </div>
+              <div className="bt-body">
+                <span className="bt-tag bt-tag--green">AI × Design</span>
+                <img className="bt-thumb" src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=500&q=75" alt="AI and design" />
+                <p className="bt-title">AI co-designers in UX workflows</p>
+                <p className="bt-desc">Not replacing — reshaping how we think and iterate.</p>
+                <p className="bt-quip">"Tools change. Thinking matters."</p>
+                <div className="bt-footer">
+                  <a href="#" className="bt-cta">Dive in <span className="bt-arr">↗</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bt-window bt-w2">
+              <div className="bt-bar">
+                <span className="bt-dot bt-dot--red"/><span className="bt-dot bt-dot--yellow"/><span className="bt-dot bt-dot--green"/>
+                <span className="bt-filename">lorem-ipsum-is-bad.md</span>
+              </div>
+              <div className="bt-body">
+                <span className="bt-tag bt-tag--purple">Thought</span>
+                <img className="bt-thumb" src="/blog-lorem-ipsum.png" alt="Stop using Lorem Ipsum" />
+                <p className="bt-title">Stop using Lorem Ipsum</p>
+                <p className="bt-desc">If the content is fake, the design is just guessing.</p>
+                <p className="bt-quip">"Design starts with meaning."</p>
+                <div className="bt-footer">
+                  <a href="https://mantraideas.com/stop-using-lorem-ipsum/" target="_blank" rel="noopener noreferrer" className="bt-cta">Read the thought <span className="bt-arr">↗</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bt-window bt-w3">
+              <div className="bt-bar">
+                <span className="bt-dot bt-dot--red"/><span className="bt-dot bt-dot--yellow"/><span className="bt-dot bt-dot--green"/>
+                <span className="bt-filename">north-nepal.log</span>
+              </div>
+              <div className="bt-body">
+                <span className="bt-tag bt-tag--amber">Trek / Life</span>
+                <img className="bt-thumb" src="https://images.unsplash.com/photo-1542224566-6e85f2e6772f?w=500&q=75" alt="mountain trekking Nepal" />
+                <p className="bt-title">Adventures in North Nepal</p>
+                <p className="bt-desc">Altitude, silence, and perspective shifts you don't get on screens.</p>
+                <p className="bt-quip">"This one's offline."</p>
+                <div className="bt-footer">
+                  <a href="#" className="bt-cta">Worth your 2 mins <span className="bt-arr">↗</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* <p className="bt-endline">I don't write often — only when something sticks.</p> */}
         </div>
 
       </div>

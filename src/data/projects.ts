@@ -4,6 +4,7 @@ export type ProjectSection = {
   body: string
   mockupBg: string
   mockupImg?: string | string[]
+  mockupLayout?: 'portrait' | 'landscape'
 }
 
 export type Project = {
@@ -15,6 +16,7 @@ export type Project = {
   intro: string
   sections: ProjectSection[]
   cardImg?: string
+  docsUrl?: string
 }
 
 const PROJECTS: Project[] = [
@@ -40,6 +42,7 @@ const PROJECTS: Project[] = [
         body: "We consolidated PO acknowledgements, overdue production updates, QC photo submissions, and document uploads into a prioritised pending actions panel — surfacing the two most urgent items at the top with countdown timers.",
         mockupBg: "linear-gradient(145deg,#fff7f0,#ffeedd)",
         mockupImg: ['/mockups/ClearPath/Po Update 01.jpg', '/mockups/ClearPath/Po Update 02.jpg'],
+        mockupLayout: 'landscape',
       },
       {
         label: "Design · Production Tracking",
@@ -124,6 +127,7 @@ const PROJECTS: Project[] = [
           "/mockups/TransferNet/Sign_Up_2.png",
           "/mockups/TransferNet/Sign_Up_1.png",
         ],
+        mockupLayout: 'portrait',
       },
 
       // ─── KYC — PERSONAL DETAILS ───────────────────────────────────────────────
@@ -136,6 +140,7 @@ const PROJECTS: Project[] = [
           "/mockups/TransferNet/Onboard-1.png",
           "/mockups/TransferNet/Onboard-2.png",
         ],
+        mockupLayout: 'portrait',
       },
 
       // ─── KYC — ADDRESS ────────────────────────────────────────────────────────
@@ -166,6 +171,7 @@ const PROJECTS: Project[] = [
           "/mockups/TransferNet/Login_flow-1.png",
           "/mockups/TransferNet/Login_flow-2.png",
         ],
+        mockupLayout: 'portrait',
       },
 
       // ─── HOME ─────────────────────────────────────────────────────────────────
@@ -214,6 +220,7 @@ const PROJECTS: Project[] = [
           "/mockups/TransferNet/Send_Money_01.png",
           "/mockups/TransferNet/Send_Money_02.png",
         ],
+        mockupLayout: 'portrait',
       },
 
       // ─── RECIPIENTS ───────────────────────────────────────────────────────────
@@ -226,6 +233,7 @@ const PROJECTS: Project[] = [
           "/mockups/TransferNet/Onboard_30.png",
           "/mockups/TransferNet/Onboard_29.png",
         ],
+        mockupLayout: 'portrait',
       },
 
       // ─── TRANSACTIONS ─────────────────────────────────────────────────────────
@@ -258,24 +266,172 @@ const PROJECTS: Project[] = [
   },
   {
     id: 2,
-    title: "Whirlpool ONE",
-    client: "Whirlpool Corporation",
-    category: "Industrial Design",
-    date: "February 2022",
-    intro: "Revamped the top-load washer for India and built a new, scalable brand DNA to unify Whirlpool's next generation of products.",
+    title: "Telvox",
+    client: "Telvox",
+    category: "Product Design",
+    date: "April 2026",
+    intro:
+      "Designed a full-stack AI voice agent management platform — giving businesses a single command centre to build agents, run telephony campaigns, track leads and appointments, and manage client billing from one dashboard.",
+    cardImg: "/mockups/Telvox/Tel.png",
+
     sections: [
+
       {
-        label: "Research · Market",
-        title: "Built for Indian homes, not adapted from global ones.",
-        body: "Indian households operate differently — bucket heights, water habits, saree care. We embedded with 14 families across 3 cities to uncover the real gaps in existing appliance design.",
-        mockupBg: "linear-gradient(145deg,#1c2a4a,#0e1828)",
+        label: "Discovery · Problem Space",
+        title: "Businesses deploying AI voice agents had no single place to operate them.",
+        body: "Agent configs, call logs, leads, and billing lived across separate tools. We mapped the full operator journey — agent creation to invoice — and unified everything into one platform.",
+        mockupBg: "linear-gradient(145deg,#0f0e1a,#1a1828)",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_50_53.png",
       },
+
       {
-        label: "Design · Brand DNA",
-        title: "Scalable visual language for the next generation of products.",
-        body: "Beyond the washer, we established a brand system — material cues, proportions, surface language — that could extend across Whirlpool's entire India product lineup.",
-        mockupBg: "linear-gradient(145deg,#162040,#0e1830)",
+        label: "Design · Overview Dashboard",
+        title: "All key metrics on one screen — calls, agents, leads, revenue, and tickets at a glance.",
+        body: "The overview surfaces 12 live metrics across calls, agents, messages, leads, appointments, and knowledge bases — plus a weekly consumption chart, billing panel, and open ticket alerts.",
+        mockupBg: "linear-gradient(145deg,#f8f6ff,#ede9ff)",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_51_28.png",
       },
+
+      {
+        label: "Design · AI Agents — Model",
+        title: "Build and configure every AI agent's voice, greeting, and identity in one panel.",
+        body: "The Model tab shows the assigned voice, full system instructions, and live agent status. A Talk to the Agent button lets operators preview the experience before deployment.",
+        mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_53_04.png",
+      },
+
+      {
+        label: "Design · Agent Analytics & Transcript",
+        title: "Every call an agent handles is logged, playable, and fully transcribed.",
+        body: "The Analytics tab shows a paginated call table per agent. Clicking any row opens a Call Details modal with audio playback and a turn-by-turn transcript — a complete audit trail for every conversation.",
+        mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
+        mockupImg: [
+          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_53_14.png",
+          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_54_56.png",
+        ],
+        mockupLayout: 'landscape',
+      },
+
+      {
+        label: "Design · Agent Instructions",
+        title: "Versioned system prompts with one-click rollback.",
+        body: "The Instructions tab lets operators edit the agent's full system prompt inline. Every save creates a new version — Load Content on any previous version restores it instantly, making prompt regressions recoverable in seconds.",
+        mockupBg: "linear-gradient(145deg,#fff7f0,#ffeedd)",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_53_22.png",
+      },
+
+      {
+        label: "Design · Knowledge Base & Settings",
+        title: "Attach documents to any agent and configure voice, tools, and model parameters.",
+        body: "The Knowledge Base tab manages documents linked to the agent. Settings exposes model name, voice, agent tools, appointment overlap limit, and raw model config key-value pairs — all editable in place.",
+        mockupBg: "linear-gradient(145deg,#f0fff4,#e0ffee)",
+        mockupImg: [
+          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_53_41.png",
+          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_53_55.png",
+        ],
+        mockupLayout: 'landscape',
+      },
+
+      {
+        label: "Design · Voices",
+        title: "Seven voices across four providers — filter by language, gender, and style.",
+        body: "The Voices library surfaces all available TTS options with provider, language, and personality tags. Operators pick and assign a voice to any agent without leaving the platform.",
+        mockupBg: "linear-gradient(145deg,#f5f0ff,#ede5ff)",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_55_10.png",
+      },
+
+      {
+        label: "Design · Tools Management",
+        title: "Every custom API integration the agents can call — GET and POST — in one table.",
+        body: "Tools are listed with method, endpoint, and description. Agents call these mid-conversation to fetch products, create leads, file support tickets, or book appointments without any human handoff.",
+        mockupBg: "linear-gradient(145deg,#fff7f0,#ffeedd)",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_55_31.png",
+      },
+
+      {
+        label: "Design · Support Tickets",
+        title: "Technical issues extracted and logged by AI agents automatically.",
+        body: "Tickets are created from call content without operator input. Each ticket surfaces customer, priority, status, and assigned agent — with Open and Resolved tabs keeping active issues front and centre.",
+        mockupBg: "linear-gradient(145deg,#fff0f0,#ffe4e4)",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_55_41.png",
+      },
+
+      {
+        label: "Design · Client Organizations",
+        title: "A super admin layer for managing every client org, tier, and account manager.",
+        body: "The Clients dashboard shows MRR, active orgs, total agents, and monthly volume at a glance. Each row exposes tier, status, users/agents, usage, MRR, and account manager — with an Export Data option for billing reconciliation.",
+        mockupBg: "linear-gradient(145deg,#f0f8ff,#e4f0ff)",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_55_49.png",
+      },
+
+      {
+        label: "Design · Calls & Conversations",
+        title: "Every inbound and outbound call across all agents — searchable and filterable.",
+        body: "The telephony log aggregates 2,420 calls with agent name, IP, timestamp, and duration. Tabs for Transferred, Successful, and Failed let ops triage without touching a filter dropdown.",
+        mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_56_06.png",
+      },
+
+      {
+        label: "Design · Outbound Leads",
+        title: "Import, segment, and call leads — individually or as a bulk campaign.",
+        body: "Leads are added manually or bulk-imported via CSV, grouped for targeting, and called via the Call Now action or scheduled runs. Contacted, Not Contacted, and Pending tabs keep campaign status clear at all times.",
+        mockupBg: "linear-gradient(145deg,#f5f0ff,#ede5ff)",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_56_18.png",
+      },
+
+      {
+        label: "Design · Schedule Calls",
+        title: "Automated outbound campaigns with daily or one-time frequency and full run history.",
+        body: "Each schedule defines a group, frequency, run time, start and end date, and timezone. The table surfaces last run, status, and enabled state — giving campaign managers a live view of what ran and what's pending.",
+        mockupBg: "linear-gradient(145deg,#f0fff4,#e0ffee)",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_56_25.png",
+      },
+
+      {
+        label: "Design · Finance — Transactions",
+        title: "Every credit top-up and service charge logged with revenue, cost, and margin.",
+        body: "The All Transactions view shows total revenue, actual costs, net profit, and average margin across the platform. Each row carries user, type, description, payment method, amount, cost, profit, and date.",
+        mockupBg: "linear-gradient(145deg,#fffbf0,#fff3d6)",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_56_44.png",
+      },
+
+      {
+        label: "Design · Credit Management",
+        title: "Monitor client credit limits, balances, risk scores, and overdue accounts.",
+        body: "The Credit Management dashboard surfaces $2.1M total credit limit, $609K outstanding, and flags accounts as Good Standing, Warning, or Exceeded — with a risk score and last payment date per client row.",
+        mockupBg: "linear-gradient(145deg,#fff0f0,#ffe4e4)",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_56_52.png",
+      },
+
+      {
+        label: "Design · My Credits",
+        title: "A personal credit wallet with current balance and one-tap top-up.",
+        body: "Operators see their available credit balance, trigger a Razorpay top-up with one button, and access a full account statement history — keeping spend visible without going through finance.",
+        mockupBg: "linear-gradient(145deg,#f8f6ff,#ede9ff)",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_57_19.png",
+      },
+
+      {
+        label: "Design · Appointments",
+        title: "A calendar view of every appointment booked by AI agents — with Google Calendar sync.",
+        body: "Appointments surfaces a weekly calendar filterable by agent, with a List View toggle for tabular access. Operators can add appointments manually or sync the full calendar to Google Calendar for external visibility.",
+        mockupBg: "linear-gradient(145deg,#f0f8ff,#e4f0ff)",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_57_35.png",
+      },
+
+      {
+        label: "Design · Client Detail",
+        title: "A 360° view of any client — plan, usage, agent performance, billing, and call history.",
+        body: "The client detail page shows subscription tier, minutes consumed, active users, AI agent overview, billing summary with recent invoices, and a full call activity log — with Pause Service and Notify Client actions at the top.",
+        mockupBg: "linear-gradient(145deg,#f8f6ff,#ede9ff)",
+        mockupImg: [
+          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_58_11.png",
+          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_58_31.png",
+        ],
+        mockupLayout: 'landscape',
+      },
+
     ],
   },
   {
@@ -300,26 +456,142 @@ const PROJECTS: Project[] = [
       },
     ],
   },
+// ─────────────────────────────────────────────────────────────────
+//  OCCS Case Study
+//
+//  Image filename map (verified):
+//    image 1.png                            → User detail — General Information panel
+//    image 2.png                            → Users list table (10 rows, bulk select)
+//    image 3.png                            → Projects list — small view (3 projects)
+//    image 4.png                            → Project Teams tab (Best Team / Acmda Team)
+//    image 5.png                            → Inbound Opening Time — per-day table
+//    image 6.png                            → Edit Opening Hours modal (day picker + time)
+//    image 7.png                            → Edit Opening Hours Playback (audio upload)
+//    image 8.png                            → Add Email — Message step (rich-text canvas)
+//    image 9.png                            → Add Email — Result Codes step
+//    image 10.png                           → Page Builder canvas (form fields + survey)
+//    image 11.png                           → Page Builder — Page Settings panel open
+//    image 12.png                           → Export / Call Records table (UUID keyed)
+//    image 13.png                           → Global Settings — Calendar list
+//    image 14.png                           → Add Calendar — full-year view (2025)
+//    image 15.png                           → Clerk Local Settings — Sound & Audio Devices
+//    image 16.png                           → Incoming call modal (accept / reject)
+//    image 17.png                           → Projects list — large view (10+ projects)
+//    image 18.png                           → Active Call — form tabs + Call Logs sidebar
+//    Screen Shot 2026-04-02 at 14.26.30.png → Jira board (OCCS active sprint)
+//    7fc570f7-ba76-43a7-85b8-59f575cdab99.png → Miro retro — car metaphor
+//    1350a396-df65-49df-a047-951dced0cb1e.jpeg → Miro retro — hunted/hunter format
+// ─────────────────────────────────────────────────────────────────
+
   {
     id: 4,
-    title: "Flowbite Design System",
-    client: "Freelance",
-    category: "Design Systems",
-    date: "2024",
-    intro: "Built and documented a scalable component library using Flowbite and Tailwind, enabling consistent design across multiple client products.",
+    title: "OCCS — Outbound Call Centre System",
+    client: "OCCS / Staie",
+    category: "UX Design · Product Design · Research",
+    date: "2024–2025",
+    intro: "Led UX design on a multi-tenant call centre platform built for 300+ clerks and 5,000+ customers across multiple client companies. Replaced a fragmented legacy system with a unified, role-based MUI dashboard — spanning user management, project configuration, live call handling, and reporting — shipped across 4,000+ tracked Jira tickets over 12 months.",
+    cardImg: '/mockups/OCCS/image 18.png',
+    docsUrl: 'https://docs.occs.live/introduction.html',
+
     sections: [
+
       {
-        label: "Audit · Foundations",
-        title: "Mapping inconsistencies before building anything new.",
-        body: "Across 3 client codebases, we found 47 button variants, 9 conflicting color scales, and zero shared spacing tokens. A system audit came first.",
-        mockupBg: "linear-gradient(145deg,#f0fdf4,#dcfce7)",
+        label: "Discovery · Sprint Scope",
+        title: "4,000+ tickets, 20+ subtasks per epic — the problem was bigger than anyone expected.",
+        body: "The OCCS Jira board made the scale impossible to ignore: in any given sprint, tickets were spread across TO DO, IN PROGRESS, BLOCKED, REVIEW, and DONE — with more in flight than resolved. QA tickets piled up faster than they cleared. The team was building a platform for hundreds of clerks while simultaneously reverse-engineering the full complexity of the legacy system it replaced. This board became the team's daily prioritisation tool and the source of truth for what shipped each week.",
+        mockupBg: "linear-gradient(145deg,#f0f4ff,#e4eaff)",
+        mockupImg: '/mockups/OCCS/Screen Shot 2026-04-02 at 14.26.30.png',
       },
+
       {
-        label: "Build · Components",
-        title: "A component library that teams actually adopt.",
-        body: "Each component ships with usage guidelines, variant rationale, and do/don't examples — making adoption frictionless for engineers and designers alike.",
-        mockupBg: "linear-gradient(145deg,#ecfdf5,#d1fae5)",
+        label: "Process · Agile Retrospectives",
+        title: "Car metaphors, ghost hunts, and sticky notes — how the team reflected and recalibrated.",
+        body: "Every sprint closed with a structured retrospective on Miro. One format asked 'Which car best describes our last sprint?' — forcing gut-check honesty about velocity and morale. A later format reframed the same question as 'What ghosts were hunting us? / What allowed us to turn from hunted to hunter?' pushing the team past surface complaints into root causes. Recurring themes — test coverage gaps, missing human resource in FE, deployment failures, poorly written user stories — fed directly into the next sprint's scope and shaped how we prioritised design decisions.",
+        mockupBg: "linear-gradient(145deg,#f5f0ff,#ede8ff)",
+        mockupImg: ['/mockups/OCCS/7fc570f7-ba76-43a7-85b8-59f575cdab99.png', '/mockups/OCCS/1350a396-df65-49df-a047-951dced0cb1e.jpeg'],
+        mockupLayout: 'landscape',
       },
+
+      {
+        label: "Design · User Management",
+        title: "One searchable table to manage every clerk, admin, and extension across the platform.",
+        body: "The Users screen gives SuperAdmins a paginated table of every account — first name, last name, username, status badge (Active / Inactive), extension number, and group (Clerk or Admin) visible without opening a single detail view. Rows support bulk selection for mass operations, and a search bar filters across 300+ users instantly. Selecting a row opens a General Information panel showing the full profile with Edit and Delete controls. This replaced scattered spreadsheets with a single auditable surface.",
+        mockupBg: "linear-gradient(145deg,#f0f5ff,#e8eeff)",
+        mockupImg: ['/mockups/OCCS/image 2.png', '/mockups/OCCS/image 1.png'],
+        mockupLayout: 'landscape',
+      },
+
+      {
+        label: "Design · Multi-tenant Project Architecture",
+        title: "Each client company lives in its own isolated Project — scoped teams, channels, and data.",
+        body: "The Projects list scales to dozens of clients simultaneously — from internal test environments to live client deployments — all managed from one admin panel without interference between companies. Drilling into a project reveals a nested tree: Channel (Voice, Email, Contact), Views, Database, and Result Code configuration. The Teams tab lets admins assign clerks with per-member agent levels and use-as-agent toggles, so each company's access is scoped precisely without touching global settings.",
+        mockupBg: "linear-gradient(145deg,#f0fff5,#e0ffee)",
+        mockupImg: ['/mockups/OCCS/image 17.png', '/mockups/OCCS/image 4.png'],
+        mockupLayout: 'landscape',
+      },
+
+      {
+        label: "Design · Inbound Voice Channel",
+        title: "Opening hours and shift windows configured per project — no developer involvement.",
+        body: "Each inbound voice channel exposes an Opening Time table showing per-day durations for Monday through Saturday, with unset days defaulting to Closed. Clicking Edit opens a day-selector modal where admins pick specific days, set start and end times with a 24-hour picker, and add multiple shift windows for split-hour operations like early/late shifts. Changes take effect immediately and are fully reversible — removing any dependency on engineering to reconfigure call routing.",
+        mockupBg: "linear-gradient(145deg,#fff8f0,#ffeedd)",
+        mockupImg: ['/mockups/OCCS/image 5.png', '/mockups/OCCS/image 6.png'],
+        mockupLayout: 'landscape',
+      },
+
+      {
+        label: "Design · Playback Audio & Email Templates",
+        title: "Upload an audio file or build a rich-text email — both self-serve, both per-project.",
+        body: "The Playback panel lets admins browse and upload custom audio files directly to an inbound channel for opening-hours messages — no engineering ticket needed. The Add Email wizard sits alongside it as the outbound equivalent: admins compose a rich-text message template with a full formatting toolbar and dynamic customer fields like {global_first_name}, drag placeholder blocks for personalized sections, and preview the result before saving. Both tools eliminated a recurring class of developer requests.",
+        mockupBg: "linear-gradient(145deg,#fff0fa,#fce8f5)",
+        mockupImg: ['/mockups/OCCS/image 7.png', '/mockups/OCCS/image 8.png'],
+        mockupLayout: 'landscape',
+      },
+
+      {
+        label: "Design · Result Codes & Automated Follow-ups",
+        title: "Link a call outcome to an email template — the right message sends itself.",
+        body: "The final step of the Add Email wizard binds the template to specific result codes: 'Call successful', 'Successful', 'Reached', 'Not Reached', and others. Two dropdowns scope the binding to a project and result code type before the checklist renders, preventing cross-project contamination. Once configured, a clerk marking a call 'Not Reached' automatically dispatches the correct follow-up email — no manual action, no missed follow-ups, no reliance on clerk memory.",
+        mockupBg: "linear-gradient(145deg,#f5f0ff,#ede8ff)",
+        mockupImg: '/mockups/OCCS/image 9.png',
+      },
+
+      {
+        label: "Design · Page Builder",
+        title: "A no-code canvas so admins build exactly the call form their clerks need.",
+        body: "The Update Project Page editor gives admins a drag-and-drop canvas to build custom call forms without writing code. Fields — First Name, Last Name, Date of Birth, Gender, Phone Number, Email — and survey questions like source channel (Facebook, YouTube, Instagram, Twitter, Other) can be arranged freely. A collapsible Page Settings sidebar binds result codes to the page by name. Auto-save runs continuously, and a Preview button lets admins see exactly what clerks will see before pushing live.",
+        mockupBg: "linear-gradient(145deg,#f0fff5,#e0ffee)",
+        mockupImg: ['/mockups/OCCS/image 10.png', '/mockups/OCCS/image 11.png'],
+        mockupLayout: 'landscape',
+      },
+
+      {
+        label: "Design · Global Settings",
+        title: "Holidays, email accounts, and call types — set once at the platform level, applied everywhere.",
+        body: "Global Settings consolidates five cross-project modules: Calendar, Email Accounts, Views Attributes, Outcome Actions, and Call Types. The Calendar module renders all 12 months of the year in a single scrollable view — clicking any date opens a popover to add a holiday, with CSV import available for bulk setup. Holidays configured here propagate automatically to every project, making it fast to handle national and regional schedules without touching individual project configs.",
+        mockupBg: "linear-gradient(145deg,#fffdf0,#fff8dd)",
+        mockupImg: ['/mockups/OCCS/image 13.png', '/mockups/OCCS/image 14.png'],
+        mockupLayout: 'landscape',
+      },
+
+      {
+        label: "Design · Active Call Interface",
+        title: "Accept. Fill the form. Mark done. The entire clerk workflow on one screen, live.",
+        body: "An incoming call surfaces a full-screen modal showing the caller's number with a green Accept and red Reject button — no ambiguity about which call is ringing. Once connected, the clerk lands on the project's custom call form, tabbed by view (Brief, Chronolog, Contact), with Call Logs running in a live sidebar on the right — showing every prior interaction with date, phone number, remarks, and which agent handled it. Auto Save Enabled runs in the background throughout, and Mark As Done cleanly closes the interaction.",
+        mockupBg: "linear-gradient(145deg,#f0f5ff,#e8eeff)",
+        mockupImg: ['/mockups/OCCS/image 16.png', '/mockups/OCCS/image 18.png'],
+        mockupLayout: 'landscape',
+      },
+
+      {
+        label: "Design · Call Records & Clerk Tools",
+        title: "Every call UUID-logged and exportable. Every audio device self-configured by the clerk.",
+        body: "The Export table inside Database logs every call with a UUID, caller number, destination, direction (inbound/outbound), agent ID, and external extension — searchable, column-filterable, and directly exportable in one click. On the clerk side, the Local Setting screen in Tools lets each user select their own recording device, playback device, and ringtone output, with Play Sound and Play Echo verification buttons to confirm hardware before going live. Together they eliminated two recurring categories of ops and IT support overhead.",
+        mockupBg: "linear-gradient(145deg,#fff0f0,#ffeded)",
+        mockupImg: ['/mockups/OCCS/image 12.png', '/mockups/OCCS/image 15.png'],
+        mockupLayout: 'landscape',
+      },
+
     ],
   },
   {

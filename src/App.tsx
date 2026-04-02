@@ -300,26 +300,13 @@ function App() {
             <div className="card rv" onClick={() => { setActiveProject(2); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
-                  <div className="thumb-svg" style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'radial-gradient(ellipse at 50% 30%,#1c2a4a,#0e0e1c 70%)' }}>
-                    <div style={{ textAlign: 'center' }}>
-                      <div style={{ width: '130px', height: '72px', margin: '0 auto 14px', background: 'linear-gradient(145deg,#1e3060,#162448)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 6px 24px rgba(30,60,180,.25)' }}>
-                        <div style={{ width: '82px', height: '42px', background: 'linear-gradient(145deg,#2c4e96,#1e3878)', borderRadius: '6px', position: 'relative' }}>
-                          <div style={{ position: 'absolute', bottom: '-3px', left: '50%', transform: 'translateX(-50%)', width: '55px', height: '5px', background: 'rgba(80,130,255,.35)', borderRadius: '2px' }}></div>
-                        </div>
-                      </div>
-                      <div style={{ display: 'flex', gap: '8px', justifyContent: 'center' }}>
-                        <div style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#3d68b4', opacity: .7 }}></div>
-                        <div style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#3d68b4', opacity: .4 }}></div>
-                        <div style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#3d68b4', opacity: .25 }}></div>
-                      </div>
-                    </div>
-                  </div>
+                  <img src="/mockups/Telvox/Tel.png" alt="Telvox" className="thumb-img" />
                 </div>
               </div>
               <div className="card-body">
-                <h3>Whirlpool ONE</h3>
-                <div className="card-meta">Whirlpool Corporation project · Feb 2022</div>
-                <p>Revamped the top-load washer for India and built a new, scalable brand DNA to unify Whirlpool's next generation of products.</p>
+                <h3>Telvox — AI Voice Agent Platform</h3>
+                <div className="card-meta">Telvox · April 2026</div>
+                <p>Designed a full-stack AI voice agent management platform — from agent builder and telephony campaigns to lead tracking, appointment scheduling, and client billing in one dashboard.</p>
               </div>
             </div>
 

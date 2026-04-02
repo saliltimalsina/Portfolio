@@ -87,7 +87,7 @@ export default function About() {
             ref={easterRef}
             className={`ab-easter-egg${easterVisible ? ' visible' : ''}`}
           >
-            "you thought it was just a cursor... KONO DIO DA!"
+            "KONO DIO DA! ..."
           </span>
           {/* Mask cursor — lives outside the clipping inner div */}
           <div className="jojo-cursor" ref={maskRef}>

@@ -279,14 +279,7 @@ function App() {
             <div className="card rv" onClick={() => { setActiveProject(1); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
-                  <div style={{ width: '100%', height: '100%', position: 'relative', overflow: 'hidden', background: 'linear-gradient(145deg,#dce8ff,#ede5ff)' }}>
-                    {/* Left phone */}
-                    <img src="/mockups/TransferNet/Sign_Up_1.png" alt="" style={{ position: 'absolute', height: '115%', width: 'auto', left: '10%', top: '-5%', transform: 'rotate(-7deg)', borderRadius: '18px', boxShadow: '0 12px 36px rgba(0,0,0,.18)', zIndex: 1 }} />
-                    {/* Center phone — front */}
-                    <img src="/mockups/TransferNet/Homepage_-_Alt_4.png" alt="" style={{ position: 'absolute', height: '125%', width: 'auto', left: '50%', top: '-12%', transform: 'translateX(-50%)', borderRadius: '18px', boxShadow: '0 16px 48px rgba(0,0,0,.25)', zIndex: 3 }} />
-                    {/* Right phone */}
-                    <img src="/mockups/TransferNet/Send_Money_01.png" alt="" style={{ position: 'absolute', height: '115%', width: 'auto', right: '10%', top: '-5%', transform: 'rotate(7deg)', borderRadius: '18px', boxShadow: '0 12px 36px rgba(0,0,0,.18)', zIndex: 2 }} />
-                  </div>
+                  <img src={PROJECTS[1].cardImg} alt="TransferNet" className="thumb-img" />
                 </div>
               </div>
               <div className="card-body">

@@ -202,7 +202,7 @@ const PROJECTS: Project[] = [
     date: "April 2026",
     intro:
       "Designed an end-to-end mobile money transfer app for the Australian diaspora — covering onboarding, identity verification, a live-rate home screen, and a four-step send flow with receipt upload, giving senders full visibility from tap to delivery.",
-    cardImg: "/mockups/TransferNet/Homepage_-_Alt_4.png",
+    cardImg: "/mockups/TransferNet/TransferNet_Cover.png",
 
     sections: [
       // ─── DISCOVERY ───────────────────────────────────────────────────────────

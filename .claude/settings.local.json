@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(npx tsc:*)",
+      "Bash(mv \"Homepage - Alt 4.png\" \"Homepage_-_Alt_4.png\")",
+      "Bash(mv \"Login flow.png\" \"Login_flow.png\")",
+      "Bash(mv \"Login flow-1.png\" \"Login_flow-1.png\")",
+      "Bash(mv \"Login flow-2.png\" \"Login_flow-2.png\")",
+      "Bash(mv \"Onboard 29.png\" \"Onboard_29.png\")",
+      "Bash(cp /Users/saliltimalsina/Downloads/Cover.jpg /Users/saliltimalsina/Desktop/Portfolio/portfolio/public/about/salil-mountain.jpg)",
+      "Bash(cp \"/Users/saliltimalsina/.claude/image-cache/916119cf-531c-4a78-9241-e30088e776ed/3.png\" /Users/saliltimalsina/Desktop/Portfolio/portfolio/public/about/jojo-mask.png)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)"
+    ]
+  }
+}

@@ -303,7 +303,21 @@ function App() {
               </div>
             </div>
 
-            {/* Card 4 — OCCS */}
+            {/* Card 4 — Jobbicus */}
+            <div className="card rv" onClick={() => { setActiveProject(7); setActiveNav('work') }}>
+              <div className="thumb">
+                <div className="thumb-inner">
+                  <img src={PROJECTS[7].cardImg} alt="Jobbicus" className="thumb-img" />
+                </div>
+              </div>
+              <div className="card-body">
+                <h3>Jobbicus — Career Platform</h3>
+                <div className="card-meta">Jobbicus · 2025</div>
+                <p>Designed a full-featured career platform for job seekers and employers — covering profile setup, a personalised home feed, job posting, proposals, upskilling courses, virtual fairs, and accommodation support.</p>
+              </div>
+            </div>
+
+            {/* Card 5 — OCCS */}
             <div className="card rv" onClick={() => { setActiveProject(5); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">

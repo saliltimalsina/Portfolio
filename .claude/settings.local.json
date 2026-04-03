@@ -26,7 +26,8 @@
       "Bash(cp \"/Users/saliltimalsina/.claude/image-cache/f3cb81b2-f6b8-46c2-8071-90df42287145/4.png\" \"/Users/saliltimalsina/Desktop/Portfolio/portfolio/public/sq/vagabond.png\")",
       "Bash(cp \"/Users/saliltimalsina/.claude/image-cache/f3cb81b2-f6b8-46c2-8071-90df42287145/6.png\" \"/Users/saliltimalsina/Desktop/Portfolio/portfolio/public/sq/music.png\")",
       "Bash(cp \"/Users/saliltimalsina/.claude/image-cache/f3cb81b2-f6b8-46c2-8071-90df42287145/7.png\" \"/Users/saliltimalsina/Desktop/Portfolio/portfolio/public/sq/ufc.png\")",
-      "WebFetch(domain:docs.occs.live)"
+      "WebFetch(domain:docs.occs.live)",
+      "Bash(file /Users/saliltimalsina/Desktop/Portfolio/portfolio/public/mockups/Jobbicus/*.png)"
     ]
   }
 }

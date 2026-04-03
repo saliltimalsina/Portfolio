@@ -872,6 +872,339 @@ const PROJECTS: Project[] = [
       },
     ],
   },
+
+  // ─── JOBBICUS ────────────────────────────────────────────────────────────────
+  // Image dimensions reference (all verified):
+  //   Desktop ~1440×900  → landscape layout, fills full width cleanly
+  //   Desktop ≥1440×1400 → too tall, avoid in multi-image layouts
+  //   Mobile  390×844    → portrait layout, show 3 per row max
+  {
+    id: 6,
+    title: "Jobbicus — Career Platform",
+    client: "Jobbicus",
+    category: "Product Design",
+    date: "2025",
+    intro: "Designed a full-featured career platform connecting job seekers and employers — covering sign-up and profile setup, a personalised home feed, employer dashboards, job posting, proposals, upskilling courses, virtual hiring fairs, and accommodation support for relocating candidates.",
+    cardImg: "/mockups/Jobbicus/Onboard.png",
+    coverImg: "/mockups/Jobbicus/Onboard.png",
+
+    sections: [
+      // ─── DISCOVERY ──────────────────────────────────────────────────────────
+      {
+        label: "Discovery · Problem Space",
+        title: "Job boards listed openings. Jobbicus was built to close the gap between wanting a job and being ready for one.",
+        body: "Most platforms gave candidates a list and left them to figure out the rest — no skill-building, no way to stand out, no support for relocation. Jobbicus was conceived as a full career launchpad: pairing live opportunities with the courses, connections, and hiring events needed to land them.",
+        mockupBg: "linear-gradient(145deg,#f0f4ff,#e0ecff)",
+        mockupImg: "/mockups/Jobbicus/Onboard.png",
+      },
+
+      // ─── LANDING PAGE — DESKTOP ──────────────────────────────────────────────
+      {
+        label: "Design · Landing Page — Desktop",
+        title: "Value-first above the fold, everything else earned by scrolling.",
+        body: "The desktop landing opens with a bold hero and a single call to action before any scroll. The page continues into feature highlights, social proof, and a second CTA — each block earns the next without burying the entry message.",
+        mockupBg: "linear-gradient(145deg,#f0f4ff,#e0ecff)",
+        mockupImg: "/mockups/Jobbicus/Home Page.png",
+      },
+
+      // ─── LANDING PAGE — MOBILE ───────────────────────────────────────────────
+      {
+        label: "Design · Landing Page — Mobile",
+        title: "Same hierarchy on a smaller screen — nothing hidden or deprioritised on mobile.",
+        body: "The mobile landing mirrors the desktop value hierarchy adapted for touch. Every key claim and the primary CTA are reachable in a single thumb scroll, with tap targets sized for comfortable one-handed use.",
+        mockupBg: "linear-gradient(145deg,#eef2ff,#dde8ff)",
+        mockupImg: "/mockups/Jobbicus/Home Page_mobiel.png",
+      },
+
+      // ─── SIGN IN & SIGN UP ───────────────────────────────────────────────────
+      {
+        label: "Design · Sign In & Sign Up",
+        title: "Two lean screens to get users in — no friction before the first meaningful action.",
+        body: "Sign-in is a single email + password form with a show/hide toggle and a Forgot Password escape hatch. Sign-up adds confirm password and an optional referral code — nothing more. Both keep the CTA in frame at all times and share the same visual structure so switching between them feels seamless.",
+        mockupBg: "linear-gradient(145deg,#fff0f7,#ffe0ec)",
+        mockupImg: [
+          "/mockups/Jobbicus/Sign In.png",
+          "/mockups/Jobbicus/Sign Up.png",
+        ],
+        mockupLayout: 'landscape',
+      },
+
+      // ─── MOBILE ONBOARDING ───────────────────────────────────────────────────
+      {
+        label: "Design · Mobile Onboarding",
+        title: "Career intent established up front before any personalisation runs.",
+        body: "The onboarding flow establishes user type and career goals in single-purpose screens — one decision per step so nothing is skipped. A persistent progress indicator keeps the end in sight throughout.",
+        mockupBg: "linear-gradient(145deg,#fff8f0,#ffeedd)",
+        mockupImg: [
+          "/mockups/Jobbicus/Onboarding 5.png",
+          "/mockups/Jobbicus/Setup.png",
+          "/mockups/Jobbicus/Setup-1.png",
+        ],
+        mockupLayout: 'portrait',
+      },
+
+      // ─── PROFILE SETUP ───────────────────────────────────────────────────────
+      {
+        label: "Design · Profile & Account Setup",
+        title: "Profile built one focused step at a time — role, skills, experience, location.",
+        body: "Setup continues after onboarding with the same single-purpose pattern. Each screen handles one part of the profile so users complete a full, findable record without facing a wall of fields. The Profile screen shows the finished candidate card employers will see.",
+        mockupBg: "linear-gradient(145deg,#fff5f0,#ffe8dd)",
+        mockupImg: [
+          "/mockups/Jobbicus/Setup-2.png",
+          "/mockups/Jobbicus/Setup-3.png",
+          "/mockups/Jobbicus/Profile.png",
+        ],
+        mockupLayout: 'portrait',
+      },
+
+      // ─── HOME FEED — FULL SCROLL ─────────────────────────────────────────────
+      {
+        label: "Design · Home Feed — Full Page",
+        title: "The personalised home feed at full length — jobs, courses, and events in one view.",
+        body: "The logged-in home surfaces job matches, course picks, and upcoming virtual fairs based on the candidate's profile. The full-page view shows how every content type coexists without competing — each section earns its position through relevance rather than editorial priority.",
+        mockupBg: "linear-gradient(145deg,#f0fff7,#e0ffed)",
+        mockupImg: "/mockups/Jobbicus/Post Login - Homepage - Subscribed.png",
+      },
+
+      // ─── HOME FEED — STATES & SUBSCRIBE ─────────────────────────────────────
+      {
+        label: "Design · Feed States & Subscribe",
+        title: "Free and subscribed states side by side — the upgrade feels like a reward, not a wall.",
+        body: "Three feed states show how content adapts as the user's subscription status changes. The Subscribe modal appears contextually with a clear value exchange — priority results, exclusive listings, virtual fair access — so the upgrade feels earned rather than forced.",
+        mockupBg: "linear-gradient(145deg,#edfff5,#d8ffee)",
+        mockupImg: [
+          "/mockups/Jobbicus/Post Login - Homepage - Subscribed-1.png",
+          "/mockups/Jobbicus/Post Login - Homepage - Subscribed-2.png",
+          "/mockups/Jobbicus/Post Login - Homepage - Subscribed-3.png",
+          "/mockups/Jobbicus/Subscribe Popup.png",
+        ],
+        mockupLayout: 'landscape',
+      },
+
+      // ─── EMPLOYER DASHBOARD — FULL VIEW ─────────────────────────────────────
+      {
+        label: "Design · Employer Dashboard — Full View",
+        title: "Every active role, applicant count, and recent activity on one scrollable page.",
+        body: "The full dashboard scroll shows how employers get a complete picture of their hiring pipeline without switching views — open roles, applicant totals, recent candidate activity, and quick actions all within one continuous layout.",
+        mockupBg: "linear-gradient(145deg,#1a1f35,#252d4a)",
+        mockupImg: "/mockups/Jobbicus/Dashboard.png",
+      },
+
+      // ─── EMPLOYER DASHBOARD — STATES ────────────────────────────────────────
+      {
+        label: "Design · Dashboard States",
+        title: "Three dashboard states covering empty, active, and populated pipeline views.",
+        body: "Dashboard-1 shows a freshly posted role awaiting applicants. Dashboard-2 and Dashboard-3 show increasingly populated pipelines — giving employers a clear mental model of what the board looks like as candidates apply.",
+        mockupBg: "linear-gradient(145deg,#1e2440,#2a3255)",
+        mockupImg: [
+          "/mockups/Jobbicus/Dashboard-1.png",
+          "/mockups/Jobbicus/Dashboard-2.png",
+          "/mockups/Jobbicus/Dashboard-3.png",
+        ],
+        mockupLayout: 'landscape',
+      },
+
+      // ─── JOB POSTING ─────────────────────────────────────────────────────────
+      {
+        label: "Design · Job Posting",
+        title: "A numbered multi-step form so employers stay focused and nothing gets skipped.",
+        body: "Job posting walks through role details, requirements, and compensation in clearly numbered steps. The View Job Post screen shows the published listing exactly as candidates see it — giving employers a final review moment before candidates start applying.",
+        mockupBg: "linear-gradient(145deg,#fff8f0,#ffeedd)",
+        mockupImg: [
+          "/mockups/Jobbicus/Job post Step 15.png",
+          "/mockups/Jobbicus/Job post Step 16.png",
+          "/mockups/Jobbicus/Dashboard - View Job Post.png",
+        ],
+        mockupLayout: 'landscape',
+      },
+
+      // ─── COMPANY PROFILE ─────────────────────────────────────────────────────
+      {
+        label: "Design · Company Profile",
+        title: "A public employer page that candidates discover and trust before they apply.",
+        body: "The company profile page shows culture, open roles, team size, and employer reviews in a single scannable view. Candidates evaluate the employer here before committing to a proposal — so the page is designed to answer the questions that would otherwise delay an application.",
+        mockupBg: "linear-gradient(145deg,#f0f8ff,#ddeeff)",
+        mockupImg: "/mockups/Jobbicus/Company Profile.png",
+      },
+
+      // ─── INVITE CANDIDATES — FULL VIEW ───────────────────────────────────────
+      {
+        label: "Design · Invite Candidates — Full Flow",
+        title: "Employers reach matched candidates directly with a targeted, personalised invite.",
+        body: "The full Invite Candidates page shows the complete matched-candidate list with filters and preview cards — employers select the best fits before composing an outreach. The flow keeps sourcing inside the platform so every touchpoint is tracked.",
+        mockupBg: "linear-gradient(145deg,#1c2138,#272f4e)",
+        mockupImg: "/mockups/Jobbicus/Dashboard - Invite Candidates.png",
+      },
+
+      // ─── INVITE FLOW ─────────────────────────────────────────────────────────
+      {
+        label: "Design · Invitation Flow",
+        title: "Pre-populated invite message and a confirmation step to keep outreach intentional.",
+        body: "After selecting candidates the employer composes a message with role context pre-filled. A confirmation step shows the recipient list before sending — preventing accidental mass outreach and keeping each invite feeling personal.",
+        mockupBg: "linear-gradient(145deg,#202540,#2d3558)",
+        mockupImg: [
+          "/mockups/Jobbicus/Dashboard - Invite Candidates-1.png",
+          "/mockups/Jobbicus/Dashboard - Invite Candidates - Confirmation.png",
+        ],
+        mockupLayout: 'landscape',
+      },
+
+      // ─── PROPOSALS — DESKTOP ─────────────────────────────────────────────────
+      {
+        label: "Design · Proposals — Desktop",
+        title: "Candidates pitch back with a structured proposal — not just a resume drop.",
+        body: "The proposal flow walks candidates through pitch, relevant experience, and availability in a multi-step form with a visible progress bar. Each step is a single decision point so the submission never feels overwhelming.",
+        mockupBg: "linear-gradient(145deg,#f5f0ff,#ede5ff)",
+        mockupImg: [
+          "/mockups/Jobbicus/Proposal Flow.png",
+          "/mockups/Jobbicus/Proposal Flow-1.png",
+          "/mockups/Jobbicus/Proposal Flow-3.png",
+        ],
+        mockupLayout: 'landscape',
+      },
+
+      // ─── PROPOSALS — FULL SCROLL ─────────────────────────────────────────────
+      {
+        label: "Design · Proposal Detail — Full Page",
+        title: "The full proposal submission page at natural scroll length.",
+        body: "Proposal Flow-2 shows the complete proposal form at full page height — capturing the structured pitch, experience summary, and availability fields together. Submitted proposals carry a live status so candidates always know where they stand.",
+        mockupBg: "linear-gradient(145deg,#f0ebff,#e6deff)",
+        mockupImg: "/mockups/Jobbicus/Proposal Flow-2.png",
+      },
+
+      // ─── PROPOSALS — MOBILE ──────────────────────────────────────────────────
+      {
+        label: "Design · Proposals & Learning — Mobile",
+        title: "Invitations, active proposals, and courses at a glance on mobile.",
+        body: "The mobile Proposals — Invited screen surfaces all active employer invitations with company, role, and deadline in one list. The Learn tabs show courses organised by skill level with duration and tag visible without opening each card.",
+        mockupBg: "linear-gradient(145deg,#f0ebff,#e4d9ff)",
+        mockupImg: [
+          "/mockups/Jobbicus/Proposals - Invited.png",
+          "/mockups/Jobbicus/Learn.png",
+          "/mockups/Jobbicus/Learn-1.png",
+        ],
+        mockupLayout: 'portrait',
+      },
+
+      // ─── COURSES — FULL PAGE ─────────────────────────────────────────────────
+      {
+        label: "Design · Courses — Full Browse Page",
+        title: "Course catalogue at full length — categories, difficulty, and duration all visible.",
+        body: "The course browse page surfaces the full catalogue with role-based categories and skill-level filters. The full-page view shows how the grid scales across many courses without losing scannability — candidates find the right track without a search.",
+        mockupBg: "linear-gradient(145deg,#f0f9ff,#dff0ff)",
+        mockupImg: "/mockups/Jobbicus/Course - Flow.png",
+      },
+
+      // ─── COURSES — BROWSE STATES ────────────────────────────────────────────
+      {
+        label: "Design · Course Browse & Enrolment",
+        title: "Three browse states — category landing, course detail, and enrolment confirmation.",
+        body: "The flow moves from category grid to individual course detail to enrolment confirmation in three screens. Each step answers one question: what's available, is this right for me, and am I committed — without back-and-forth.",
+        mockupBg: "linear-gradient(145deg,#e8f4ff,#d5eaff)",
+        mockupImg: [
+          "/mockups/Jobbicus/Course - Flow-1.png",
+          "/mockups/Jobbicus/Course - Flow-2.png",
+          "/mockups/Jobbicus/Course - Flow-3.png",
+        ],
+        mockupLayout: 'landscape',
+      },
+
+      // ─── COURSE DETAIL — MOBILE ─────────────────────────────────────────────
+      {
+        label: "Design · Course Detail — Mobile",
+        title: "Reading and video modes from the same entry point — format is a preference, not a fork.",
+        body: "The mobile course detail opens with an overview of modules and estimated time. From there the learner picks reading or video mode without being routed to a different course version. Both formats share the same progress state so switching mid-course doesn't lose position.",
+        mockupBg: "linear-gradient(145deg,#f0f6ff,#e0eeff)",
+        mockupImg: [
+          "/mockups/Jobbicus/Course Detail - Home.png",
+          "/mockups/Jobbicus/Course Detail - Home - Reading.png",
+          "/mockups/Jobbicus/Course Detail - Home - Video.png",
+        ],
+        mockupLayout: 'portrait',
+      },
+
+      // ─── COURSE PROGRESS — MOBILE ────────────────────────────────────────────
+      {
+        label: "Design · Course Progress & Mobile Navigation",
+        title: "Quiz closes the module; More tab keeps secondary actions out of the main nav.",
+        body: "The post-quiz pass screen confirms the skill badge earned and shows the next recommended module — closing the learning loop with forward momentum. The More tab consolidates account, settings, referrals, and accommodations so the main navigation stays focused on the core job-seeking flow.",
+        mockupBg: "linear-gradient(145deg,#f8f0ff,#f0e4ff)",
+        mockupImg: [
+          "/mockups/Jobbicus/Course Detail - Quiz - Post Take - Pass.png",
+          "/mockups/Jobbicus/More.png",
+          "/mockups/Jobbicus/More-1.png",
+        ],
+        mockupLayout: 'portrait',
+      },
+
+      // ─── MESSAGES — DESKTOP ─────────────────────────────────────────────────
+      {
+        label: "Design · Messages — Desktop",
+        title: "Threaded inbox on desktop — consistent layout and status indicators across both sides.",
+        body: "The messages view uses a split-pane layout with thread list on the left and active conversation on the right. Read/unread states and timestamp are visible in the list without opening each message — recruiters and candidates triage quickly.",
+        mockupBg: "linear-gradient(145deg,#f0fff8,#e0fff2)",
+        mockupImg: "/mockups/Jobbicus/Messages.png",
+      },
+
+      // ─── MESSAGES — MOBILE ───────────────────────────────────────────────────
+      {
+        label: "Design · Messages & Accommodations — Mobile",
+        title: "Full message thread on mobile, and accommodation listings for relocating candidates.",
+        body: "Mobile messaging preserves the same thread context as desktop — no messages are hidden or truncated on smaller screens. The Accommodations — Detail screen surfaces verified housing listings for candidates relocating for a role, integrated into the same app so job and housing search happen together.",
+        mockupBg: "linear-gradient(145deg,#e8fff5,#d5ffec)",
+        mockupImg: [
+          "/mockups/Jobbicus/Messages Mobile.png",
+          "/mockups/Jobbicus/Message View.png",
+          "/mockups/Jobbicus/Accommodations - Detail.png",
+        ],
+        mockupLayout: 'portrait',
+      },
+
+      // ─── VIRTUAL FAIRS ───────────────────────────────────────────────────────
+      {
+        label: "Design · Virtual Hiring Fairs",
+        title: "Company booths, live sessions, and direct job applications in one event interface.",
+        body: "Virtual fairs consolidate what candidates normally do across multiple platforms — research companies, attend talks, and apply for roles — into a single live-event experience. Booth cards surface the key company info and open roles so candidates can apply without leaving the fair.",
+        mockupBg: "linear-gradient(145deg,#f0fff8,#ddfff0)",
+        mockupImg: [
+          "/mockups/Jobbicus/Virtual Fair.png",
+          "/mockups/Jobbicus/Virtual Fair-1.png",
+        ],
+        mockupLayout: 'landscape',
+      },
+
+      // ─── SETTINGS ────────────────────────────────────────────────────────────
+      {
+        label: "Design · Settings",
+        title: "Preferences, billing, and account management in a predictable, scannable layout.",
+        body: "Settings uses a grouped list pattern — notifications, privacy, subscription, billing — so users find what they're looking for without a search. The Invoice view gives subscribers a printable record without routing them to an external portal.",
+        mockupBg: "linear-gradient(145deg,#f5f5f5,#ebebeb)",
+        mockupImg: [
+          "/mockups/Jobbicus/Settings.png",
+          "/mockups/Jobbicus/Settings - Billing and Payments - Invoice.png",
+        ],
+        mockupLayout: 'landscape',
+      },
+
+      // ─── SETTINGS — MY INFORMATION ───────────────────────────────────────────
+      {
+        label: "Design · My Information — Full Edit Page",
+        title: "Every editable profile field on one long form — no pagination, no modal stacks.",
+        body: "The My Information edit page surfaces all personal and professional fields in a single continuous form. The decision to use one long page rather than multi-step wizard reflects that users editing existing data move non-linearly — they jump to the field that needs updating rather than stepping through from the top.",
+        mockupBg: "linear-gradient(145deg,#f2f2f2,#e8e8e8)",
+        mockupImg: "/mockups/Jobbicus/Settings -  My Information - Edit.png",
+      },
+
+      // ─── STAYS & ACCOMMODATIONS ──────────────────────────────────────────────
+      {
+        label: "Design · Stays & Accommodations",
+        title: "Verified housing listings for candidates relocating for a new role.",
+        body: "Stays brings accommodation search inside the platform so candidates don't need to juggle a separate housing service while job hunting. Listings are verified, show commute context to posted roles, and surface key details — price, proximity, lease terms — in a card format consistent with the job browse experience.",
+        mockupBg: "linear-gradient(145deg,#fff8f0,#ffeedd)",
+        mockupImg: "/mockups/Jobbicus/Stays.png",
+      },
+    ],
+  },
 ]
 
 export default PROJECTS

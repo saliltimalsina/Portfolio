@@ -254,113 +254,68 @@ const PROJECTS: Project[] = [
         mockupImg: "/mockups/TransferNet/Homepage_-_Alt_4.png",
       },
 
-      // ─── ONBOARDING ──────────────────────────────────────────────────────────
+      // ─── ONBOARDING & SIGN UP ────────────────────────────────────────────────
       {
-        label: "Design · Onboarding",
-        title: "A single screen to orient new users before any commitment.",
-        body: "The welcome screen leads with a bold illustration of global reach and two clear paths — Get Started or Already have an Account. No feature list, no rate teaser. The goal was to remove hesitation and route users confidently into either the sign-up or login flow with a single tap.",
-        mockupBg: "linear-gradient(145deg,#eef2ff,#e4eaff)",
-        mockupImg: "/mockups/TransferNet/Login_flow.png",
-      },
-
-      // ─── SIGN UP & VERIFICATION ───────────────────────────────────────────────
-      {
-        label: "Design · Sign Up & Verification",
-        title: "Account creation in two screens, verified before KYC begins.",
-        body: "Email, password, confirm password, and an optional referral code are collected on a single sign-up screen. An OTP sent immediately to the registered email confirms the account — a 45-second countdown with a Resend option keeps the flow moving without locking users out. Both screens keep the keyboard and CTA in frame at all times.",
+        label: "Design · Onboarding & Sign Up",
+        title: "Welcome, sign up, and email verification — three screens, zero dead ends.",
+        body: "The welcome screen gives new users two clear paths (Get Started / Already have an Account) with no feature lists or rate teasers — just confidence routing. Sign-up collects email, password, and an optional referral code on a single form. An OTP is sent immediately to confirm the account, with a 45-second countdown and a Resend option so users are never locked out. All screens keep the keyboard and primary CTA in frame throughout.",
         mockupBg: "linear-gradient(145deg,#eef2ff,#e4eaff)",
         mockupImg: [
+          "/mockups/TransferNet/Login_flow.png",
           "/mockups/TransferNet/Sign_Up_2.png",
           "/mockups/TransferNet/Sign_Up_1.png",
         ],
         mockupLayout: 'portrait',
       },
 
-      // ─── KYC — PERSONAL DETAILS ───────────────────────────────────────────────
+      // ─── KYC — IDENTITY, ADDRESS & CONFIRMATION ──────────────────────────────
       {
-        label: "Design · KYC — Personal Details",
-        title: "Identity collected in one form, Continue only unlocks when it's complete.",
-        body: "Name, date of birth, country of birth, and gender are gathered on a single screen that matches the layout of the user's official ID. The Continue button stays disabled until every field is valid — making it a reliable signal of completion rather than a source of inline error states. Two states are shown: mid-fill (Continue greyed) and fully completed (Continue active in blue).",
+        label: "Design · KYC — Identity, Address & Confirmation",
+        title: "Personal details, address, proof of residence, and an 'All done!' — the full KYC loop.",
+        body: "Identity (name, date of birth, country of birth, gender) is collected on one screen with Continue locked until every field is valid — no inline errors, just a reliable signal of completion. Address follows: street, suburb, postal code, state, country, and a proof-of-residence upload zone, keeping compliance visible without making it feel like an interrogation. An 'All done!' screen with a pulsing green check closes the loop cleanly — users arrive at the home screen fully verified, with a single Start Exploring App CTA.",
         mockupBg: "linear-gradient(145deg,#fff7f0,#ffeedd)",
         mockupImg: [
           "/mockups/TransferNet/Onboard-1.png",
           "/mockups/TransferNet/Onboard-2.png",
+          "/mockups/TransferNet/Onboard-3.png",
+          "/mockups/TransferNet/Sign_Up_3.png",
         ],
         mockupLayout: 'portrait',
       },
 
-      // ─── KYC — ADDRESS ────────────────────────────────────────────────────────
+      // ─── LOGIN & HOME ─────────────────────────────────────────────────────────
       {
-        label: "Design · KYC — Address & Proof",
-        title: "Residential address and proof of residence in one focused screen.",
-        body: "Street, suburb, postal code, state, and country are captured with a proof-of-residence upload zone at the bottom. Keeping compliance requirements visible but contained to a single screen prevents the KYC flow from feeling like an interrogation — users know exactly what's left before they can send.",
-        mockupBg: "linear-gradient(145deg,#fff7f0,#ffeedd)",
-        mockupImg: "/mockups/TransferNet/Onboard-3.png",
-      },
-
-      // ─── ALL DONE ─────────────────────────────────────────────────────────────
-      {
-        label: "Design · Account Ready",
-        title: "A clear success state before users ever touch the send flow.",
-        body: "An 'All done!' confirmation screen with a pulsing green check mark closes the onboarding loop cleanly. Users arrive at the home screen knowing their account is fully verified — not mid-process. The single CTA, Start Exploring App, removes any ambiguity about what to do next.",
-        mockupBg: "linear-gradient(145deg,#f0fff4,#e0ffee)",
-        mockupImg: "/mockups/TransferNet/Sign_Up_3.png",
-      },
-
-      // ─── LOGIN & RECOVERY ─────────────────────────────────────────────────────
-      {
-        label: "Design · Login & Password Recovery",
-        title: "Returning users get in fast. Locked-out users have a clear path back.",
-        body: "The login screen mirrors the sign-up layout — email, password with show/hide toggle, remember me, and a Forgot Password link — keeping cognitive load low for repeat visits. The recovery flow issues a fresh OTP then routes directly to a Create New Password screen with inline character requirements, keeping steps minimal and the keyboard in frame throughout.",
-        mockupBg: "linear-gradient(145deg,#eef2ff,#e4eaff)",
+        label: "Design · Login & Home Screen",
+        title: "Returning users get straight in — and land on a screen that closes the deal.",
+        body: "The login screen mirrors sign-up's layout (email, password with show/hide, remember me, Forgot Password) to keep repeat visits frictionless. Password recovery issues a fresh OTP then routes to a Create New Password screen with inline character requirements — minimal steps, keyboard always in frame. The home screen leads with the live exchange rate and a trend sparkline before any tap, Small/Large/Tuition tabs to switch transfer type, fees crossed out to zero, and a single Send Now button — backed by social proof and a real-time activity ticker.",
+        mockupBg: "linear-gradient(145deg,#0f172a,#1e293b)",
         mockupImg: [
           "/mockups/TransferNet/Login_flow-1.png",
           "/mockups/TransferNet/Login_flow-2.png",
+          "/mockups/TransferNet/Homepage_-_Alt_4.png",
         ],
         mockupLayout: 'portrait',
       },
 
-      // ─── HOME ─────────────────────────────────────────────────────────────────
+      // ─── SEND MONEY — STEPS 1–3 ───────────────────────────────────────────────
       {
-        label: "Design · Home Screen",
-        title: "A live rate, a fee waiver, and one button — the home screen does one job.",
-        body: "The dark home screen leads with the exchange rate and a trend sparkline, showing the exclusive rate advantage before any interaction. Small/Large/Tuition tabs let users switch transfer type without leaving the screen. Fees are crossed out to zero, the saved amount appears in the footer, and a single Send Now button closes the decision loop. Social proof ('13M+ transactions done') and a real-time activity ticker reinforce trust without cluttering the layout.",
-        mockupBg: "linear-gradient(145deg,#0f172a,#1e293b)",
-        mockupImg: "/mockups/TransferNet/Homepage_-_Alt_4.png",
-      },
-
-      // ─── SEND — STEP 1 ────────────────────────────────────────────────────────
-      {
-        label: "Design · Send Money — Amount",
-        title: "Step 1 of 4: live rate, delivery method, and total before picking a recipient.",
-        body: "Amount and recipient currency update in real time with the exclusive rate and a trend indicator visible inline. Delivery method (Bank Deposit) is selectable from a dropdown. Fees and subtotal are broken out below the fold so users understand exactly what they're committing to — including the zero-fee promotional state — before they continue.",
+        label: "Design · Send Money — Steps 1–3",
+        title: "Amount, recipient, and payment upload — the first three steps of the send flow.",
+        body: "Step 1 shows the live rate and trend inline, lets users pick delivery method, and breaks out fees and subtotal before they commit. Step 2 surfaces frequent recipients as avatar pills above a searchable list — a New recipient shortcut sits inline so adding someone never breaks flow, and Continue stays grey until a selection is made. Step 3 shows copy-pasteable bank details (account name, BSB, account number) alongside a Required receipt upload zone that keeps Continue locked until evidence is attached, giving ops a full audit trail.",
         mockupBg: "linear-gradient(145deg,#f5f0ff,#ede5ff)",
-        mockupImg: "/mockups/TransferNet/Send_Money_05.png",
+        mockupImg: [
+          "/mockups/TransferNet/Send_Money_05.png",
+          "/mockups/TransferNet/Send_Money_04.png",
+          "/mockups/TransferNet/Send_Money_03.png",
+        ],
+        mockupLayout: 'portrait',
       },
 
-      // ─── SEND — STEP 2 ────────────────────────────────────────────────────────
-      {
-        label: "Design · Send Money — Recipient",
-        title: "Step 2 of 4: pick a frequent contact or add someone new in one tap.",
-        body: "Frequent recipients surface immediately as avatar pills above a full searchable list. A New recipient shortcut sits inline with the frequent row so adding someone never breaks the flow. When no recipient is selected the Continue button stays grey — a passive guardrail that eliminates the empty-state submission error entirely.",
-        mockupBg: "linear-gradient(145deg,#f5f0ff,#ede5ff)",
-        mockupImg: "/mockups/TransferNet/Send_Money_04.png",
-      },
-
-      // ─── SEND — STEP 3 ────────────────────────────────────────────────────────
-      {
-        label: "Design · Send Money — Payment Upload",
-        title: "Step 3 of 4: bank details to copy, receipt to upload, then continue.",
-        body: "Rather than integrating a payment gateway, the flow asks users to transfer via online banking and upload the receipt screenshot. Account name, BSB, and account number are all copy-pasteable inline. The upload zone is marked Required and keeps Continue disabled until evidence is attached — preventing orders from advancing without a payment trace and giving ops a full audit trail.",
-        mockupBg: "linear-gradient(145deg,#f5f0ff,#ede5ff)",
-        mockupImg: "/mockups/TransferNet/Send_Money_03.png",
-      },
-
-      // ─── SEND — STEP 4 + SUCCESS ──────────────────────────────────────────────
+      // ─── SEND — CONFIRM & SUCCESS ─────────────────────────────────────────────
       {
         label: "Design · Send Money — Confirm & Success",
-        title: "Step 4 of 4: full summary review, then a confirmation that sticks.",
-        body: "The confirmation screen shows the complete transfer at a glance — amount, recipient bank, fee, exchange rate, and the uploaded receipt thumbnail — before a single Confirm & Send button commits. The success screen that follows surfaces the transfer number, fee, and delivery method with Back to Home and Track Order Transfer CTAs, closing the send loop and routing users directly into the tracking flow.",
+        title: "Review the full transfer, confirm once, and get a receipt that routes to tracking.",
+        body: "The confirmation screen shows amount, recipient bank, fee, exchange rate, and the uploaded receipt thumbnail in a single summary before Confirm & Send commits. The success screen that follows surfaces the transfer ID, fee, and delivery method with Back to Home and Track Transfer CTAs — closing the send loop and routing users directly into the live tracking view.",
         mockupBg: "linear-gradient(145deg,#f5f0ff,#ede5ff)",
         mockupImg: [
           "/mockups/TransferNet/Send_Money_01.png",
@@ -369,44 +324,31 @@ const PROJECTS: Project[] = [
         mockupLayout: 'portrait',
       },
 
-      // ─── RECIPIENTS ───────────────────────────────────────────────────────────
+      // ─── TRANSACTIONS & DETAIL ────────────────────────────────────────────────
       {
-        label: "Design · Recipients",
-        title: "A contacts-style list that doubles as a send launchpad.",
-        body: "Each recipient row shows initials, name, and phone number with a direct Send shortcut — jumping straight to step 2 of the send flow without passing through the home screen. Frequent recipients stay pinned at the top. The detail view exposes full account information — receiver ID, name, mobile, account name and number — with Edit and Remove controls and a Send button that triggers the flow from context.",
-        mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
+        label: "Design · Transactions & Tracking",
+        title: "A filterable history and a five-stage timeline — visibility from list to delivery.",
+        body: "The transactions screen groups transfers by date with a daily AUD total, filterable across All / Processing / Completed / Failed. Each row shows recipient, transfer ID, amounts, and timestamp with a Track Transfer shortcut. The detail view shows the full transfer above a vertical timeline — Transfer Created → Payment Verified → Sent for Collection → Processing → Delivered — with completed stages in green and the active stage in blue, plus a full details card and sender/recipient side by side.",
+        mockupBg: "linear-gradient(145deg,#f0fff4,#e0ffee)",
         mockupImg: [
-          "/mockups/TransferNet/Onboard_30.png",
-          "/mockups/TransferNet/Onboard_29.png",
+          "/mockups/TransferNet/Transaction_4.png",
+          "/mockups/TransferNet/Transaction_3.png",
         ],
         mockupLayout: 'portrait',
       },
 
-      // ─── TRANSACTIONS ─────────────────────────────────────────────────────────
+      // ─── RECIPIENTS & PROFILE ─────────────────────────────────────────────────
       {
-        label: "Design · Transactions",
-        title: "A filterable transfer history with per-transfer tracking built in.",
-        body: "Transfers are grouped by date with a total AUD value per day, filterable across All / Processing / Completed / Failed tabs. Each card shows recipient, transfer ID, sent amount, recipient gets amount, and timestamp — with a Track Transfer button that opens the live status view. Status badges (Delivered, Pending) let users triage at a glance without opening individual records.",
-        mockupBg: "linear-gradient(145deg,#f0fff4,#e0ffee)",
-        mockupImg: "/mockups/TransferNet/Transaction_4.png",
-      },
-
-      // ─── TRANSACTION DETAIL ───────────────────────────────────────────────────
-      {
-        label: "Design · Transaction Detail",
-        title: "A five-stage timeline so senders always know exactly where their money is.",
-        body: "Each transfer page shows the amount, approximate destination value, and recipient name above a live status badge. A vertical timeline below walks through Transfer Created → Payment Verified → Sent for Collection → Processing Transfer → Delivered, with completed stages struck through in green and the active stage highlighted in blue. Exchange rate, fee, created date, transaction ID, and platform are broken out in a details card, with sender and recipient shown side by side at the foot of the page.",
-        mockupBg: "linear-gradient(145deg,#f0fff4,#e0ffee)",
-        mockupImg: "/mockups/TransferNet/Transaction_3.png",
-      },
-
-      // ─── PROFILE ──────────────────────────────────────────────────────────────
-      {
-        label: "Design · Profile",
-        title: "Account stats, quick actions, and settings — without the clutter.",
-        body: "The profile screen surfaces three personal stats (TXNs completed, AUD saved, days as member) alongside quick-action tiles for Refer, Help, and Security. An Essentials list handles the rest — personal detail, about, password change, update check, and log out — using a simple disclosure pattern that keeps the screen scannable and the settings hierarchy shallow.",
-        mockupBg: "linear-gradient(145deg,#fff7f0,#ffeedd)",
-        mockupImg: "/mockups/TransferNet/Onboard_31.png",
+        label: "Design · Recipients & Profile",
+        title: "A send-ready contacts list and an account screen that stays scannable.",
+        body: "Recipients are shown as a contacts-style list with a direct Send shortcut per row — jumping to step 2 without touching the home screen. The detail view shows full account info with Edit, Remove, and Send from context. The profile screen surfaces three personal stats (TXNs completed, AUD saved, days as member), quick-action tiles for Refer, Help, and Security, and an Essentials list for settings — all in a shallow, scannable hierarchy.",
+        mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
+        mockupImg: [
+          "/mockups/TransferNet/Onboard_30.png",
+          "/mockups/TransferNet/Onboard_29.png",
+          "/mockups/TransferNet/Onboard_31.png",
+        ],
+        mockupLayout: 'portrait',
       },
     ],
   },

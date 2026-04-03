@@ -218,7 +218,7 @@ function App() {
                 </span>
               </div>
             </div>
-            <p>UI/UX Designer with 1.5+ years crafting web and mobile experiences, building scalable design systems (MUI, Flowbite, Untitled), leading end-to-end design, collaborating with clients, and mentoring interns.
+            <p>UI/UX Designer with 2+ years crafting web and mobile experiences, building scalable design systems (MUI, Flowbite, Untitled), leading end-to-end design, collaborating with clients, and mentoring interns.
 </p>
             <div className="actions">
               <a href="https://cal.com/salil-timalsina-a431sp/30min" target="_blank" rel="noopener noreferrer" className="btn">

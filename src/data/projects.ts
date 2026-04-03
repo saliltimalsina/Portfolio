@@ -1,3 +1,40 @@
+// ─── Skathi asset imports ─────────────────────────────────────────────────────
+import skathiAppOnboarding from '../assets/Skathi/Onboarding Page.png'
+import skathiAppUsername from '../assets/Skathi/Username.png'
+import skathiAppUsername3 from '../assets/Skathi/Username-3.png'
+import skathiAppUsername4 from '../assets/Skathi/Username-4.png'
+import skathiAppUsername5 from '../assets/Skathi/Username-5.png'
+import skathiAppUsername6 from '../assets/Skathi/Username-6.png'
+import skathiAppUsername7 from '../assets/Skathi/Username-7.png'
+import skathiAppUsername8 from '../assets/Skathi/Username-8.png'
+import skathiAppUsername9 from '../assets/Skathi/Username-9.png'
+import skathiAppUsername10 from '../assets/Skathi/Username-10.png'
+import skathiAppSubPage from '../assets/Skathi/Sub Page.png'
+import skathiAppSubPage1 from '../assets/Skathi/Sub Page-1.png'
+import skathiAppSubPage2 from '../assets/Skathi/Sub Page-2.png'
+import skathiAppSubPage3 from '../assets/Skathi/Sub Page-3.png'
+import skathiAppSubPage4 from '../assets/Skathi/Sub Page-4.png'
+import skathiAppSubPage5 from '../assets/Skathi/Sub Page-5.png'
+import skathiAppAlbum from '../assets/Skathi/Album.png'
+import skathiWebHomepage from '../assets/Skathi/Homepage.png'
+import skathiWebArtist from '../assets/Skathi/Artist.png'
+import skathiWebAlbum from '../assets/Skathi/Album_web.png'
+import skathiWebBeats from '../assets/Skathi/Beats.png'
+import skathiWebBeats1 from '../assets/Skathi/Beats-1.png'
+import skathiWebBeatsList from '../assets/Skathi/Beats - List.png'
+import skathiWebBeatsBox from '../assets/Skathi/Beats - Box.png'
+import skathiWebBeatsDetail from '../assets/Skathi/Beats - Add to Cart or Detail.png'
+import skathiWebBeatsDetailPlaying from '../assets/Skathi/Beats - Add to Cart or Detail - Playing.png'
+import skathiWebBeatsLicense from '../assets/Skathi/Beats - License.png'
+import skathiWebDetailedView from '../assets/Skathi/Detailed View.png'
+import skathiWebEvent from '../assets/Skathi/Event.png'
+import skathiWebCart from '../assets/Skathi/Cart.png'
+import skathiWebBookArtist from '../assets/Skathi/Book Artist Form.png'
+import skathiWebShop from '../assets/Skathi/Shop.png'
+import skathiWebShop1 from '../assets/Skathi/Shop-1.png'
+import skathiCover from '../assets/Skathi/Cover.png'
+// ─────────────────────────────────────────────────────────────────────────────
+
 export type ProjectSection = {
   label: string
   title: string
@@ -16,6 +53,7 @@ export type Project = {
   intro: string
   sections: ProjectSection[]
   cardImg?: string
+  coverImg?: string
   docsUrl?: string
 }
 
@@ -27,7 +65,8 @@ const PROJECTS: Project[] = [
     category: "Product Design",
     date: "April 2026",
     intro: "A dual-sided supply chain platform connecting garment factories and buyers — giving factories a clear action queue and buyers real-time shipment visibility with direct customer impact data.",
-    cardImg: '/mockups/ClearPath/Fac-11.png',
+    cardImg: '/mockups/ClearPath/Cover.png',
+    coverImg: '/mockups/ClearPath/Cover.png',
     sections: [
       {
         label: "Discovery · Problem Space",
@@ -203,6 +242,7 @@ const PROJECTS: Project[] = [
     intro:
       "Designed an end-to-end mobile money transfer app for the Australian diaspora — covering onboarding, identity verification, a live-rate home screen, and a four-step send flow with receipt upload, giving senders full visibility from tap to delivery.",
     cardImg: "/mockups/TransferNet/TransferNet_Cover.png",
+    coverImg: "/mockups/TransferNet/TransferNet_Cover.png",
 
     sections: [
       // ─── DISCOVERY ───────────────────────────────────────────────────────────
@@ -540,27 +580,194 @@ const PROJECTS: Project[] = [
 
     ],
   },
+// ─── SKATHI ───────────────────────────────────────────────────────────────────
+
   {
     id: 3,
-    title: "Blockchain system design for socio-economic impact",
-    client: "NID Academic Project",
-    category: "Service Design",
-    date: "June 2022",
-    intro: "Designed a speculative blockchain system offering microfinance and transparent supply chains to empower Indian farmers and drive socio-economic impact.",
+    title: "Skathi — App & Web Platform",
+    client: "Skathi",
+    category: "Product Design",
+    date: "April 2026",
+    intro: "Designed the complete Skathi experience across iOS and web — a music platform built for South Asian listeners. The app covers streaming from onboarding to playback. The web extends into beats licensing, artist booking, studio rental, events, and a merch shop.",
+    cardImg: skathiCover,
+    coverImg: skathiCover,
     sections: [
+
+      // ── APP ────────────────────────────────────────────────────────────────────
       {
-        label: "Research · Context",
-        title: "Farmers trapped in opaque, exploitative supply chains.",
-        body: "We mapped the journey of a kilo of wheat — from field to shelf — and found 5 rent-seeking intermediaries, zero farmer visibility, and no access to fair credit.",
-        mockupBg: "linear-gradient(145deg,#0d2234,#122d46)",
+        label: "App · Onboarding",
+        title: "Three album covers and one line — the app makes its case immediately.",
+        body: "The splash screen leads with a collage of real album art, the Skathi logo, and a single tagline: 'Feel every beat, wherever you are.' Two CTAs at the bottom — Get Started and I Already Have an Account — route new and returning users into separate flows from the first screen.",
+        mockupBg: "linear-gradient(145deg,#1a1a2e,#16213e)",
+        mockupImg: skathiAppOnboarding,
       },
       {
-        label: "Design · System",
-        title: "Trustless transparency for low-literacy, low-connectivity users.",
-        body: "SMS-based transaction logging, visual-first interface in local languages, and community validator nodes — designed for real constraints, not ideal conditions.",
-        mockupBg: "linear-gradient(145deg,#0a1e2e,#0f2840)",
+        label: "App · Sign Up & Password",
+        title: "Email or social to sign up, then live password validation before moving on.",
+        body: "Sign-up is a single email field with Google and Apple as alternatives — no name or phone required at this stage. The next screen asks for a password and ticks off three requirements in real time (1 letter, 1 number or special character, 8 characters minimum) as the user types. No post-submit errors, no ambiguity about what's still missing.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: [skathiAppSubPage1, skathiAppSubPage2],
+        mockupLayout: 'portrait',
+      },
+      {
+        label: "App · Choose a Plan",
+        title: "Ad-free, offline, unlimited skips — the value is stated before the price.",
+        body: "The plan screen leads with a preview carousel of the app and the core promise upfront. Two plan cards — Yearly at Rs. 1,400 and Monthly at Rs. 300 — sit below with a single Get Started CTA. The yearly saving is visible from the math alone, no badge needed.",
+        mockupBg: "linear-gradient(145deg,#1a1a2e,#0f3460)",
+        mockupImg: skathiAppSubPage,
+      },
+      {
+        label: "App · Home Feed",
+        title: "Eight named rows, genre filters at the top — nothing is unlabelled.",
+        body: "The home feed is sectioned into Latest Songs, Albums for You, Your Top Picks, Trending Songs, Fresh Releases, Top Charts, Your Playlists, and Recently Played. Genre chips (Home, Rock, Folk, Indie, Sad) filter the whole feed from the top without navigating away. Free users see a premium banner above the fold; paid users see the same layout clean.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: [skathiAppUsername4, skathiAppUsername],
+        mockupLayout: 'portrait',
+      },
+      {
+        label: "App · Explore & Search",
+        title: "Browse by genre or search across songs, playlists, EPs, and artists at once.",
+        body: "The Explore tab is a full-bleed colour grid of genres — each tile uses a real album art crop as its background. Search returns all content types in a single unified list, with every row labelled by type and source so users know exactly what they're tapping into without switching between tabs.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: [skathiAppUsername5, skathiAppUsername3],
+        mockupLayout: 'portrait',
+      },
+      {
+        label: "App · Genre & Album",
+        title: "A genre opens songs and albums together. An album opens Play, Shuffle, and its full tracklist.",
+        body: "Genre pages (e.g. Skathi Prog Rock) surface song rows and album tiles on one scroll — no sub-navigation. Album pages lead with cover art, Play and Shuffle, and the complete tracklist with per-track action menus. The bottom tab bar persists throughout so users can navigate away without losing context.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: [skathiAppUsername10, skathiAppAlbum],
+        mockupLayout: 'portrait',
+      },
+      {
+        label: "App · Now Playing",
+        title: "Album art fills the screen — controls stay minimal and out of the way.",
+        body: "The player uses the album cover as a full-bleed background, pulling the mood of the artwork directly into the UI. Shuffle, skip, play/pause, and repeat sit below a progress scrubber. Three tabs — Queue, Lyrics, Related — extend the player experience without leaving the now playing screen.",
+        mockupBg: "linear-gradient(145deg,#0d2137,#1a3a5c)",
+        mockupImg: skathiAppUsername7,
+      },
+      {
+        label: "App · Queue & Song Actions",
+        title: "The queue is a reorderable list. Every song action lives in a bottom sheet.",
+        body: "The Queue tab lists every upcoming track with drag handles for reordering inline. Tapping the three-dot menu on any track opens a bottom sheet with Share, Unlike Song, Add in Playlist, Add to Artist, and Downloaded — all without leaving the player or navigating to a separate settings screen.",
+        mockupBg: "linear-gradient(145deg,#0d2137,#1a3a5c)",
+        mockupImg: [skathiAppUsername8, skathiAppUsername6],
+        mockupLayout: 'portrait',
+      },
+      {
+        label: "App · Library & Account",
+        title: "Saved content filtered by type. Account settings in a clean single list.",
+        body: "The Library uses three filter pills — Playlists, Albums, Downloaded — to surface saved content without separate tabs. Each item shows its cover, title, and source label. The Account screen is a plain disclosure list: View Profile, Downloads, History, Manage Plan, Settings, and Log Out — nothing buried.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: [skathiAppUsername9, skathiAppSubPage3],
+        mockupLayout: 'portrait',
+      },
+      {
+        label: "App · Plan Management & Cancellation",
+        title: "Current plan, billing date, and a cancellation form that treats leaving as feedback.",
+        body: "Manage Plan shows the active subscription and next billing date with a single Change Plan button. Cancellation skips dark patterns entirely — a seven-option form (Subscription cost feels too high, Not using the app enough, Switched to a better service, and four more) collects the reason before confirming, turning exit into a product signal.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: [skathiAppSubPage4, skathiAppSubPage5],
+        mockupLayout: 'portrait',
+      },
+
+      // ── WEB ────────────────────────────────────────────────────────────────────
+      {
+        label: "Web · Homepage",
+        title: "Every surface Skathi offers — reachable in one click from the landing page.",
+        body: "The homepage opens with a full-width search bar and a row of category icons covering Music, Artists, Beats, Studio, Events, and Shop. Scrolling reveals Featured this Month, Fresh Beats, Discover Artists, Noteworthy Releases, Latest Videos, Gallery of Visuals, Studio Booking, merch, and a mobile app download prompt — the entire platform in one scroll, nothing hidden behind a nav menu.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: skathiWebHomepage,
+      },
+      {
+        label: "Web · Artist Page",
+        title: "Music, discography, shows, videos, and merch — one profile, nothing split across pages.",
+        body: "Artist pages like Chumbak open with a full-bleed live photo and a top nav spanning Popular Musics, Discography, Upcoming Shows, About, Videos, and Shop. Fans can stream an album, buy a t-shirt, and check upcoming show dates without ever leaving the artist's profile — each section is self-contained within the same scrollable page.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: skathiWebArtist,
+      },
+      {
+        label: "Web · Album Detail",
+        title: "Tracklist, price, more from the artist — and a nudge to go mobile.",
+        body: "Album pages show the full tracklist, a purchase price, and a More from Chumbak carousel inline. A Go Mobile card with App Store and Google Play links sits within the page — nudging desktop listeners toward streaming without disrupting the purchase flow for those who want to buy.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: skathiWebAlbum,
+      },
+      {
+        label: "Web · Beats Marketplace",
+        title: "A numbered, filterable beats list — producers and buyers can both find exactly what they need.",
+        body: "Beats to Explore presents tracks in a numbered two-column list with title, producer, and price per row. Filter chips across Genre, Track Type, BPM, Key, Mood, and more let buyers narrow precisely — a C-key ambient beat at 90 BPM is three filter taps away. Clicking any beat slides in a right-side detail panel without navigating away from the list.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: [skathiWebBeatsList, skathiWebBeatsDetail],
+        mockupLayout: 'landscape',
+      },
+      {
+        label: "Web · Beat Licensing",
+        title: "Three license tiers, a preview player, and transparent terms — before checkout.",
+        body: "The beat detail panel shows producer, BPM, key, tags, and three pricing tiers: Basic (MP3), Premium (MP3 + WAV + STEMS), and Exclusive (full rights). A persistent audio player bar at the bottom lets buyers preview while browsing. Clicking License Terms opens a modal — not a PDF — showing format availability and plain-language usage rules upfront.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: [skathiWebBeatsDetailPlaying, skathiWebBeatsLicense],
+        mockupLayout: 'landscape',
+      },
+      {
+        label: "Web · Beat Single Page",
+        title: "A dedicated page for producers — tags, pricing, and a More like this carousel.",
+        body: "Individual beat pages surface the producer, genre tags, price, play controls, and a Go Mobile prompt. The layout mirrors the album detail page — consistent whether users land on a track or a beat. A More like this carousel at the bottom keeps discovery going without requiring a return to the marketplace.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: skathiWebDetailedView,
+      },
+      {
+        label: "Web · Events & Checkout",
+        title: "From event poster to ticket — about, talent roll, venue map, and a checkout modal.",
+        body: "Event pages open with a branded header image, then show About, Talent Roll, Date and Time, and an embedded venue map in one scroll. Clicking Register opens a checkout modal handling contact information and payment method inline — no page redirect, no separate checkout flow.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: [skathiWebEvent, skathiWebBeats],
+        mockupLayout: 'landscape',
+      },
+      {
+        label: "Web · Book an Artist",
+        title: "A three-step booking form — Event Basics, Performances & Venue, Pricing & Contact.",
+        body: "The Book Artist modal walks organisers through three clearly labelled steps. Step one collects Event Name, Date & Time, City, Organiser, Set Duration, and Event Type. A step indicator at the top shows progress without a page reload — keeping the flow contained in one overlay and reducing drop-off before the form is complete.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: skathiWebBookArtist,
+      },
+      {
+        label: "Web · Studio Booking",
+        title: "Rehearsal spaces listed like short-stay rentals — photos, amenities, hours, map, sticky booking widget.",
+        body: "Studio pages open with a photo grid, rate per hour, capacity, and minimum booking duration. Below: an About section, amenities checklist, operating hours by day, and an embedded map. A sticky booking widget on the right holds date and time pickers with a Request to Book CTA — visible regardless of scroll position.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: skathiWebBeatsBox,
+      },
+      {
+        label: "Web · Shop",
+        title: "Artist merch in a filterable grid — from band tees to fine art prints.",
+        body: "The Shop displays items in a five-column grid with name and price visible without hovering, filterable by Gender, Artist Merch, and New Arrivals. Product pages show the item with a watermarked preview, discount callout, description, Add to Cart CTA, and a Similar Items carousel — the same layout whether the product is apparel or an art print.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: [skathiWebShop, skathiWebShop1],
+        mockupLayout: 'landscape',
+      },
+      {
+        label: "Web · Cart & Orders",
+        title: "One cart for beats, albums, shop, and events — tabbed, with a live order summary.",
+        body: "The Cart is tabbed across Beats, Albums, Shop, and Events so each purchase type is visible on its own. An Order Summary sidebar shows item total, service charge, and total in real time. The account sidebar covers Order & Booking History, Return & Cancellations, and Payment Method. Request Cancellation surfaces the full order detail before anything is finalised.",
+        mockupBg: "linear-gradient(145deg,#111111,#1a1a2e)",
+        mockupImg: [skathiWebCart, skathiWebBeats1],
+        mockupLayout: 'landscape',
       },
     ],
+  },
+
+  // ─── SKATHI WEB STUB (index 4 — keeps App.tsx card indices intact) ───────────
+  {
+    id: 2,
+    title: "Skathi — App & Web Platform",
+    client: "Skathi",
+    category: "Product Design",
+    date: "April 2026",
+    intro: "Designed the complete Skathi experience across iOS and web — a music platform built for South Asian listeners. The app covers streaming from onboarding to playback. The web extends into beats licensing, artist booking, studio rental, events, and a merch shop.",
+    cardImg: skathiCover,
+    sections: [],
   },
 // ─────────────────────────────────────────────────────────────────
 //  OCCS Case Study
@@ -596,7 +803,8 @@ const PROJECTS: Project[] = [
     category: "UX Design · Product Design · Research",
     date: "2024–2025",
     intro: "Led UX design on a multi-tenant call centre platform built for 300+ clerks and 5,000+ customers across multiple client companies. Replaced a fragmented legacy system with a unified, role-based MUI dashboard — spanning user management, project configuration, live call handling, and reporting — shipped across 4,000+ tracked Jira tickets over 12 months.",
-    cardImg: '/mockups/OCCS/image 18.png',
+    cardImg: '/mockups/OCCS/OCCS Cover.png',
+    coverImg: '/mockups/OCCS/OCCS Cover.png',
     docsUrl: 'https://docs.occs.live/introduction.html',
 
     sections: [

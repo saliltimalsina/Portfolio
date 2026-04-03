@@ -74,6 +74,13 @@ export default function ProjectDetail({ project, onClose }: Props) {
         <div className="detail-hero">
           <h1>{project.title}</h1>
           <p>{project.intro}</p>
+          {(project.coverImg ?? project.cardImg) && (
+            <img
+              src={project.coverImg ?? project.cardImg}
+              alt={`${project.title} cover`}
+              className="detail-cover-img"
+            />
+          )}
           {project.docsUrl && (
             <a
               className="detail-docs-link"

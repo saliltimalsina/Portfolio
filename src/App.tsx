@@ -261,35 +261,7 @@ function App() {
           <h2 className="sec-title rv" style={{ marginTop: 0 }}>Explore my work</h2>
           <div className="cards">
 
-            {/* Card 1 */}
-            <div className="card rv" onClick={() => { setActiveProject(0); setActiveNav('work') }}>
-              <div className="thumb">
-                <div className="thumb-inner">
-                  <img src={PROJECTS[0].cardImg} alt="ClearPath Factory Portal" className="thumb-img" />
-                </div>
-              </div>
-              <div className="card-body">
-                <h3>ClearPath Factory Portal</h3>
-                <div className="card-meta">ClearPath · April 2026</div>
-                <p>Designed a dual-sided supply chain platform connecting garment factories and buyers with real-time shipment visibility and a prioritised action queue.</p>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="card rv" onClick={() => { setActiveProject(1); setActiveNav('work') }}>
-              <div className="thumb">
-                <div className="thumb-inner">
-                  <img src={PROJECTS[1].cardImg} alt="TransferNet" className="thumb-img" />
-                </div>
-              </div>
-              <div className="card-body">
-                <h3>{PROJECTS[1].title}</h3>
-                <div className="card-meta">{PROJECTS[1].client} · {PROJECTS[1].date}</div>
-                <p>{PROJECTS[1].intro}</p>
-              </div>
-            </div>
-
-            {/* Card 3 */}
+            {/* Card 1 — Telvox */}
             <div className="card rv" onClick={() => { setActiveProject(2); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
@@ -303,30 +275,63 @@ function App() {
               </div>
             </div>
 
-            {/* Card 4 */}
-            <div className="card rv" onClick={() => { setActiveProject(3); setActiveNav('work') }}>
+            {/* Card 2 — ClearPath */}
+            <div className="card rv" onClick={() => { setActiveProject(0); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
-                  <div className="thumb-svg" style={{ background: 'linear-gradient(145deg,#0d2234,#122d46)', display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', padding: '24px' }}>
-                    <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-end' }}>
-                      <div style={{ width: '64px', height: '64px', background: 'linear-gradient(145deg,#00d4b0,#009e84)', borderRadius: '12px', boxShadow: '0 4px 18px rgba(0,200,160,.25)' }}></div>
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                        <div style={{ width: '76px', height: '48px', background: 'linear-gradient(145deg,#b830d8,#8a18aa)', borderRadius: '10px', boxShadow: '0 4px 16px rgba(180,40,200,.2)' }}></div>
-                        <div style={{ width: '60px', height: '30px', background: 'linear-gradient(145deg,#3870e8,#1a52c0)', borderRadius: '8px', boxShadow: '0 3px 12px rgba(40,80,220,.2)' }}></div>
-                      </div>
-                      <div style={{ width: '52px', height: '78px', background: 'linear-gradient(145deg,#e03870,#b0184a)', borderRadius: '10px', boxShadow: '0 4px 16px rgba(200,40,90,.2)' }}></div>
-                    </div>
-                  </div>
+                  <img src={PROJECTS[0].cardImg} alt="ClearPath Factory Portal" className="thumb-img" />
                 </div>
               </div>
               <div className="card-body">
-                <h3>Blockchain system design for socio-economic impact</h3>
-                <div className="card-meta">NID Academic project · Jun 2022</div>
-                <p>Designed a speculative blockchain system offering microfinance and transparent supply chains to empower Indian farmers and drive socio-economic impact.</p>
+                <h3>ClearPath Factory Portal</h3>
+                <div className="card-meta">ClearPath · April 2026</div>
+                <p>Designed a dual-sided supply chain platform connecting garment factories and buyers with real-time shipment visibility and a prioritised action queue.</p>
               </div>
             </div>
 
-            {/* Card 5 */}
+            {/* Card 3 — TransferNet */}
+            <div className="card rv" onClick={() => { setActiveProject(1); setActiveNav('work') }}>
+              <div className="thumb">
+                <div className="thumb-inner">
+                  <img src={PROJECTS[1].cardImg} alt="TransferNet" className="thumb-img" />
+                </div>
+              </div>
+              <div className="card-body">
+                <h3>{PROJECTS[1].title}</h3>
+                <div className="card-meta">{PROJECTS[1].client} · {PROJECTS[1].date}</div>
+                <p>{PROJECTS[1].intro}</p>
+              </div>
+            </div>
+
+            {/* Card 4 — OCCS */}
+            <div className="card rv" onClick={() => { setActiveProject(5); setActiveNav('work') }}>
+              <div className="thumb">
+                <div className="thumb-inner">
+                  <img src={PROJECTS[5].cardImg} alt="OCCS" className="thumb-img" style={{ objectPosition: 'center' }} />
+                </div>
+              </div>
+              <div className="card-body">
+                <h3>OCCS — Outbound Call Centre System</h3>
+                <div className="card-meta">OCCS / Staie · 2024–2025</div>
+                <p>Led UX design on a multi-tenant call centre platform for 300+ clerks — spanning user management, project configuration, live call handling, and reporting across 4,000+ Jira tickets.</p>
+              </div>
+            </div>
+
+            {/* Card 5 — Skathi */}
+            <div className="card rv" onClick={() => { setActiveProject(3); setActiveNav('work') }}>
+              <div className="thumb">
+                <div className="thumb-inner">
+                  <img src={PROJECTS[3].cardImg} alt="Skathi" className="thumb-img" />
+                </div>
+              </div>
+              <div className="card-body">
+                <h3>Skathi — App & Web Platform</h3>
+                <div className="card-meta">Product Design · April 2026</div>
+                <p>Designed the complete Skathi experience across iOS and web — a music platform built for South Asian listeners covering streaming, beats licensing, artist booking, events, and a merch shop.</p>
+              </div>
+            </div>
+
+            {/* Card 6 — Flowbite */}
             <div className="card rv" onClick={() => { setActiveProject(4); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
@@ -353,40 +358,6 @@ function App() {
                 <h3>Flowbite Design System</h3>
                 <div className="card-meta">Freelance · 2024</div>
                 <p>Built and documented a scalable component library using Flowbite and Tailwind, enabling consistent design across multiple client products.</p>
-              </div>
-            </div>
-
-            {/* Card 6 */}
-            <div className="card rv" onClick={() => { setActiveProject(5); setActiveNav('work') }}>
-              <div className="thumb">
-                <div className="thumb-inner">
-                  <div className="thumb-svg" style={{ background: 'linear-gradient(145deg,#fdf4ff,#fae8ff)', display: 'flex', flexDirection: 'column', padding: '16px 20px', gap: '10px', height: '100%' }}>
-                    <div style={{ display: 'flex', gap: '10px', alignItems: 'stretch', flex: 1 }}>
-                      <div style={{ flex: 1, background: 'rgba(255,255,255,.8)', borderRadius: '10px', padding: '12px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                        <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: 'linear-gradient(135deg,#d946ef,#a21caf)', marginBottom: '4px' }}></div>
-                        <div style={{ height: '6px', background: '#f0abfc', borderRadius: '3px', width: '80%' }}></div>
-                        <div style={{ height: '6px', background: '#f5d0fe', borderRadius: '3px', width: '55%' }}></div>
-                        <div style={{ marginTop: 'auto', display: 'flex', gap: '6px' }}>
-                          <div style={{ height: '24px', flex: 1, background: 'linear-gradient(135deg,#d946ef,#a21caf)', borderRadius: '6px' }}></div>
-                          <div style={{ height: '24px', flex: 1, background: 'rgba(217,70,239,.15)', borderRadius: '6px', border: '1px solid rgba(217,70,239,.3)' }}></div>
-                        </div>
-                      </div>
-                      <div style={{ width: '100px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                        {[.9,.6,.75].map((o, i) => (
-                          <div key={i} style={{ flex: 1, background: 'rgba(255,255,255,.8)', borderRadius: '10px', padding: '10px', opacity: o }}>
-                            <div style={{ height: '5px', background: '#e9d5ff', borderRadius: '3px', width: '70%', marginBottom: '5px' }}></div>
-                            <div style={{ height: '5px', background: '#f3e8ff', borderRadius: '3px' }}></div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card-body">
-                <h3>Topmate Mentor Profile & Dashboard</h3>
-                <div className="card-meta">Personal project · 2025</div>
-                <p>Designed and optimised a mentoring profile and session dashboard for Topmate.io to improve booking conversion and mentee experience.</p>
               </div>
             </div>
 

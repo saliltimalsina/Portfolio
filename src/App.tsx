@@ -344,7 +344,7 @@ function App() {
         <div className="wrap">
           <h2 className="sec-title rv">Explore more of my work</h2>
           <p className="more-desc rv">These were my recent highlights. If you'd like to see my broader journey across industrial design, automobile design, product visualizations, and illustrations, explore my full portfolio on Behance.</p>
-          <a href="#" className="go-link rv">↗ Go to Behance</a>
+          <a href="https://www.behance.net/saliltimalsina1" target="_blank" rel="noopener noreferrer" className="go-link rv">↗ Go to Behance</a>
           <div className="car-wrap rv">
             <div className="ticker-outer">
               <div className="ticker-track" ref={tickerRef}>
@@ -355,6 +355,8 @@ function App() {
                 <div className="c-card"><img src="/mockups/ticker/t4.png" alt="" /></div>
                 <div className="c-card"><img src="/mockups/ticker/t5.png" alt="" /></div>
                 <div className="c-card"><img src="/mockups/ticker/t6.png" alt="" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t7.png" alt="" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t8.png" alt="" /></div>
                 {/* — set 2 (duplicate for seamless loop) — */}
                 <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t1.png" alt="" /></div>
                 <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t2.png" alt="" /></div>
@@ -362,6 +364,8 @@ function App() {
                 <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t4.png" alt="" /></div>
                 <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t5.png" alt="" /></div>
                 <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t6.png" alt="" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t7.png" alt="" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t8.png" alt="" /></div>
               </div>
             </div>
           </div>

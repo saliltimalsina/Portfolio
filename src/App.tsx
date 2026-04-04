@@ -181,7 +181,7 @@ function App() {
         <span className="nav-divider"/>
         <a className={`nl${activeNav === 'home' ? ' active' : ''}`} href="#" onClick={e => { e.preventDefault(); setShowAbout(false); setActiveProject(null); setActiveNav('home'); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Home</a>
         <a className={`nl${activeNav === 'work' ? ' active' : ''}`} href="#work" onClick={e => { e.preventDefault(); setShowAbout(false); setActiveProject(null); setActiveNav('work'); document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' }) }}>Work</a>
-        <a className={`nl${activeNav === 'about' ? ' active' : ''}`} href="#" onClick={e => { e.preventDefault(); setShowAbout(true); setActiveNav('about') }}>About</a>
+        <a className={`nl${activeNav === 'about' ? ' active' : ''}`} href="#" onClick={e => { e.preventDefault(); setActiveProject(null); setShowAbout(true); setActiveNav('about') }}>About</a>
         <span className="nav-divider"/>
         <a className="nl nav-resume" href="https://drive.google.com/file/d/1i-e1tOKSXCM44YU-40x83a5_oOVcI9Lr/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resume ↗</a>
       </nav>

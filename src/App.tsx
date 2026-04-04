@@ -111,8 +111,10 @@ function App() {
       entries.forEach(e => {
         if (e.isIntersecting) track.classList.add('running')
       })
-    }, { threshold: 0.15 })
-    io.observe(track)
+    }, { threshold: 0 })
+    // Observe the bounded wrapper, not the wide track itself
+    const wrapper = track.parentElement
+    if (wrapper) io.observe(wrapper)
 
     const pause = () => track.classList.add('paused')
     const resume = () => track.classList.remove('paused')
@@ -124,6 +126,46 @@ function App() {
       track.removeEventListener('mouseenter', pause)
       track.removeEventListener('mouseleave', resume)
     }
+  }, [])
+
+  useEffect(() => {
+    if (activeProject !== null) {
+      const slug = PROJECTS[activeProject]?.slug
+      if (slug) window.history.pushState({projectIdx: activeProject}, '', `/${slug}`)
+    } else if (showAbout) {
+      const current = window.location.pathname
+      if (current !== '/about') window.history.pushState({}, '', '/about')
+    } else {
+      const current = window.location.pathname
+      if (current !== '/') window.history.pushState({}, '', '/')
+    }
+  }, [activeProject, showAbout])
+
+  useEffect(() => {
+    const slug = window.location.pathname.replace(/^\//, '')
+    if (slug === 'about') {
+      setShowAbout(true)
+    } else if (slug) {
+      const idx = PROJECTS.findIndex(p => p.slug === slug)
+      if (idx !== -1) setActiveProject(idx)
+    }
+
+    const onPop = () => {
+      const slug = window.location.pathname.replace(/^\//, '')
+      if (slug === 'about') {
+        setShowAbout(true)
+        setActiveProject(null)
+      } else if (slug) {
+        const idx = PROJECTS.findIndex(p => p.slug === slug)
+        if (idx !== -1) { setActiveProject(idx); setShowAbout(false) }
+        else { setActiveProject(null) }
+      } else {
+        setActiveProject(null)
+        setShowAbout(false)
+      }
+    }
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
   }, [])
 
   return (

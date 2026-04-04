@@ -171,7 +171,7 @@ footer{
 footer p{font-size:12px;color:#8A8A8A;line-height:1.9;position:relative;z-index:1}
 
 /* ---- RESPONSIVE ---- */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
 
   /* Navbar */
   nav { max-width: calc(100vw - 24px); padding: 6px 8px; }
@@ -219,8 +219,8 @@ footer p{font-size:12px;color:#8A8A8A;line-height:1.9;position:relative;z-index:
   .more-desc { font-size: 13px; }
 
   /* Carousel ticker */
-  .c-card { width: 200px; height: 150px; }
   .ticker-outer { margin: 0 -16px; }
+  .c-card { width: 200px; height: 150px; }
 
   /* Footer */
   footer { padding: 32px 16px 44px; }
@@ -229,15 +229,40 @@ footer p{font-size:12px;color:#8A8A8A;line-height:1.9;position:relative;z-index:
   .fb3 { width: 160px; height: 140px; }
 
   /* Detail page */
-  .detail-inner { padding: 0 16px 72px; }
+  .detail-inner { padding: 0 16px 36px; }
   .detail-crumb { padding: 88px 0 0; margin-bottom: 32px; gap: 8px; }
   .detail-crumb-label { font-size: 10px; }
-  .detail-hero { margin-bottom: 48px; }
+  .detail-hero { margin-bottom: 36px; }
   .detail-hero p { font-size: 13.5px; }
-  .detail-section { margin-bottom: 52px; }
-  .detail-footer-nav { padding-top: 32px; }
-  .detail-mockup-multi--portrait { flex-direction: column; }
-  .detail-mockup-multi--portrait .detail-mockup-multi-img { height: auto; width: 100%; max-width: 100%; }
+  .detail-section { margin-bottom: 36px; }
+  .detail-footer-nav { padding-top: 16px; }
+  .swipe-hint {
+    display: block;
+    text-align: center;
+    font-size: 10.5px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #ABABAB;
+    margin-top: 10px;
+  }
+  /* Portrait multi: horizontal scroll strip */
+  .detail-mockup-multi--portrait {
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 10px;
+  }
+  .detail-mockup-multi--portrait::-webkit-scrollbar { display: none; }
+  .detail-mockup-multi--portrait .detail-mockup-multi-img {
+    height: 340px;
+    width: auto;
+    max-width: none;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
 }
 
 /* Very small phones (≤375px) */
@@ -329,11 +354,12 @@ footer p{font-size:12px;color:#8A8A8A;line-height:1.9;position:relative;z-index:
 .detail-mockup-row{display:flex;width:100%;height:100%;gap:3px}
 .detail-mockup-row .detail-mockup-img{flex:1;width:0}
 .detail-mockup-multi{display:flex;gap:12px;width:100%}
-.detail-mockup-multi--portrait{flex-direction:row;justify-content:center;align-items:flex-start}
+.detail-mockup-multi--portrait{flex-direction:row;justify-content:flex-start;align-items:flex-start}
 .detail-mockup-multi--portrait .detail-mockup-multi-img{height:460px;width:auto;max-width:49%}
 .detail-mockup-multi--landscape{flex-direction:column;align-items:stretch}
 .detail-mockup-multi--landscape .detail-mockup-multi-img{width:100%;height:auto;max-height:800px}
 .detail-mockup-multi-img{object-fit:contain;display:block;border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.12)}
+.swipe-hint{display:none}
 .detail-footer-nav{
   text-align:center;padding-top:48px;
   border-top:1px dashed rgba(0,0,0,.1);

@@ -46,6 +46,7 @@ export type ProjectSection = {
 
 export type Project = {
   id: number
+  slug: string
   title: string
   client: string
   category: string
@@ -60,6 +61,7 @@ export type Project = {
 const PROJECTS: Project[] = [
   {
     id: 0,
+    slug: 'clearpath',
     title: "ClearPath — Supply Chain Platform",
     client: "ClearPath",
     category: "Product Design",
@@ -235,6 +237,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: 1,
+    slug: 'transfernet',
     title: "TransferNet",
     client: "TransferNet",
     category: "Product Design",
@@ -354,6 +357,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: 2,
+    slug: 'telvox',
     title: "Telvox",
     client: "Telvox",
     category: "Product Design",
@@ -526,6 +530,7 @@ const PROJECTS: Project[] = [
 
   {
     id: 3,
+    slug: 'skathi',
     title: "Skathi — App & Web Platform",
     client: "Skathi",
     category: "Product Design",
@@ -703,6 +708,7 @@ const PROJECTS: Project[] = [
   // ─── SKATHI WEB STUB (index 4 — keeps App.tsx card indices intact) ───────────
   {
     id: 2,
+    slug: 'flowbite',
     title: "Skathi — App & Web Platform",
     client: "Skathi",
     category: "Product Design",
@@ -740,6 +746,7 @@ const PROJECTS: Project[] = [
 
   {
     id: 4,
+    slug: 'occs',
     title: "OCCS — Outbound Call Centre System",
     client: "OCCS / Staie",
     category: "UX Design · Product Design · Research",
@@ -852,6 +859,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: 5,
+    slug: 'topmate',
     title: "Topmate Mentor Profile & Dashboard",
     client: "Personal Project",
     category: "UX Design",
@@ -880,6 +888,7 @@ const PROJECTS: Project[] = [
   //   Mobile  390×844    → portrait layout, show 3 per row max
   {
     id: 6,
+    slug: 'jobbicus',
     title: "Jobbicus — Career Platform",
     client: "Jobbicus",
     category: "Product Design",

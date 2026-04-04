@@ -112,11 +112,16 @@ export default function ProjectDetail({ project, onClose }: Props) {
               style={!sec.mockupImg ? { background: sec.mockupBg } : undefined}
             >
               {Array.isArray(sec.mockupImg)
-                ? <div className={`detail-mockup-multi detail-mockup-multi--${sec.mockupLayout ?? 'landscape'}`}>
-                    {sec.mockupImg.map((src, j) => (
-                      <img key={j} src={src} alt={`${sec.title} ${j + 1}`} className="detail-mockup-multi-img" />
-                    ))}
-                  </div>
+                ? <>
+                    <div className={`detail-mockup-multi detail-mockup-multi--${sec.mockupLayout ?? 'landscape'}`}>
+                      {sec.mockupImg.map((src, j) => (
+                        <img key={j} src={src} alt={`${sec.title} ${j + 1}`} className="detail-mockup-multi-img" />
+                      ))}
+                    </div>
+                    {(sec.mockupLayout ?? 'landscape') === 'portrait' && (
+                      <p className="swipe-hint">← swipe to explore →</p>
+                    )}
+                  </>
                 : sec.mockupImg
                   ? <img src={sec.mockupImg} alt={sec.title} className="detail-mockup-img" />
                   : renderMockup(i, project.id)

@@ -138,10 +138,15 @@ main{background:transparent;padding:56px 0 0;position:relative;z-index:1}
 }
 .go-link:hover{background:rgba(255,255,255,.95);box-shadow:0 4px 16px rgba(0,0,0,.08);transform:translateY(-1px)}
 .car-wrap{position:relative;padding:0}
-.car{display:flex;gap:16px;overflow-x:auto;padding:4px 4px 0;scroll-snap-type:x mandatory;scrollbar-width:none}
-.car::-webkit-scrollbar{display:none}
-.c-card{min-width:calc(50% - 8px);height:200px;border-radius:16px;overflow:hidden;scroll-snap-align:start;flex-shrink:0;cursor:pointer;position:relative;transition:transform .22s,box-shadow .22s;box-shadow:0 4px 16px rgba(0,0,0,.12)}
+/* ticker */
+.ticker-outer{overflow:hidden;position:relative;margin:0 -28px;-webkit-mask:linear-gradient(to right,transparent,#000 36px,#000 calc(100% - 36px),transparent);mask:linear-gradient(to right,transparent,#000 36px,#000 calc(100% - 36px),transparent)}
+.ticker-track{display:flex;width:max-content;animation:ticker 22s linear infinite;animation-play-state:paused;cursor:default}
+.ticker-track.running{animation-play-state:running}
+.ticker-track.paused{animation-play-state:paused}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.c-card{width:280px;height:190px;margin-right:16px;border-radius:16px;overflow:hidden;flex-shrink:0;cursor:pointer;position:relative;transition:transform .22s,box-shadow .22s;box-shadow:0 4px 16px rgba(0,0,0,.12)}
 .c-card:hover{transform:scale(1.02);box-shadow:0 8px 28px rgba(0,0,0,.18)}
+.c-card img{width:100%;height:100%;object-fit:cover;display:block;border-radius:16px}
 .c-card .label{
   position:absolute;bottom:12px;left:12px;
   font-size:11px;color:#fff;font-weight:500;
@@ -150,33 +155,6 @@ main{background:transparent;padding:56px 0 0;position:relative;z-index:1}
   padding:4px 10px;border-radius:20px;
   border:1px solid rgba(255,255,255,.15);
 }
-.arr-btn{
-  position:absolute;top:50%;transform:translateY(-50%);
-  width:40px;height:40px;border-radius:50%;
-  background:rgba(255,255,255,.65);
-  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-  border:1px solid rgba(255,255,255,.8);
-  cursor:pointer;display:flex;align-items:center;justify-content:center;
-  box-shadow:0 4px 20px rgba(0,0,0,.12);
-  transition:all .2s;z-index:4;color:#444;
-}
-.arr-btn:hover{background:rgba(255,255,255,.92);box-shadow:0 6px 24px rgba(0,0,0,.16)}
-.arr-btn:hover{transform:translateY(-50%) scale(1.07)}
-.arr-l{left:-20px}
-.arr-r{right:-20px}
-/* dots overlaid on carousel */
-.dots{
-  position:absolute;bottom:14px;left:50%;transform:translateX(-50%);
-  display:flex;gap:5px;align-items:center;
-  background:rgba(255,255,255,.28);
-  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
-  border:1px solid rgba(255,255,255,.45);
-  padding:7px 12px;border-radius:30px;
-  box-shadow:0 2px 12px rgba(0,0,0,.1);
-  z-index:5;
-}
-.dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.5);cursor:pointer;transition:all .22s}
-.dot.on{background:#fff;width:18px;border-radius:4px}
 
 /* ---- FOOTER ---- */
 footer{
@@ -240,11 +218,9 @@ footer p{font-size:12px;color:#8A8A8A;line-height:1.9;position:relative;z-index:
   .more { padding: 36px 0 32px; }
   .more-desc { font-size: 13px; }
 
-  /* Carousel: 1 card + peek */
-  .c-card { min-width: calc(84% - 8px); height: 175px; }
-  .arr-btn { width: 32px; height: 32px; }
-  .arr-l { left: -8px; }
-  .arr-r { right: -8px; }
+  /* Carousel ticker */
+  .c-card { width: 200px; height: 150px; }
+  .ticker-outer { margin: 0 -16px; }
 
   /* Footer */
   footer { padding: 32px 16px 44px; }

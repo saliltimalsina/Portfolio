@@ -10,7 +10,7 @@ import ProjectDetail from './components/ProjectDetail'
 import About from './components/About'
 
 function App() {
-  const carRef = useRef<HTMLDivElement>(null)
+  const tickerRef = useRef<HTMLDivElement>(null)
   const [activeProject, setActiveProject] = useState<number | null>(null)
   const [showAbout, setShowAbout] = useState(false)
   const [activeNav, setActiveNav] = useState<'home' | 'work' | 'about'>('home')
@@ -103,68 +103,28 @@ function App() {
     }
   }, [])
 
-  const autoScrollPaused = useRef(false)
-  const autoScrollRaf = useRef<number>(0)
-  const autoScrollPos = useRef(0)
-
   useEffect(() => {
-    const car = carRef.current
-    if (!car) return
-    autoScrollPos.current = 0
+    const track = tickerRef.current
+    if (!track) return
 
-    const tick = () => {
-      if (!autoScrollPaused.current) {
-        autoScrollPos.current += 0.5
-        const maxScroll = car.scrollWidth - car.clientWidth
-        if (autoScrollPos.current >= maxScroll) autoScrollPos.current = 0
-        car.scrollLeft = autoScrollPos.current
-      }
-      autoScrollRaf.current = requestAnimationFrame(tick)
-    }
-    autoScrollRaf.current = requestAnimationFrame(tick)
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) track.classList.add('running')
+      })
+    }, { threshold: 0.15 })
+    io.observe(track)
 
-    let resumeTimeout: ReturnType<typeof setTimeout>
-    const pause = () => {
-      autoScrollPaused.current = true
-      clearTimeout(resumeTimeout)
-      resumeTimeout = setTimeout(() => {
-        autoScrollPos.current = car.scrollLeft
-        autoScrollPaused.current = false
-      }, 2500)
-    }
+    const pause = () => track.classList.add('paused')
+    const resume = () => track.classList.remove('paused')
+    track.addEventListener('mouseenter', pause)
+    track.addEventListener('mouseleave', resume)
 
-    car.addEventListener('mouseenter', pause)
-    car.addEventListener('touchstart', pause, { passive: true })
     return () => {
-      cancelAnimationFrame(autoScrollRaf.current)
-      clearTimeout(resumeTimeout)
-      car.removeEventListener('mouseenter', pause)
-      car.removeEventListener('touchstart', pause)
+      io.disconnect()
+      track.removeEventListener('mouseenter', pause)
+      track.removeEventListener('mouseleave', resume)
     }
   }, [])
-
-  const sc = (d: number) => {
-    autoScrollPaused.current = true
-    const car = carRef.current
-    if (!car) return
-    car.scrollBy({ left: d * 220, behavior: 'smooth' })
-    setTimeout(() => { autoScrollPos.current = car.scrollLeft }, 400)
-  }
-
-  const handleCarScroll = () => {
-    const car = carRef.current
-    if (!car) return
-    const dots = document.querySelectorAll('.dot')
-    const i = Math.min(Math.round(car.scrollLeft / (car.scrollWidth / dots.length)), dots.length - 1)
-    dots.forEach((dot, j) => dot.classList.toggle('on', j === i))
-  }
-
-  const scrollToDot = (i: number) => {
-    const car = carRef.current
-    if (!car) return
-    const cardW = car.offsetWidth / 2 + 8
-    car.scrollTo({ left: i * cardW, behavior: 'smooth' })
-  }
 
   return (
     <>
@@ -386,61 +346,23 @@ function App() {
           <p className="more-desc rv">These were my recent highlights. If you'd like to see my broader journey across industrial design, automobile design, product visualizations, and illustrations, explore my full portfolio on Behance.</p>
           <a href="#" className="go-link rv">↗ Go to Behance</a>
           <div className="car-wrap rv">
-            <button className="arr-btn arr-l" onClick={() => sc(-1)}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="15 18 9 12 15 6"/></svg>
-            </button>
-            <div className="car" ref={carRef} onScroll={handleCarScroll}>
-              <div className="c-card" style={{ background: 'linear-gradient(135deg,#18182e,#28285a)' }}>
-                <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <div style={{ width: '72px', height: '72px', background: 'linear-gradient(135deg,#e03030,#b01010)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 16px rgba(200,30,30,.3)' }}>
-                    <div style={{ width: '36px', height: '10px', background: 'rgba(255,255,255,.9)', borderRadius: '5px' }}></div>
-                  </div>
-                </div>
-                <span className="label">Jio Device</span>
+            <div className="ticker-outer">
+              <div className="ticker-track" ref={tickerRef}>
+                {/* — set 1 — */}
+                <div className="c-card"><img src="/mockups/ticker/t1.png" alt="" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t2.png" alt="" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t3.png" alt="" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t4.png" alt="" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t5.png" alt="" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t6.png" alt="" /></div>
+                {/* — set 2 (duplicate for seamless loop) — */}
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t1.png" alt="" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t2.png" alt="" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t3.png" alt="" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t4.png" alt="" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t5.png" alt="" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t6.png" alt="" /></div>
               </div>
-              <div className="c-card" style={{ background: 'linear-gradient(135deg,#0d1828,#0d2848)' }}>
-                <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <div style={{ width: '46px', height: '96px', background: 'linear-gradient(180deg,#2a4a8a,#1a3268)', borderRadius: '23px 23px 8px 8px', boxShadow: '0 6px 20px rgba(30,70,180,.3)' }}>
-                    <div style={{ margin: '14px auto 0', width: '18px', height: '18px', borderRadius: '50%', background: 'linear-gradient(135deg,#4a80c8,#2a60a8)' }}></div>
-                    <div style={{ margin: '8px auto 0', width: '28px', height: '5px', background: 'rgba(90,150,255,.3)', borderRadius: '3px' }}></div>
-                    <div style={{ margin: '5px auto 0', width: '28px', height: '5px', background: 'rgba(90,150,255,.2)', borderRadius: '3px' }}></div>
-                  </div>
-                </div>
-                <span className="label">Product Design</span>
-              </div>
-              <div className="c-card" style={{ background: 'linear-gradient(135deg,#22102e,#3a1858)' }}>
-                <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
-                  <div style={{ width: '26px', height: '76px', background: 'linear-gradient(180deg,#b830d8,#8018b0)', borderRadius: '13px', opacity: .9 }}></div>
-                  <div style={{ width: '26px', height: '58px', background: 'linear-gradient(180deg,#7830d8,#5010b0)', borderRadius: '13px', opacity: .7, marginTop: '18px' }}></div>
-                  <div style={{ width: '26px', height: '66px', background: 'linear-gradient(180deg,#d83070,#a81050)', borderRadius: '13px', opacity: .8, marginTop: '10px' }}></div>
-                </div>
-                <span className="label">Illustrations</span>
-              </div>
-              <div className="c-card" style={{ background: 'linear-gradient(135deg,#18221a,#243826)' }}>
-                <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <div style={{ width: '110px', height: '64px', background: 'linear-gradient(135deg,#3a7a3e,#286030)', borderRadius: '8px', overflow: 'hidden', position: 'relative' }}>
-                    <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 28% 55%,rgba(100,200,110,.25),transparent)' }}></div>
-                    <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '38%', background: 'rgba(0,0,0,.25)' }}></div>
-                  </div>
-                </div>
-                <span className="label">Auto Design</span>
-              </div>
-              <div className="c-card" style={{ background: 'linear-gradient(135deg,#281e10,#3e2e18)' }}>
-                <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <div style={{ width: '90px', height: '68px', background: 'linear-gradient(135deg,#78604a,#5a4230)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <div style={{ width: '52px', height: '40px', background: 'rgba(255,200,150,.12)', borderRadius: '4px', border: '1px solid rgba(255,200,150,.18)' }}></div>
-                  </div>
-                </div>
-                <span className="label">Visualizations</span>
-              </div>
-            </div>
-            <button className="arr-btn arr-r" onClick={() => sc(1)}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="9 18 15 12 9 6"/></svg>
-            </button>
-            <div className="dots">
-              {[0, 1, 2, 3, 4].map(i => (
-                <div key={i} className={`dot${i === 0 ? ' on' : ''}`} onClick={() => scrollToDot(i)}></div>
-              ))}
             </div>
           </div>
         </div>

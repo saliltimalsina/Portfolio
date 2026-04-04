@@ -27,7 +27,14 @@
       "Bash(cp \"/Users/saliltimalsina/.claude/image-cache/f3cb81b2-f6b8-46c2-8071-90df42287145/6.png\" \"/Users/saliltimalsina/Desktop/Portfolio/portfolio/public/sq/music.png\")",
       "Bash(cp \"/Users/saliltimalsina/.claude/image-cache/f3cb81b2-f6b8-46c2-8071-90df42287145/7.png\" \"/Users/saliltimalsina/Desktop/Portfolio/portfolio/public/sq/ufc.png\")",
       "WebFetch(domain:docs.occs.live)",
-      "Bash(file /Users/saliltimalsina/Desktop/Portfolio/portfolio/public/mockups/Jobbicus/*.png)"
+      "Bash(file /Users/saliltimalsina/Desktop/Portfolio/portfolio/public/mockups/Jobbicus/*.png)",
+      "Read(//Users/saliltimalsina/Desktop/**)",
+      "Read(//Users/saliltimalsina/Downloads/**)",
+      "Bash(cp \"/Users/saliltimalsina/Downloads/Section 1 \\(2\\).png\" /Users/saliltimalsina/Desktop/Portfolio/portfolio/public/mockups/ticker/t1.png)",
+      "Bash(cp \"/Users/saliltimalsina/Downloads/Yellow and Grey Creative Portfolio Presentation \\(1\\).png\" /Users/saliltimalsina/Desktop/Portfolio/portfolio/public/mockups/ticker/t2.png)",
+      "Bash(cp \"/Users/saliltimalsina/Downloads/Frame 1000003821.png\" /Users/saliltimalsina/Desktop/Portfolio/portfolio/public/mockups/ticker/t3.png)",
+      "Bash(cp \"/Users/saliltimalsina/Downloads/Tel.png\" /Users/saliltimalsina/Desktop/Portfolio/portfolio/public/mockups/ticker/t4.png)",
+      "Bash(cp \"/Users/saliltimalsina/Downloads/screencapture-app-dev-telvox-ai-dashboard-2026-04-02-10_51_04.png\" /Users/saliltimalsina/Desktop/Portfolio/portfolio/public/mockups/ticker/t5.png)"
     ]
   }
 }

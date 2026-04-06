@@ -8,6 +8,7 @@ import nepalImg from './assets/nepal.png'
 import PROJECTS from './data/projects'
 import ProjectDetail from './components/ProjectDetail'
 import About from './components/About'
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   const tickerRef = useRef<HTMLDivElement>(null)

@@ -347,7 +347,7 @@ function App() {
               </div>
             </div>
 
-            {/* Card 6 — Flowbite */}
+            {/* Card 6 — Flowbite
             <div className="card rv" onClick={() => { setActiveProject(4); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
@@ -375,7 +375,7 @@ function App() {
                 <div className="card-meta">Freelance · 2024</div>
                 <p>Built and documented a scalable component library using Flowbite and Tailwind, enabling consistent design across multiple client products.</p>
               </div>
-            </div>
+            </div> */}
 
           </div>
         </div>

@@ -271,7 +271,7 @@ export default function About() {
           <div className="footer-blob fb3"/>
         </div>
         <p>Crafted with intent for humans</p>
-        <p style={{ marginTop: '4px', fontSize: '11px', color: '#AAA' }}>© Salil Timalsina · 2025</p>
+        <p style={{ marginTop: '4px', fontSize: '11px', color: '#AAA' }}>© Salil Timalsina</p>
       </footer>
     </div>
   )

@@ -664,18 +664,18 @@ footer p{font-size:12px;color:#8A8A8A;line-height:1.9;position:relative;z-index:
 .bt-w2{transform:rotate(0deg)  translate(0,0);z-index:3}
 .bt-w3{transform:rotate(5deg)  translate(260px,28px);z-index:1}
 
-/* Hover: lift hovered card, dim others */
-.bt-stage:has(.bt-w1:hover) .bt-w1{transform:rotate(0deg) translate(-260px,-10px) scale(1.05);z-index:10;box-shadow:0 24px 56px rgba(0,0,0,.14)}
-.bt-stage:has(.bt-w1:hover) .bt-w2,
-.bt-stage:has(.bt-w1:hover) .bt-w3{filter:brightness(.9) blur(.8px);opacity:.65}
+/* Hover: JS sets data-hover on .bt-stage — debounced so edge-exit during animation doesn't flicker */
+.bt-stage[data-hover="1"] .bt-w1{transform:rotate(0deg) translate(-260px,-10px) scale(1.05);z-index:10;box-shadow:0 24px 56px rgba(0,0,0,.14)}
+.bt-stage[data-hover="1"] .bt-w2,
+.bt-stage[data-hover="1"] .bt-w3{filter:brightness(.9) blur(.8px);opacity:.65}
 
-.bt-stage:has(.bt-w2:hover) .bt-w2{transform:rotate(0deg) translate(0,-10px) scale(1.05);z-index:10;box-shadow:0 24px 56px rgba(0,0,0,.14)}
-.bt-stage:has(.bt-w2:hover) .bt-w1,
-.bt-stage:has(.bt-w2:hover) .bt-w3{filter:brightness(.9) blur(.8px);opacity:.65}
+.bt-stage[data-hover="2"] .bt-w2{transform:rotate(0deg) translate(0,-10px) scale(1.05);z-index:10;box-shadow:0 24px 56px rgba(0,0,0,.14)}
+.bt-stage[data-hover="2"] .bt-w1,
+.bt-stage[data-hover="2"] .bt-w3{filter:brightness(.9) blur(.8px);opacity:.65}
 
-.bt-stage:has(.bt-w3:hover) .bt-w3{transform:rotate(0deg) translate(260px,-10px) scale(1.05);z-index:10;box-shadow:0 24px 56px rgba(0,0,0,.14)}
-.bt-stage:has(.bt-w3:hover) .bt-w1,
-.bt-stage:has(.bt-w3:hover) .bt-w2{filter:brightness(.9) blur(.8px);opacity:.65}
+.bt-stage[data-hover="3"] .bt-w3{transform:rotate(0deg) translate(260px,-10px) scale(1.05);z-index:10;box-shadow:0 24px 56px rgba(0,0,0,.14)}
+.bt-stage[data-hover="3"] .bt-w1,
+.bt-stage[data-hover="3"] .bt-w2{filter:brightness(.9) blur(.8px);opacity:.65}
 
 /* macOS title bar */
 .bt-bar{
@@ -703,7 +703,9 @@ footer p{font-size:12px;color:#8A8A8A;line-height:1.9;position:relative;z-index:
   border:1px solid rgba(0,0,0,.06);
   transition:transform .3s ease;
 }
-.bt-window:hover .bt-thumb{transform:scale(1.02)}
+.bt-stage[data-hover="1"] .bt-w1 .bt-thumb,
+.bt-stage[data-hover="2"] .bt-w2 .bt-thumb,
+.bt-stage[data-hover="3"] .bt-w3 .bt-thumb{transform:scale(1.02)}
 
 /* Tag pill */
 .bt-tag{
@@ -727,7 +729,9 @@ footer p{font-size:12px;color:#8A8A8A;line-height:1.9;position:relative;z-index:
   opacity:0;transform:translateY(3px);
   transition:opacity .2s ease .05s,transform .2s ease .05s;
 }
-.bt-window:hover .bt-quip{opacity:1;transform:translateY(0)}
+.bt-stage[data-hover="1"] .bt-w1 .bt-quip,
+.bt-stage[data-hover="2"] .bt-w2 .bt-quip,
+.bt-stage[data-hover="3"] .bt-w3 .bt-quip{opacity:1;transform:translateY(0)}
 
 .bt-footer{
   display:flex;align-items:center;
@@ -738,11 +742,13 @@ footer p{font-size:12px;color:#8A8A8A;line-height:1.9;position:relative;z-index:
   font-size:12px;font-weight:500;color:#9A9A9A;
   text-decoration:none;transition:color .15s,gap .15s;
 }
-.bt-w1:hover .bt-cta{color:#5B4BC4;gap:7px}
-.bt-w2:hover .bt-cta{color:#1a7a40;gap:7px}
-.bt-w3:hover .bt-cta{color:#b06a00;gap:7px}
+.bt-stage[data-hover="1"] .bt-w1 .bt-cta{color:#5B4BC4;gap:7px}
+.bt-stage[data-hover="2"] .bt-w2 .bt-cta{color:#1a7a40;gap:7px}
+.bt-stage[data-hover="3"] .bt-w3 .bt-cta{color:#b06a00;gap:7px}
 .bt-arr{font-size:10px;transition:transform .15s}
-.bt-window:hover .bt-arr{transform:translate(2px,-2px)}
+.bt-stage[data-hover="1"] .bt-w1 .bt-arr,
+.bt-stage[data-hover="2"] .bt-w2 .bt-arr,
+.bt-stage[data-hover="3"] .bt-w3 .bt-arr{transform:translate(2px,-2px)}
 
 .bt-endline{
   margin-top:2rem;font-size:13px;color:#AAAAAA;

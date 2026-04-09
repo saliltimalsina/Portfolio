@@ -15,6 +15,42 @@ export default function About() {
   const [easterVisible, setEasterVisible] = useState(false)
   const [imgLoaded, setImgLoaded] = useState(false)
 
+  // Debounced hover for blog cards — prevents edge-flicker when rotating cards shift hit-area
+  useEffect(() => {
+    const stage = document.querySelector('.bt-stage') as HTMLElement | null
+    if (!stage) return
+    const windows = Array.from(stage.querySelectorAll('.bt-window'))
+    const timers = new Map<Element, ReturnType<typeof setTimeout>>()
+    const cleanup: Array<() => void> = []
+
+    windows.forEach((win, idx) => {
+      const val = String(idx + 1)
+      const onEnter = () => {
+        const t = timers.get(win)
+        if (t) { clearTimeout(t); timers.delete(win) }
+        stage.dataset.hover = val
+      }
+      const onLeave = () => {
+        const t = setTimeout(() => {
+          if (stage.dataset.hover === val) delete stage.dataset.hover
+          timers.delete(win)
+        }, 150)
+        timers.set(win, t)
+      }
+      win.addEventListener('mouseenter', onEnter)
+      win.addEventListener('mouseleave', onLeave)
+      cleanup.push(() => {
+        win.removeEventListener('mouseenter', onEnter)
+        win.removeEventListener('mouseleave', onLeave)
+      })
+    })
+
+    return () => {
+      cleanup.forEach(fn => fn())
+      timers.forEach(t => clearTimeout(t))
+    }
+  }, [])
+
   useEffect(() => {
     const area = photoRef.current
     const mask = maskRef.current

@@ -127,7 +127,7 @@ export default function About() {
           </span>
           {/* Mask cursor — lives outside the clipping inner div */}
           <div className="jojo-cursor" ref={maskRef}>
-            <img src="/about/jojo-mask.png" alt="" />
+            <img src="/about/jojo-mask.png" alt="" loading="lazy" />
           </div>
         </div>
 
@@ -153,7 +153,7 @@ export default function About() {
             ))}
           </div>
           <div className="ab-sketch-wrap">
-            <img src="/about/sketch.png" alt="Design thinking illustration" className="ab-sketch-img" />
+            <img src="/about/sketch.png" alt="Design thinking illustration" className="ab-sketch-img" loading="lazy" />
           </div>
         </div>
 
@@ -165,12 +165,12 @@ export default function About() {
             <p>
               When I'm not designing, I'm probably{' '}
               <span className="sq-chip">
-                <img className="sq-chip-img" src="/sq/hiking.png" alt="hiking" />
+                <img className="sq-chip-img" src="/sq/hiking.png" alt="hiking" loading="lazy" />
               </span>{' '}
               <span className="sq-hl sq-hl--green">hiking somewhere I shouldn't be</span>,
               or logging runs on{' '}
               <a href="https://strava.com" className="sq-chip-link sq-strava-pill" target="_blank" rel="noopener noreferrer">
-                <img className="sq-chip-img" src="/sq/running.png" alt="running" />
+                <img className="sq-chip-img" src="/sq/running.png" alt="running" loading="lazy" />
                 <span className="sq-strava-label sq-strava-label--orange">Strava <span className="sq-arr">↗</span></span>
               </a>{' '}
               trying to convince myself I'm consistent.
@@ -179,15 +179,15 @@ export default function About() {
             <p>
               I read{' '}
               <span className="sq-chip">
-                <img className="sq-chip-img" src="/sq/vagabond.png" alt="Vagabond" />
+                <img className="sq-chip-img" src="/sq/vagabond.png" alt="Vagabond" loading="lazy" />
               </span>{' '}
               <span className="sq-hl sq-hl--purple">Vagabond</span> for the philosophy, watch{' '}
               <span className="sq-chip">
-                <img className="sq-chip-img" src="https://i.pinimg.com/originals/e6/1c/54/e61c541a6e262c678ec0bb5a1cf74c90.gif" alt="JoJo" />
+                <img className="sq-chip-img" src="https://i.pinimg.com/originals/e6/1c/54/e61c541a6e262c678ec0bb5a1cf74c90.gif" alt="JoJo" loading="lazy" />
               </span>{' '}
               <span className="sq-hl sq-hl--purple">JoJo</span> for the chaos, and loop{' '}
               <span className="sq-chip">
-                <img className="sq-chip-img" src="/sq/music.png" alt="music" />
+                <img className="sq-chip-img" src="/sq/music.png" alt="music" loading="lazy" />
               </span>{' '}
               <span className="sq-hl sq-hl--teal">Radiohead, Tool, and Jeff Buckley</span> like it's a personality trait.
             </p>
@@ -195,11 +195,11 @@ export default function About() {
             <p>
               Also:{' '}
               <span className="sq-chip">
-                <img className="sq-chip-img" src="/sq/ufc.png" alt="UFC" />
+                <img className="sq-chip-img" src="/sq/ufc.png" alt="UFC" loading="lazy" />
               </span>{' '}
               <span className="sq-hl sq-hl--red">UFC</span> for reality checks,{' '}
               <span className="sq-chip">
-                <img className="sq-chip-img" src="/sq/f1.png" alt="F1" />
+                <img className="sq-chip-img" src="/sq/f1.png" alt="F1" loading="lazy" />
               </span>{' '}
               <span className="sq-hl sq-hl--amber">F1</span> for strategy — both remind me design is just controlled chaos.
             </p>
@@ -207,7 +207,7 @@ export default function About() {
             <p>
               And yes —{' '}
               <span className="sq-chip">
-                <img className="sq-chip-img" src="/sq/gaming.png" alt="gaming" />
+                <img className="sq-chip-img" src="/sq/gaming.png" alt="gaming" loading="lazy" />
               </span>{' '}
               <span className="sq-hl sq-hl--purple">I game</span>.
               Valorant (bad aim). CS2 (trying). Minecraft (peaceful mode).
@@ -250,7 +250,7 @@ export default function About() {
               </div>
               <div className="bt-body">
                 <span className="bt-tag bt-tag--green">AI × Design</span>
-                <img className="bt-thumb" src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=500&q=75" alt="AI and design" />
+                <img className="bt-thumb" src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=500&q=75" alt="AI and design" loading="lazy" />
                 <p className="bt-title">AI co-designers in UX workflows</p>
                 <p className="bt-desc">Not replacing — reshaping how we think and iterate.</p>
                 <p className="bt-quip">"Tools change. Thinking matters."</p>
@@ -267,7 +267,7 @@ export default function About() {
               </div>
               <div className="bt-body">
                 <span className="bt-tag bt-tag--purple">Thought</span>
-                <img className="bt-thumb" src="/blog-lorem-ipsum.png" alt="Stop using Lorem Ipsum" />
+                <img className="bt-thumb" src="/blog-lorem-ipsum.png" alt="Stop using Lorem Ipsum" loading="lazy" />
                 <p className="bt-title">Stop using Lorem Ipsum</p>
                 <p className="bt-desc">If the content is fake, the design is just guessing.</p>
                 <p className="bt-quip">"Design starts with meaning."</p>
@@ -284,7 +284,7 @@ export default function About() {
               </div>
               <div className="bt-body">
                 <span className="bt-tag bt-tag--amber">Trek / Life</span>
-                <img className="bt-thumb" src="https://images.unsplash.com/photo-1542224566-6e85f2e6772f?w=500&q=75" alt="mountain trekking Nepal" />
+                <img className="bt-thumb" src="https://images.unsplash.com/photo-1542224566-6e85f2e6772f?w=500&q=75" alt="mountain trekking Nepal" loading="lazy" />
                 <p className="bt-title">Adventures in North Nepal</p>
                 <p className="bt-desc">Altitude, silence, and perspective shifts you don't get on screens.</p>
                 <p className="bt-quip">"This one's offline."</p>

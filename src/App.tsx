@@ -268,7 +268,7 @@ function App() {
             <div className="card rv" onClick={() => { setActiveProject(2); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
-                  <img src="/mockups/Telvox/Tel.png" alt="Telvox" className="thumb-img" />
+                  <img src="/mockups/Telvox/Tel.png" alt="Telvox" className="thumb-img" loading="lazy" />
                 </div>
               </div>
               <div className="card-body">
@@ -282,7 +282,7 @@ function App() {
             <div className="card rv" onClick={() => { setActiveProject(0); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
-                  <img src={PROJECTS[0].cardImg} alt="ClearPath Factory Portal" className="thumb-img" />
+                  <img src={PROJECTS[0].cardImg} alt="ClearPath Factory Portal" className="thumb-img" loading="lazy" />
                 </div>
               </div>
               <div className="card-body">
@@ -296,7 +296,7 @@ function App() {
             <div className="card rv" onClick={() => { setActiveProject(1); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
-                  <img src={PROJECTS[1].cardImg} alt="TransferNet" className="thumb-img" />
+                  <img src={PROJECTS[1].cardImg} alt="TransferNet" className="thumb-img" loading="lazy" />
                 </div>
               </div>
               <div className="card-body">
@@ -310,7 +310,7 @@ function App() {
             <div className="card rv" onClick={() => { setActiveProject(7); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
-                  <img src={PROJECTS[7].cardImg} alt="Jobbicus" className="thumb-img" />
+                  <img src={PROJECTS[7].cardImg} alt="Jobbicus" className="thumb-img" loading="lazy" />
                 </div>
               </div>
               <div className="card-body">
@@ -324,7 +324,7 @@ function App() {
             <div className="card rv" onClick={() => { setActiveProject(5); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
-                  <img src={PROJECTS[5].cardImg} alt="OCCS" className="thumb-img" style={{ objectPosition: 'center' }} />
+                  <img src={PROJECTS[5].cardImg} alt="OCCS" className="thumb-img" style={{ objectPosition: 'center' }} loading="lazy" />
                 </div>
               </div>
               <div className="card-body">
@@ -338,7 +338,7 @@ function App() {
             <div className="card rv" onClick={() => { setActiveProject(3); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
-                  <img src={PROJECTS[3].cardImg} alt="Skathi" className="thumb-img" />
+                  <img src={PROJECTS[3].cardImg} alt="Skathi" className="thumb-img" loading="lazy" />
                 </div>
               </div>
               <div className="card-body">
@@ -392,23 +392,23 @@ function App() {
             <div className="ticker-outer">
               <div className="ticker-track" ref={tickerRef}>
                 {/* — set 1 — */}
-                <div className="c-card"><img src="/mockups/ticker/t1.png" alt="" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t2.png" alt="" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t3.png" alt="" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t4.png" alt="" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t5.png" alt="" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t6.png" alt="" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t7.png" alt="" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t8.png" alt="" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t1.png" alt="" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t2.png" alt="" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t3.png" alt="" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t4.png" alt="" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t5.png" alt="" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t6.png" alt="" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t7.png" alt="" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t8.png" alt="" loading="lazy" /></div>
                 {/* — set 2 (duplicate for seamless loop) — */}
-                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t1.png" alt="" /></div>
-                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t2.png" alt="" /></div>
-                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t3.png" alt="" /></div>
-                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t4.png" alt="" /></div>
-                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t5.png" alt="" /></div>
-                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t6.png" alt="" /></div>
-                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t7.png" alt="" /></div>
-                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t8.png" alt="" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t1.png" alt="" loading="lazy" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t2.png" alt="" loading="lazy" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t3.png" alt="" loading="lazy" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t4.png" alt="" loading="lazy" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t5.png" alt="" loading="lazy" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t6.png" alt="" loading="lazy" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t7.png" alt="" loading="lazy" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t8.png" alt="" loading="lazy" /></div>
               </div>
             </div>
           </div>

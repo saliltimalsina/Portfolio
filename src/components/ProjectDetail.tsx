@@ -79,6 +79,7 @@ export default function ProjectDetail({ project, onClose }: Props) {
               src={project.coverImg ?? project.cardImg}
               alt={`${project.title} cover`}
               className="detail-cover-img"
+              loading="lazy"
             />
           )}
           {project.docsUrl && (
@@ -115,7 +116,7 @@ export default function ProjectDetail({ project, onClose }: Props) {
                 ? <>
                     <div className={`detail-mockup-multi detail-mockup-multi--${sec.mockupLayout ?? 'landscape'}`}>
                       {sec.mockupImg.map((src, j) => (
-                        <img key={j} src={src} alt={`${sec.title} ${j + 1}`} className="detail-mockup-multi-img" />
+                        <img key={j} src={src} alt={`${sec.title} ${j + 1}`} className="detail-mockup-multi-img" loading="lazy" />
                       ))}
                     </div>
                     {(sec.mockupLayout ?? 'landscape') === 'portrait' && (
@@ -123,7 +124,7 @@ export default function ProjectDetail({ project, onClose }: Props) {
                     )}
                   </>
                 : sec.mockupImg
-                  ? <img src={sec.mockupImg} alt={sec.title} className="detail-mockup-img" />
+                  ? <img src={sec.mockupImg} alt={sec.title} className="detail-mockup-img" loading="lazy" />
                   : renderMockup(i, project.id)
               }
             </div>

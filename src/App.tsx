@@ -12,8 +12,17 @@ import About from './components/About'
 
 function App() {
   const tickerRef = useRef<HTMLDivElement>(null)
-  const [activeProject, setActiveProject] = useState<number | null>(null)
-  const [showAbout, setShowAbout] = useState(false)
+  const [activeProject, setActiveProject] = useState<number | null>(() => {
+    const slug = window.location.pathname.replace(/^\//, '')
+    if (slug && slug !== 'about') {
+      const idx = PROJECTS.findIndex(p => p.slug === slug)
+      return idx !== -1 ? idx : null
+    }
+    return null
+  })
+  const [showAbout, setShowAbout] = useState(() => {
+    return window.location.pathname.replace(/^\//, '') === 'about'
+  })
   const [activeNav, setActiveNav] = useState<'home' | 'work' | 'about'>('home')
 
   useEffect(() => {

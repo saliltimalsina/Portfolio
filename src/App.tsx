@@ -8,6 +8,7 @@ import nepalImg from './assets/nepal.png'
 import PROJECTS from './data/projects'
 import ProjectDetail from './components/ProjectDetail'
 import About from './components/About'
+import { Analytics } from '@vercel/analytics/react'
 
 
 function App() {
@@ -446,6 +447,7 @@ function App() {
         <p>Crafted with intent for humans</p>
         <p style={{ marginTop: '4px', fontSize: '11px', color: '#AAA' }}>© Salil Timalsina</p>
       </footer>
+      <Analytics />
     </>
   )
 }

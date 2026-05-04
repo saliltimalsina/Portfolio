@@ -717,41 +717,14 @@ const PROJECTS: Project[] = [
     cardImg: skathiCover,
     sections: [],
   },
-// ─────────────────────────────────────────────────────────────────
-//  OCCS Case Study
-//
-//  Image filename map (verified):
-//    image 1.png                            → User detail — General Information panel
-//    image 2.png                            → Users list table (10 rows, bulk select)
-//    image 3.png                            → Projects list — small view (3 projects)
-//    image 4.png                            → Project Teams tab (Best Team / Acmda Team)
-//    image 5.png                            → Inbound Opening Time — per-day table
-//    image 6.png                            → Edit Opening Hours modal (day picker + time)
-//    image 7.png                            → Edit Opening Hours Playback (audio upload)
-//    image 8.png                            → Add Email — Message step (rich-text canvas)
-//    image 9.png                            → Add Email — Result Codes step
-//    image 10.png                           → Page Builder canvas (form fields + survey)
-//    image 11.png                           → Page Builder — Page Settings panel open
-//    image 12.png                           → Export / Call Records table (UUID keyed)
-//    image 13.png                           → Global Settings — Calendar list
-//    image 14.png                           → Add Calendar — full-year view (2025)
-//    image 15.png                           → Clerk Local Settings — Sound & Audio Devices
-//    image 16.png                           → Incoming call modal (accept / reject)
-//    image 17.png                           → Projects list — large view (10+ projects)
-//    image 18.png                           → Active Call — form tabs + Call Logs sidebar
-//    Screen Shot 2026-04-02 at 14.26.30.png → Jira board (OCCS active sprint)
-//    7fc570f7-ba76-43a7-85b8-59f575cdab99.png → Miro retro — car metaphor
-//    1350a396-df65-49df-a047-951dced0cb1e.jpeg → Miro retro — hunted/hunter format
-// ─────────────────────────────────────────────────────────────────
-
   {
     id: 4,
     slug: 'occs',
     title: "OCCS — Outbound Call Centre System",
     client: "OCCS / Staie",
     category: "UX Design · Product Design · Research",
-    date: "2024–2025",
-    intro: "Led UX design on a multi-tenant call centre platform built for 300+ clerks and 5,000+ customers across multiple client companies. Replaced a fragmented legacy system with a unified, role-based MUI dashboard — spanning user management, project configuration, live call handling, and reporting — shipped across 4,000+ tracked Jira tickets over 12 months.",
+    date: "2024–2026",
+    intro: "Redesigned the clerk-facing side of OCCS — a multi-tenant call centre platform used by 300+ clerks across multiple client companies. The goal was simple: give clerks everything they need on one screen during a live call, and get out of their way the rest of the time.",
     cardImg: '/mockups/OCCS/OCCS Cover.png',
     coverImg: '/mockups/OCCS/OCCS Cover.png',
     docsUrl: 'https://docs.occs.live/introduction.html',
@@ -759,99 +732,127 @@ const PROJECTS: Project[] = [
     sections: [
 
       {
-        label: "Discovery · Sprint Scope",
-        title: "4,000+ tickets, 20+ subtasks per epic — the problem was bigger than anyone expected.",
-        body: "The OCCS Jira board made the scale impossible to ignore: in any given sprint, tickets were spread across TO DO, IN PROGRESS, BLOCKED, REVIEW, and DONE — with more in flight than resolved. QA tickets piled up faster than they cleared. The team was building a platform for hundreds of clerks while simultaneously reverse-engineering the full complexity of the legacy system it replaced. This board became the team's daily prioritisation tool and the source of truth for what shipped each week.",
-        mockupBg: "linear-gradient(145deg,#f0f4ff,#e4eaff)",
-        mockupImg: '/mockups/OCCS/Screen Shot 2026-04-02 at 14.26.30.png',
-      },
-
-      {
-        label: "Process · Agile Retrospectives",
-        title: "Car metaphors, ghost hunts, and sticky notes — how the team reflected and recalibrated.",
-        body: "Every sprint closed with a structured retrospective on Miro. One format asked 'Which car best describes our last sprint?' — forcing gut-check honesty about velocity and morale. A later format reframed the same question as 'What ghosts were hunting us? / What allowed us to turn from hunted to hunter?' pushing the team past surface complaints into root causes. Recurring themes — test coverage gaps, missing human resource in FE, deployment failures, poorly written user stories — fed directly into the next sprint's scope and shaped how we prioritised design decisions.",
-        mockupBg: "linear-gradient(145deg,#f5f0ff,#ede8ff)",
-        mockupImg: ['/mockups/OCCS/7fc570f7-ba76-43a7-85b8-59f575cdab99.png', '/mockups/OCCS/1350a396-df65-49df-a047-951dced0cb1e.jpeg'],
-        mockupLayout: 'landscape',
-      },
-
-      {
-        label: "Design · User Management",
-        title: "One searchable table to manage every clerk, admin, and extension across the platform.",
-        body: "The Users screen gives SuperAdmins a paginated table of every account — first name, last name, username, status badge (Active / Inactive), extension number, and group (Clerk or Admin) visible without opening a single detail view. Rows support bulk selection for mass operations, and a search bar filters across 300+ users instantly. Selecting a row opens a General Information panel showing the full profile with Edit and Delete controls. This replaced scattered spreadsheets with a single auditable surface.",
+        label: "Design · Sign In",
+        title: "First login or returning clerk — two states, no dead ends.",
+        body: "Sign In collects username, password, and language upfront. Dark/light toggle is accessible before logging in. Returning clerks see a Welcome Back screen with their account pre-loaded — one tap to get in, one link to switch accounts.",
         mockupBg: "linear-gradient(145deg,#f0f5ff,#e8eeff)",
-        mockupImg: ['/mockups/OCCS/image 2.png', '/mockups/OCCS/image 1.png'],
+        mockupImg: ['/mockups/OCCS/occs-signin.png', '/mockups/OCCS/occs-welcome-back.png'],
         mockupLayout: 'landscape',
       },
 
       {
-        label: "Design · Multi-tenant Project Architecture",
-        title: "Each client company lives in its own isolated Project — scoped teams, channels, and data.",
-        body: "The Projects list scales to dozens of clients simultaneously — from internal test environments to live client deployments — all managed from one admin panel without interference between companies. Drilling into a project reveals a nested tree: Channel (Voice, Email, Contact), Views, Database, and Result Code configuration. The Teams tab lets admins assign clerks with per-member agent levels and use-as-agent toggles, so each company's access is scoped precisely without touching global settings.",
+        label: "Design · Project Selection",
+        title: "Pick your primary project, stack secondaries — then go live.",
+        body: "Clerks work across multiple client companies. One project is Primary — it loads the call form, guide, and result codes. Any number can be Secondary for reference. The list is searchable and sortable by last used. Selected primary highlights orange, secondaries blue. The status bar at the bottom shows what's active before hitting LOGIN.",
         mockupBg: "linear-gradient(145deg,#f0fff5,#e0ffee)",
-        mockupImg: ['/mockups/OCCS/image 17.png', '/mockups/OCCS/image 4.png'],
+        mockupImg: ['/mockups/OCCS/occs-project-selection.png', '/mockups/OCCS/occs-project-selection-active.png', '/mockups/OCCS/occs-project-selection-filtered.png'],
         mockupLayout: 'landscape',
       },
 
       {
-        label: "Design · Inbound Voice Channel",
-        title: "Opening hours and shift windows configured per project — no developer involvement.",
-        body: "Each inbound voice channel exposes an Opening Time table showing per-day durations for Monday through Saturday, with unset days defaulting to Closed. Clicking Edit opens a day-selector modal where admins pick specific days, set start and end times with a 24-hour picker, and add multiple shift windows for split-hour operations like early/late shifts. Changes take effect immediately and are fully reversible — removing any dependency on engineering to reconfigure call routing.",
+        label: "Design · Audio Setup",
+        title: "Test your mic, speaker, and ringtone before the first call rings.",
+        body: "Local Settings lets clerks pick their own audio devices independently. Live input meter shows the mic is actually picking up. TEST, PLAY TEST, and PLAY ECHO let them verify both directions. Changes apply instantly — no save step, no IT ticket.",
+        mockupBg: "linear-gradient(145deg,#f5f5f5,#ebebeb)",
+        mockupImg: '/mockups/OCCS/occs-local-settings.png',
+      },
+
+      {
+        label: "Design · Callbacks",
+        title: "Where clerks live between calls.",
+        body: "The Callbacks dashboard lists every scheduled interaction — project, caller number, customer name, scheduled time — with CALL and RESCHEDULE inline on every row. My Callbacks and Shared Callbacks are tabbed. Search filters by name or number. TODAY shortcut cuts through the noise.",
+        mockupBg: "linear-gradient(145deg,#f0f5ff,#e8eeff)",
+        mockupImg: '/mockups/OCCS/occs-callbacks.png',
+      },
+
+      {
+        label: "Design · Incoming Call",
+        title: "The greeting script shows before the clerk picks up.",
+        body: "When a call comes in, a modal interrupts whatever screen is open. It shows the project (Deer Car Sharing), the greeting script the clerk should read, the caller's name and number, then DECLINE and ACCEPT. The clerk knows exactly what to say before they answer — not after.",
+        mockupBg: "linear-gradient(145deg,#f0fff5,#e0ffee)",
+        mockupImg: '/mockups/OCCS/occs-incoming-call.png',
+      },
+
+      {
+        label: "Design · Active Call — Main Screen",
+        title: "Everything on one screen. No tab switching during a live call.",
+        body: "The call screen is the hardest surface to get right. Left column: greeting script, problem locations with advice, 8 numbered call handling steps, and 3 special rule cards (Time Adjustment, Email Escalation, Never Do). Centre: live project info and active issues. Right: result codes, notes, Call Logs and Live Transcribe tabs. Top bar: caller name, timer, direction badge, and all call controls — permanent throughout.",
+        mockupBg: "linear-gradient(145deg,#f0f5ff,#e8eeff)",
+        mockupImg: '/mockups/OCCS/occs-call-screen.png',
+      },
+
+      {
+        label: "Design · Result Codes",
+        title: "Log the outcome before ending the call — not after.",
+        body: "The right panel has three tabs: Not Reached, Reached, Successful. Clerks pick a result code, add notes, and hit Save. The button confirms SAVED in green. This happens while still on the call — no second screen, no post-call admin.",
         mockupBg: "linear-gradient(145deg,#fff8f0,#ffeedd)",
-        mockupImg: ['/mockups/OCCS/image 5.png', '/mockups/OCCS/image 6.png'],
+        mockupImg: ['/mockups/OCCS/occs-result-not-selected.png', '/mockups/OCCS/occs-active-call.png'],
         mockupLayout: 'landscape',
       },
 
       {
-        label: "Design · Playback Audio & Email Templates",
-        title: "Upload an audio file or build a rich-text email — both self-serve, both per-project.",
-        body: "The Playback panel lets admins browse and upload custom audio files directly to an inbound channel for opening-hours messages — no engineering ticket needed. The Add Email wizard sits alongside it as the outbound equivalent: admins compose a rich-text message template with a full formatting toolbar and dynamic customer fields like {global_first_name}, drag placeholder blocks for personalized sections, and preview the result before saving. Both tools eliminated a recurring class of developer requests.",
-        mockupBg: "linear-gradient(145deg,#fff0fa,#fce8f5)",
-        mockupImg: ['/mockups/OCCS/image 7.png', '/mockups/OCCS/image 8.png'],
-        mockupLayout: 'landscape',
+        label: "Design · Focus Mode",
+        title: "Collapse both sidebars when the form needs more room.",
+        body: "Both the left nav and right panel collapse independently. When a project has a dense call form, clerks can give the centre content the full width. Expanding either sidebar is one click — nothing is hidden permanently.",
+        mockupBg: "linear-gradient(145deg,#f5f5f5,#ebebeb)",
+        mockupImg: '/mockups/OCCS/occs-sidebars-collapsed.png',
       },
 
       {
-        label: "Design · Result Codes & Automated Follow-ups",
-        title: "Link a call outcome to an email template — the right message sends itself.",
-        body: "The final step of the Add Email wizard binds the template to specific result codes: 'Call successful', 'Successful', 'Reached', 'Not Reached', and others. Two dropdowns scope the binding to a project and result code type before the checklist renders, preventing cross-project contamination. Once configured, a clerk marking a call 'Not Reached' automatically dispatches the correct follow-up email — no manual action, no missed follow-ups, no reliance on clerk memory.",
-        mockupBg: "linear-gradient(145deg,#f5f0ff,#ede8ff)",
-        mockupImg: '/mockups/OCCS/image 9.png',
-      },
-
-      {
-        label: "Design · Page Builder",
-        title: "A no-code canvas so admins build exactly the call form their clerks need.",
-        body: "The Update Project Page editor gives admins a drag-and-drop canvas to build custom call forms without writing code. Fields — First Name, Last Name, Date of Birth, Gender, Phone Number, Email — and survey questions like source channel (Facebook, YouTube, Instagram, Twitter, Other) can be arranged freely. A collapsible Page Settings sidebar binds result codes to the page by name. Auto-save runs continuously, and a Preview button lets admins see exactly what clerks will see before pushing live.",
-        mockupBg: "linear-gradient(145deg,#f0fff5,#e0ffee)",
-        mockupImg: ['/mockups/OCCS/image 10.png', '/mockups/OCCS/image 11.png'],
-        mockupLayout: 'landscape',
-      },
-
-      {
-        label: "Design · Global Settings",
-        title: "Holidays, email accounts, and call types — set once at the platform level, applied everywhere.",
-        body: "Global Settings consolidates five cross-project modules: Calendar, Email Accounts, Views Attributes, Outcome Actions, and Call Types. The Calendar module renders all 12 months of the year in a single scrollable view — clicking any date opens a popover to add a holiday, with CSV import available for bulk setup. Holidays configured here propagate automatically to every project, making it fast to handle national and regional schedules without touching individual project configs.",
-        mockupBg: "linear-gradient(145deg,#fffdf0,#fff8dd)",
-        mockupImg: ['/mockups/OCCS/image 13.png', '/mockups/OCCS/image 14.png'],
-        mockupLayout: 'landscape',
-      },
-
-      {
-        label: "Design · Active Call Interface",
-        title: "Accept. Fill the form. Mark done. The entire clerk workflow on one screen, live.",
-        body: "An incoming call surfaces a full-screen modal showing the caller's number with a green Accept and red Reject button — no ambiguity about which call is ringing. Once connected, the clerk lands on the project's custom call form, tabbed by view (Brief, Chronolog, Contact), with Call Logs running in a live sidebar on the right — showing every prior interaction with date, phone number, remarks, and which agent handled it. Auto Save Enabled runs in the background throughout, and Mark As Done cleanly closes the interaction.",
+        label: "Design · Call Persists Across Screens",
+        title: "Navigate anywhere during a call — the bar stays.",
+        body: "The blue call bar doesn't disappear when a clerk opens Callbacks or another module. It locks to the top of every page with the caller name, timer, and all controls. 'Click to return to call' appears when they're away from the call form — one click brings it back.",
         mockupBg: "linear-gradient(145deg,#f0f5ff,#e8eeff)",
-        mockupImg: ['/mockups/OCCS/image 16.png', '/mockups/OCCS/image 18.png'],
+        mockupImg: '/mockups/OCCS/occs-call-persist.png',
+      },
+
+      {
+        label: "Design · Minimized Call",
+        title: "Need both hands free? Shrink the call to a pill.",
+        body: "The active call collapses to a floating pill — caller name, number, expand arrow — sitting in the bottom corner. The rest of the app is fully usable. Clicking the pill restores the full call screen.",
+        mockupBg: "linear-gradient(145deg,#f0fff5,#e0ffee)",
+        mockupImg: '/mockups/OCCS/occs-call-minimized.png',
+      },
+
+      {
+        label: "Design · Callback Select During Call",
+        title: "Schedule a callback without dropping the live call.",
+        body: "While on a call, clerks can open the callback scheduler inline. The call continues in the top bar. They pick the time, confirm — done. No modal stack, no context loss.",
+        mockupBg: "linear-gradient(145deg,#fff8f0,#ffeedd)",
+        mockupImg: '/mockups/OCCS/occs-callback-select.png',
+      },
+
+      {
+        label: "Design · Call Forward",
+        title: "Select an agent, watch it ring, confirm the handoff.",
+        body: "The Forward panel shows every available agent — name, status (Available, On Hold, On Break), wait time. Clerk selects one, hits FORWARD. The row flips to Ringing with a live counter. If the call gets through in conditional mode, the top bar shows both legs of the call simultaneously. CANCEL is always there if the transfer needs to be pulled back.",
+        mockupBg: "linear-gradient(145deg,#f0f5ff,#e8eeff)",
+        mockupImg: ['/mockups/OCCS/occs-forward-selected.png', '/mockups/OCCS/occs-forward-ringing.png', '/mockups/OCCS/occs-forward-conditional.png'],
         mockupLayout: 'landscape',
       },
 
       {
-        label: "Design · Call Records & Clerk Tools",
-        title: "Every call UUID-logged and exportable. Every audio device self-configured by the clerk.",
-        body: "The Export table inside Database logs every call with a UUID, caller number, destination, direction (inbound/outbound), agent ID, and external extension — searchable, column-filterable, and directly exportable in one click. On the clerk side, the Local Setting screen in Tools lets each user select their own recording device, playback device, and ringtone output, with Play Sound and Play Echo verification buttons to confirm hardware before going live. Together they eliminated two recurring categories of ops and IT support overhead.",
+        label: "Design · End Call",
+        title: "Confirm before you hang up.",
+        body: "Clicking End Call shows a modal with the contact name, number, and result code. Two buttons: CANCEL and END CALL. No accidental disconnects, no fixing a wrong result code after the fact.",
         mockupBg: "linear-gradient(145deg,#fff0f0,#ffeded)",
-        mockupImg: ['/mockups/OCCS/image 12.png', '/mockups/OCCS/image 15.png'],
+        mockupImg: '/mockups/OCCS/occs-end-call.png',
+      },
+
+      {
+        label: "Design · Client Search",
+        title: "Look up any customer mid-call without losing your place.",
+        body: "Client Search is a tab inside the active call screen. Eight search fields — name, phone, email, address, project, postal code. Results are paginated. SELECT links the record to the call. Call Logs stay visible on the right throughout.",
+        mockupBg: "linear-gradient(145deg,#f0fff5,#e0ffee)",
+        mockupImg: '/mockups/OCCS/occs-search.png',
+      },
+
+      {
+        label: "At Scale · Process & Impact",
+        title: "4,000+ tickets. Sprint retros every two weeks. ~35% faster response. ~30% less manual coordination.",
+        body: "OCCS wasn't a side project — it ran live across multiple client companies with 300+ clerks and thousands of customer interactions. The Jira board shows a real sprint in motion: tickets across To Do, In Progress, Blocked, Review, and Done simultaneously. Every two weeks the team ran structured Miro retrospectives — car metaphors, hunted/hunter formats — to surface blockers and recalibrate. Rule-based workflows, automated mailing, project-level views, and AI-powered voice recognition shipped across the 12-month build. End result: response efficiency up ~35%, manual coordination down ~30%.",
+        mockupBg: "linear-gradient(145deg,#1a1f2e,#252d40)",
+        mockupImg: ['/mockups/OCCS/Screen Shot 2026-04-02 at 14.26.30.png', '/mockups/OCCS/7fc570f7-ba76-43a7-85b8-59f575cdab99.png', '/mockups/OCCS/1350a396-df65-49df-a047-951dced0cb1e.jpeg'],
         mockupLayout: 'landscape',
       },
 

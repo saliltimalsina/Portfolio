@@ -287,7 +287,21 @@ function App() {
               </div>
             </div>
 
-            {/* Card 2 — ClearPath */}
+            {/* Card 2 — OCCS */}
+            <div className="card rv" onClick={() => { setActiveProject(5); setActiveNav('work') }}>
+              <div className="thumb">
+                <div className="thumb-inner">
+                  <img src={PROJECTS[5].cardImg} alt="OCCS" className="thumb-img" style={{ objectPosition: 'center' }} loading="lazy" />
+                </div>
+              </div>
+              <div className="card-body">
+                <h3>OCCS — Outbound Call Centre System</h3>
+                <div className="card-meta">OCCS / Staie · 2024–2026</div>
+                <p>Redesigned the clerk-facing experience of a multi-tenant call centre platform — unifying project setup, live call handling, result logging, and warm transfers into one coherent workspace for 300+ clerks.</p>
+              </div>
+            </div>
+
+            {/* Card 3 — ClearPath */}
             <div className="card rv" onClick={() => { setActiveProject(0); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
@@ -329,21 +343,7 @@ function App() {
               </div>
             </div>
 
-            {/* Card 5 — OCCS */}
-            <div className="card rv" onClick={() => { setActiveProject(5); setActiveNav('work') }}>
-              <div className="thumb">
-                <div className="thumb-inner">
-                  <img src={PROJECTS[5].cardImg} alt="OCCS" className="thumb-img" style={{ objectPosition: 'center' }} loading="lazy" />
-                </div>
-              </div>
-              <div className="card-body">
-                <h3>OCCS — Outbound Call Centre System</h3>
-                <div className="card-meta">OCCS / Staie · 2024–2025</div>
-                <p>Led UX design on a multi-tenant call centre platform for 300+ clerks — spanning user management, project configuration, live call handling, and reporting across 4,000+ Jira tickets.</p>
-              </div>
-            </div>
-
-            {/* Card 5 — Skathi */}
+            {/* Card 6 — Skathi */}
             <div className="card rv" onClick={() => { setActiveProject(3); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">

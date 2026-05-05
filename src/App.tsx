@@ -274,7 +274,7 @@ function App() {
           <div className="cards">
 
             {/* Card 1 — Telvox */}
-            <div className="card rv" onClick={() => { setActiveProject(2); setActiveNav('work') }}>
+            <a className="card rv" href="/telvox" onClick={e => { e.preventDefault(); setActiveProject(2); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
                   <img src="/mockups/Telvox/Tel.png" alt="Telvox" className="thumb-img" loading="lazy" />
@@ -285,10 +285,10 @@ function App() {
                 <div className="card-meta">Telvox · April 2026</div>
                 <p>Designed a full-stack AI voice agent management platform — from agent builder and telephony campaigns to lead tracking, appointment scheduling, and client billing in one dashboard.</p>
               </div>
-            </div>
+            </a>
 
             {/* Card 2 — OCCS */}
-            <div className="card rv" onClick={() => { setActiveProject(5); setActiveNav('work') }}>
+            <a className="card rv" href="/occs" onClick={e => { e.preventDefault(); setActiveProject(5); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
                   <img src={PROJECTS[5].cardImg} alt="OCCS" className="thumb-img" style={{ objectPosition: 'center' }} loading="lazy" />
@@ -299,10 +299,10 @@ function App() {
                 <div className="card-meta">OCCS / Staie · 2024–2026</div>
                 <p>Redesigned the clerk-facing experience of a multi-tenant call centre platform — unifying project setup, live call handling, result logging, and warm transfers into one coherent workspace for 300+ clerks.</p>
               </div>
-            </div>
+            </a>
 
             {/* Card 3 — ClearPath */}
-            <div className="card rv" onClick={() => { setActiveProject(0); setActiveNav('work') }}>
+            <a className="card rv" href="/clearpath" onClick={e => { e.preventDefault(); setActiveProject(0); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
                   <img src={PROJECTS[0].cardImg} alt="ClearPath Factory Portal" className="thumb-img" loading="lazy" />
@@ -313,10 +313,10 @@ function App() {
                 <div className="card-meta">ClearPath · April 2026</div>
                 <p>Designed a dual-sided supply chain platform connecting garment factories and buyers with real-time shipment visibility and a prioritised action queue.</p>
               </div>
-            </div>
+            </a>
 
-            {/* Card 3 — TransferNet */}
-            <div className="card rv" onClick={() => { setActiveProject(1); setActiveNav('work') }}>
+            {/* Card 4 — TransferNet */}
+            <a className="card rv" href="/transfernet" onClick={e => { e.preventDefault(); setActiveProject(1); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
                   <img src={PROJECTS[1].cardImg} alt="TransferNet" className="thumb-img" loading="lazy" />
@@ -327,10 +327,10 @@ function App() {
                 <div className="card-meta">{PROJECTS[1].client} · {PROJECTS[1].date}</div>
                 <p>{PROJECTS[1].intro}</p>
               </div>
-            </div>
+            </a>
 
-            {/* Card 4 — Jobbicus */}
-            <div className="card rv" onClick={() => { setActiveProject(7); setActiveNav('work') }}>
+            {/* Card 5 — Jobbicus */}
+            <a className="card rv" href="/jobbicus" onClick={e => { e.preventDefault(); setActiveProject(7); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
                   <img src={PROJECTS[7].cardImg} alt="Jobbicus" className="thumb-img" loading="lazy" />
@@ -341,10 +341,10 @@ function App() {
                 <div className="card-meta">Jobbicus · 2025</div>
                 <p>Designed a full-featured career platform for job seekers and employers — covering profile setup, a personalised home feed, job posting, proposals, upskilling courses, virtual fairs, and accommodation support.</p>
               </div>
-            </div>
+            </a>
 
             {/* Card 6 — Skathi */}
-            <div className="card rv" onClick={() => { setActiveProject(3); setActiveNav('work') }}>
+            <a className="card rv" href="/skathi" onClick={e => { e.preventDefault(); setActiveProject(3); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
                   <img src={PROJECTS[3].cardImg} alt="Skathi" className="thumb-img" loading="lazy" />
@@ -355,7 +355,7 @@ function App() {
                 <div className="card-meta">Product Design · April 2026</div>
                 <p>Designed the complete Skathi experience across iOS and web — a music platform built for South Asian listeners covering streaming, beats licensing, artist booking, events, and a merch shop.</p>
               </div>
-            </div>
+            </a>
 
             {/* Card 6 — Flowbite
             <div className="card rv" onClick={() => { setActiveProject(4); setActiveNav('work') }}>

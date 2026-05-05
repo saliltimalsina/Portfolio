@@ -98,6 +98,7 @@ main{background:transparent;padding:56px 0 0;position:relative;z-index:1}
 /* ---- CARDS ---- */
 .cards{display:flex;flex-direction:column;gap:20px}
 .card{
+  text-decoration:none;display:block;
   background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.05);
   border-radius:22px;overflow:hidden;
   backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);

@@ -81,14 +81,14 @@ What's working: sidebar + project nav, story-grouped active sprint board, full b
 <tr>
 <td width="33%" align="center">
   <a href="https://www.saliltimalsina.com.np/transfernet">
-    <img src="https://www.saliltimalsina.com.np/mockups/TransferNet/Cover.webp" width="100%" alt="TransferNet" />
+    <img src="https://www.saliltimalsina.com.np/mockups/TransferNet/TransferNet_Cover.webp" width="100%" alt="TransferNet" />
     <br/><sub><b>TransferNet</b></sub>
     <br/><sub>Fintech App</sub>
   </a>
 </td>
 <td width="33%" align="center">
   <a href="https://www.saliltimalsina.com.np/jobbicus">
-    <img src="https://www.saliltimalsina.com.np/mockups/Jobbicus/Onboard.webp" width="100%" alt="Jobbicus" />
+    <img src="https://www.saliltimalsina.com.np/mockups/Jobbicus/Homepage.webp" width="100%" alt="Jobbicus" />
     <br/><sub><b>Jobbicus</b></sub>
     <br/><sub>Career Platform</sub>
   </a>

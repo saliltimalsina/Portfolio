@@ -181,6 +181,35 @@ function buildProjectPage(shellHtml, p) {
   html = setMeta(html, 'name="twitter:description"', desc)
   html = setCanonical(html, url)
 
+  const projectLd = `
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Salil Timalsina", "item": "${ORIGIN}/" },
+          { "@type": "ListItem", "position": 2, "name": "Work", "item": "${ORIGIN}/#work" },
+          { "@type": "ListItem", "position": 3, "name": ${JSON.stringify(p.title)}, "item": "${url}" }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": ${JSON.stringify(p.title)},
+        "url": "${url}",
+        "description": ${JSON.stringify(p.intro)},
+        "datePublished": ${JSON.stringify(p.date)},
+        "author": { "@type": "Person", "name": "Salil Timalsina", "url": "${ORIGIN}/" },
+        "creator": { "@type": "Person", "name": "Salil Timalsina" },
+        "image": "${ORIGIN}/og.png",
+        "keywords": ${JSON.stringify(p.keywords.join(', '))}
+      }
+    </script>
+  `
+  html = html.replace('</head>', `${projectLd}\n  </head>`)
+
   const shadow = `
     <h1>${escapeHtml(p.title)} — Case Study by Salil Timalsina</h1>
     <p><strong>Client:</strong> ${escapeHtml(p.client)} · <strong>Date:</strong> ${escapeHtml(p.date)} · <strong>Designer:</strong> Salil Timalsina, UI/UX Interaction Designer.</p>
@@ -314,11 +343,11 @@ function blogShell({ title, description, url, bodyHtml }) {
     <meta property="og:title" content="${escapeHtml(title)}" />
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:url" content="${url}" />
-    <meta property="og:image" content="${ORIGIN}/og.webp" />
+    <meta property="og:image" content="${ORIGIN}/og.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(title)}" />
     <meta name="twitter:description" content="${escapeHtml(description)}" />
-    <meta name="twitter:image" content="${ORIGIN}/og.webp" />
+    <meta name="twitter:image" content="${ORIGIN}/og.png" />
     <style>
       body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 60px auto; padding: 0 24px; color: #222; line-height: 1.65; font-size: 17px; }
       h1 { font-size: 34px; line-height: 1.2; margin-bottom: 12px; letter-spacing: -0.01em; }
@@ -365,15 +394,41 @@ function buildBlogIndex() {
 }
 
 function buildBlogPost(post) {
+  const url = `${ORIGIN}/blog/${post.slug}`
   const bodyHtml = `
     <h1>${escapeHtml(post.title)}</h1>
     <div class="meta">${escapeHtml(post.date)} · by <a href="/about">Salil Timalsina</a></div>
     ${post.body}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": ${JSON.stringify(post.title)},
+      "description": ${JSON.stringify(post.description)},
+      "datePublished": ${JSON.stringify(post.date)},
+      "dateModified": ${JSON.stringify(post.date)},
+      "author": { "@type": "Person", "name": "Salil Timalsina", "url": "${ORIGIN}/" },
+      "publisher": { "@type": "Person", "name": "Salil Timalsina", "url": "${ORIGIN}/" },
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "${url}" },
+      "image": "${ORIGIN}/og.png"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Salil Timalsina", "item": "${ORIGIN}/" },
+        { "@type": "ListItem", "position": 2, "name": "Writing", "item": "${ORIGIN}/blog" },
+        { "@type": "ListItem", "position": 3, "name": ${JSON.stringify(post.title)}, "item": "${url}" }
+      ]
+    }
+    </script>
   `
   return blogShell({
     title: `${post.title} — Salil Timalsina`,
     description: post.description,
-    url: `${ORIGIN}/blog/${post.slug}`,
+    url,
     bodyHtml,
   })
 }

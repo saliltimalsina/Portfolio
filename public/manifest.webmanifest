@@ -1,0 +1,24 @@
+{
+  "name": "Salil Timalsina — UI/UX Interaction Designer",
+  "short_name": "Salil Timalsina",
+  "description": "Portfolio of Salil Timalsina — UI/UX interaction designer from Nepal. Case studies across SaaS, fintech, voice AI, supply chain, and music platforms.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f0814",
+  "theme_color": "#b73ad6",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/og.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

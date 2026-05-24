@@ -152,7 +152,7 @@ function App() {
   }, [activeProject, showAbout])
 
   useEffect(() => {
-    const ORIGIN = 'https://saliltimalsina.com.np'
+    const ORIGIN = 'https://www.saliltimalsina.com.np'
     const DEFAULT_TITLE = "Salil Timalsina — UI/UX Interaction Designer | Portfolio"
     const DEFAULT_DESC = "Salil Timalsina — UI/UX interaction designer from Nepal. 2+ years designing web and mobile products, scalable design systems, and end-to-end product experiences."
     const ABOUT_TITLE = "About Salil Timalsina — UI/UX Interaction Designer"

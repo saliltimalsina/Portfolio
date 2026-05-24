@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
 const DIST = join(ROOT, 'dist')
-const ORIGIN = 'https://saliltimalsina.com.np'
+const ORIGIN = 'https://www.saliltimalsina.com.np'
 
 const PROJECTS = [
   {

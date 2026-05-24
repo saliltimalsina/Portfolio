@@ -20,6 +20,8 @@
 
 Designing **Telvox v2** — agent builder, telephony campaigns, lead tracking, and billing in one dashboard.
 
+Vibe coding **Arc** in spare hours — a project management tool I'm building from scratch to test my own design ideas in production.
+
 #### Latest writing
 
 — [Designing B2B SaaS dashboards that earn the third click](https://www.saliltimalsina.com.np/blog/designing-b2b-saas-dashboards)
@@ -38,19 +40,34 @@ Designing **Telvox v2** — agent builder, telephony campaigns, lead tracking, a
 </td>
 <td width="64%" valign="top">
 
-#### Featured case study
+#### Vibe coding
 
-<a href="https://www.saliltimalsina.com.np/occs">
-  <img src="https://www.saliltimalsina.com.np/mockups/OCCS/OCCS%20Cover.webp" alt="OCCS — Outbound Call Centre System" width="100%" />
-</a>
+> Designing in Figma is one thing. Shipping a real product end-to-end is another. I build small tools as labs — to feel the friction designers usually hand off, and to stress-test my own UX decisions against real engineering constraints.
 
-**OCCS — Outbound Call Centre System**
+<table>
+<tr>
+<td width="100%" valign="top">
 
-2 years · 300+ clerks · ~35% faster response · ~30% less manual coordination
+**[Arc](https://github.com/saliltimalsina/Arc)** — Project management for small teams
 
-Redesign of a multi-tenant call centre platform — unifying project setup, live call handling, result logging, and warm transfers into one workspace.
+A Linear/Jira-style tool I'm building solo. Sprints, backlog, board view, story trees, drag-and-drop status changes, task panels with a rich editor. Designed and coded from scratch — every interaction is a design decision I get to test against real keyboard, drag, and edge cases.
 
-[Read the case study →](https://www.saliltimalsina.com.np/occs)
+What's working: sidebar + project nav, story-grouped active sprint board, full backlog with story trees, sprint start/complete flows, inline task creation, task panel edit modes, my-work view.
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)
+![Turbo](https://img.shields.io/badge/Turborepo-EF4444?style=flat&logo=turborepo&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![pnpm](https://img.shields.io/badge/pnpm-F69220?style=flat&logo=pnpm&logoColor=white)
+
+→ Live: [arc-api-pi.vercel.app](https://arc-api-pi.vercel.app) · Code: [github.com/saliltimalsina/Arc](https://github.com/saliltimalsina/Arc)
+
+</td>
+</tr>
+</table>
+
+<sub>More vibe projects coming — this section will grow as I ship.</sub>
 
 </td>
 </tr>
@@ -58,39 +75,48 @@ Redesign of a multi-tenant call centre platform — unifying project setup, live
 
 <br/>
 
-#### More case studies
+#### Case studies
 
 <table>
 <tr>
-<td width="20%" align="center">
+<td width="33%" align="center">
+  <a href="https://www.saliltimalsina.com.np/occs">
+    <img src="https://www.saliltimalsina.com.np/mockups/OCCS/OCCS%20Cover.webp" width="100%" alt="OCCS" />
+    <br/><sub><b>OCCS</b></sub>
+    <br/><sub>Call Centre · 300+ clerks</sub>
+  </a>
+</td>
+<td width="33%" align="center">
   <a href="https://www.saliltimalsina.com.np/telvox">
     <img src="https://www.saliltimalsina.com.np/mockups/Telvox/Tel.webp" width="100%" alt="Telvox" />
     <br/><sub><b>Telvox</b></sub>
     <br/><sub>AI Voice Agents</sub>
   </a>
 </td>
-<td width="20%" align="center">
+<td width="33%" align="center">
   <a href="https://www.saliltimalsina.com.np/clearpath">
     <img src="https://www.saliltimalsina.com.np/mockups/ClearPath/Cover.webp" width="100%" alt="ClearPath" />
     <br/><sub><b>ClearPath</b></sub>
     <br/><sub>Supply Chain</sub>
   </a>
 </td>
-<td width="20%" align="center">
+</tr>
+<tr>
+<td width="33%" align="center">
   <a href="https://www.saliltimalsina.com.np/transfernet">
     <img src="https://www.saliltimalsina.com.np/mockups/TransferNet/Cover.webp" width="100%" alt="TransferNet" />
     <br/><sub><b>TransferNet</b></sub>
     <br/><sub>Fintech App</sub>
   </a>
 </td>
-<td width="20%" align="center">
+<td width="33%" align="center">
   <a href="https://www.saliltimalsina.com.np/jobbicus">
     <img src="https://www.saliltimalsina.com.np/mockups/Jobbicus/Onboard.webp" width="100%" alt="Jobbicus" />
     <br/><sub><b>Jobbicus</b></sub>
     <br/><sub>Career Platform</sub>
   </a>
 </td>
-<td width="20%" align="center">
+<td width="33%" align="center">
   <a href="https://www.saliltimalsina.com.np/skathi">
     <img src="https://www.saliltimalsina.com.np/mockups/Skathi/Cover.webp" width="100%" alt="Skathi" />
     <br/><sub><b>Skathi</b></sub>

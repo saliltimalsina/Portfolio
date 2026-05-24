@@ -152,6 +152,45 @@ function App() {
   }, [activeProject, showAbout])
 
   useEffect(() => {
+    const ORIGIN = 'https://saliltimalsina.com.np'
+    const DEFAULT_TITLE = "Salil Timalsina — UI/UX Interaction Designer | Portfolio"
+    const DEFAULT_DESC = "Salil Timalsina — UI/UX interaction designer from Nepal. 2+ years designing web and mobile products, scalable design systems, and end-to-end product experiences."
+    const ABOUT_TITLE = "About Salil Timalsina — UI/UX Interaction Designer"
+    const ABOUT_DESC = "About Salil Timalsina — UI/UX interaction designer based in Nepal. Background, process, tools, and design philosophy."
+
+    let title = DEFAULT_TITLE
+    let desc = DEFAULT_DESC
+    let url = `${ORIGIN}/`
+
+    if (activeProject !== null) {
+      const p = PROJECTS[activeProject]
+      if (p) {
+        title = `${p.title} — Case Study by Salil Timalsina`
+        desc = p.intro
+        url = `${ORIGIN}/${p.slug}`
+      }
+    } else if (showAbout) {
+      title = ABOUT_TITLE
+      desc = ABOUT_DESC
+      url = `${ORIGIN}/about`
+    }
+
+    document.title = title
+    const setMeta = (selector: string, attr: 'content', value: string) => {
+      const el = document.head.querySelector(selector) as HTMLMetaElement | null
+      if (el) el.setAttribute(attr, value)
+    }
+    setMeta('meta[name="description"]', 'content', desc)
+    setMeta('meta[property="og:title"]', 'content', title)
+    setMeta('meta[property="og:description"]', 'content', desc)
+    setMeta('meta[property="og:url"]', 'content', url)
+    setMeta('meta[name="twitter:title"]', 'content', title)
+    setMeta('meta[name="twitter:description"]', 'content', desc)
+    const canon = document.head.querySelector('link[rel="canonical"]') as HTMLLinkElement | null
+    if (canon) canon.href = url
+  }, [activeProject, showAbout])
+
+  useEffect(() => {
     const slug = window.location.pathname.replace(/^\//, '')
     if (slug === 'about') {
       setShowAbout(true)
@@ -210,23 +249,23 @@ function App() {
               <div className="hl">
                 <span className="hl-word">Hi, I'm</span>
                 <span className="hl-pill hl-pill--photo">
-                  <img src={salilImg} alt="Salil" />
+                  <img src={salilImg} alt="Salil Timalsina" />
                 </span>
                 <span className="hl-word">Salil Timalsina,</span>
               </div>
               <div className="hl hl--tight">
                 <span className="hl-word">UI/UX Interaction Designer</span>
                 <span className="hl-pill hl-pill--ui">
-                  <img src={ui1Img} alt="UI design" />
+                  <img src={ui1Img} alt="UI design by Salil Timalsina" />
                 </span>
                 <span className="hl-pill hl-pill--ui">
-                  <img src={ui2Img} alt="UI design" />
+                  <img src={ui2Img} alt="UX design by Salil Timalsina" />
                 </span>
               </div>
               <div className="hl">
                 <span className="hl-word">Designing from Nepal</span>
                 <span className="hl-pill hl-pill--nepal">
-                  <img src={nepalImg} alt="Nepal" />
+                  <img src={nepalImg} alt="Designing from Nepal" />
                 </span>
               </div>
             </div>
@@ -243,19 +282,19 @@ function App() {
                 Book 1:1 session
               </a>
               <a href="mailto:salil.timalsina@gmail.com" className="btn">Reach out</a>
-              <a href="https://www.linkedin.com/in/saliltimalsina/" target="_blank" rel="noopener noreferrer" className="icon-btn" title="LinkedIn">
+              <a href="https://www.linkedin.com/in/saliltimalsina/" target="_blank" rel="noopener noreferrer" className="icon-btn" title="LinkedIn" aria-label="Salil Timalsina on LinkedIn">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
                   <rect x="2" y="9" width="4" height="12"/>
                   <circle cx="4" cy="4" r="2"/>
                 </svg>
               </a>
-              <a href="https://x.com/saliltimalsina" target="_blank" rel="noopener noreferrer" className="icon-btn" title="X">
+              <a href="https://x.com/saliltimalsina" target="_blank" rel="noopener noreferrer" className="icon-btn" title="X" aria-label="Salil Timalsina on X">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
               </a>
-              <a href="https://www.instagram.com/why.salil/" target="_blank" rel="noopener noreferrer" className="icon-btn" title="Instagram">
+              <a href="https://www.instagram.com/why.salil/" target="_blank" rel="noopener noreferrer" className="icon-btn" title="Instagram" aria-label="Salil Timalsina on Instagram">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <rect x="2" y="2" width="20" height="20" rx="5"/>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
@@ -401,14 +440,14 @@ function App() {
             <div className="ticker-outer">
               <div className="ticker-track" ref={tickerRef}>
                 {/* — set 1 — */}
-                <div className="c-card"><img src="/mockups/ticker/t1.png" alt="" loading="lazy" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t2.png" alt="" loading="lazy" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t3.png" alt="" loading="lazy" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t4.png" alt="" loading="lazy" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t5.png" alt="" loading="lazy" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t6.png" alt="" loading="lazy" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t7.png" alt="" loading="lazy" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t8.png" alt="" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t1.png" alt="Design work by Salil Timalsina — visual 1" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t2.png" alt="Design work by Salil Timalsina — visual 2" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t3.png" alt="Design work by Salil Timalsina — visual 3" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t4.png" alt="Design work by Salil Timalsina — visual 4" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t5.png" alt="Design work by Salil Timalsina — visual 5" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t6.png" alt="Design work by Salil Timalsina — visual 6" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t7.png" alt="Design work by Salil Timalsina — visual 7" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t8.png" alt="Design work by Salil Timalsina — visual 8" loading="lazy" /></div>
                 {/* — set 2 (duplicate for seamless loop) — */}
                 <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t1.png" alt="" loading="lazy" /></div>
                 <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t2.png" alt="" loading="lazy" /></div>

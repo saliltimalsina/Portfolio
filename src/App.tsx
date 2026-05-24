@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
 import logoSvg from './assets/logo.svg'
-import salilImg from './assets/salil.png'
-import ui1Img from './assets/ui1.png'
-import ui2Img from './assets/ui2.png'
-import nepalImg from './assets/nepal.png'
+import salilImg from './assets/salil.webp'
+import ui1Img from './assets/ui1.webp'
+import ui2Img from './assets/ui2.webp'
+import nepalImg from './assets/nepal.webp'
 import PROJECTS from './data/projects'
 import ProjectDetail from './components/ProjectDetail'
 import About from './components/About'
@@ -316,7 +316,7 @@ function App() {
             <a className="card rv" href="/telvox" onClick={e => { e.preventDefault(); setActiveProject(2); setActiveNav('work') }}>
               <div className="thumb">
                 <div className="thumb-inner">
-                  <img src="/mockups/Telvox/Tel.png" alt="Telvox" className="thumb-img" loading="lazy" />
+                  <img src="/mockups/Telvox/Tel.webp" alt="Telvox" className="thumb-img" loading="lazy" />
                 </div>
               </div>
               <div className="card-body">
@@ -440,23 +440,23 @@ function App() {
             <div className="ticker-outer">
               <div className="ticker-track" ref={tickerRef}>
                 {/* — set 1 — */}
-                <div className="c-card"><img src="/mockups/ticker/t1.png" alt="Design work by Salil Timalsina — visual 1" loading="lazy" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t2.png" alt="Design work by Salil Timalsina — visual 2" loading="lazy" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t3.png" alt="Design work by Salil Timalsina — visual 3" loading="lazy" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t4.png" alt="Design work by Salil Timalsina — visual 4" loading="lazy" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t5.png" alt="Design work by Salil Timalsina — visual 5" loading="lazy" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t6.png" alt="Design work by Salil Timalsina — visual 6" loading="lazy" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t7.png" alt="Design work by Salil Timalsina — visual 7" loading="lazy" /></div>
-                <div className="c-card"><img src="/mockups/ticker/t8.png" alt="Design work by Salil Timalsina — visual 8" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t1.webp" alt="Design work by Salil Timalsina — visual 1" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t2.webp" alt="Design work by Salil Timalsina — visual 2" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t3.webp" alt="Design work by Salil Timalsina — visual 3" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t4.webp" alt="Design work by Salil Timalsina — visual 4" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t5.webp" alt="Design work by Salil Timalsina — visual 5" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t6.webp" alt="Design work by Salil Timalsina — visual 6" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t7.webp" alt="Design work by Salil Timalsina — visual 7" loading="lazy" /></div>
+                <div className="c-card"><img src="/mockups/ticker/t8.webp" alt="Design work by Salil Timalsina — visual 8" loading="lazy" /></div>
                 {/* — set 2 (duplicate for seamless loop) — */}
-                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t1.png" alt="" loading="lazy" /></div>
-                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t2.png" alt="" loading="lazy" /></div>
-                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t3.png" alt="" loading="lazy" /></div>
-                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t4.png" alt="" loading="lazy" /></div>
-                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t5.png" alt="" loading="lazy" /></div>
-                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t6.png" alt="" loading="lazy" /></div>
-                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t7.png" alt="" loading="lazy" /></div>
-                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t8.png" alt="" loading="lazy" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t1.webp" alt="" loading="lazy" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t2.webp" alt="" loading="lazy" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t3.webp" alt="" loading="lazy" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t4.webp" alt="" loading="lazy" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t5.webp" alt="" loading="lazy" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t6.webp" alt="" loading="lazy" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t7.webp" alt="" loading="lazy" /></div>
+                <div className="c-card" aria-hidden="true"><img src="/mockups/ticker/t8.webp" alt="" loading="lazy" /></div>
               </div>
             </div>
           </div>

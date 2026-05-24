@@ -1,38 +1,38 @@
 // ─── Skathi asset imports ─────────────────────────────────────────────────────
-import skathiAppOnboarding from '../assets/Skathi/Onboarding Page.png'
-import skathiAppUsername from '../assets/Skathi/Username.png'
-import skathiAppUsername3 from '../assets/Skathi/Username-3.png'
-import skathiAppUsername4 from '../assets/Skathi/Username-4.png'
-import skathiAppUsername5 from '../assets/Skathi/Username-5.png'
-import skathiAppUsername6 from '../assets/Skathi/Username-6.png'
-import skathiAppUsername7 from '../assets/Skathi/Username-7.png'
-import skathiAppUsername8 from '../assets/Skathi/Username-8.png'
-import skathiAppUsername9 from '../assets/Skathi/Username-9.png'
-import skathiAppUsername10 from '../assets/Skathi/Username-10.png'
-import skathiAppSubPage from '../assets/Skathi/Sub Page.png'
-import skathiAppSubPage1 from '../assets/Skathi/Sub Page-1.png'
-import skathiAppSubPage2 from '../assets/Skathi/Sub Page-2.png'
-import skathiAppSubPage3 from '../assets/Skathi/Sub Page-3.png'
-import skathiAppSubPage4 from '../assets/Skathi/Sub Page-4.png'
-import skathiAppSubPage5 from '../assets/Skathi/Sub Page-5.png'
-import skathiAppAlbum from '../assets/Skathi/Album.png'
-import skathiWebHomepage from '../assets/Skathi/Homepage.png'
-import skathiWebArtist from '../assets/Skathi/Artist.png'
-import skathiWebAlbum from '../assets/Skathi/Album_web.png'
-import skathiWebBeats from '../assets/Skathi/Beats.png'
-import skathiWebBeats1 from '../assets/Skathi/Beats-1.png'
-import skathiWebBeatsList from '../assets/Skathi/Beats - List.png'
-import skathiWebBeatsBox from '../assets/Skathi/Beats - Box.png'
-import skathiWebBeatsDetail from '../assets/Skathi/Beats - Add to Cart or Detail.png'
-import skathiWebBeatsDetailPlaying from '../assets/Skathi/Beats - Add to Cart or Detail - Playing.png'
-import skathiWebBeatsLicense from '../assets/Skathi/Beats - License.png'
-import skathiWebDetailedView from '../assets/Skathi/Detailed View.png'
-import skathiWebEvent from '../assets/Skathi/Event.png'
-import skathiWebCart from '../assets/Skathi/Cart.png'
-import skathiWebBookArtist from '../assets/Skathi/Book Artist Form.png'
-import skathiWebShop from '../assets/Skathi/Shop.png'
-import skathiWebShop1 from '../assets/Skathi/Shop-1.png'
-import skathiCover from '../assets/Skathi/Cover.png'
+import skathiAppOnboarding from '../assets/Skathi/Onboarding Page.webp'
+import skathiAppUsername from '../assets/Skathi/Username.webp'
+import skathiAppUsername3 from '../assets/Skathi/Username-3.webp'
+import skathiAppUsername4 from '../assets/Skathi/Username-4.webp'
+import skathiAppUsername5 from '../assets/Skathi/Username-5.webp'
+import skathiAppUsername6 from '../assets/Skathi/Username-6.webp'
+import skathiAppUsername7 from '../assets/Skathi/Username-7.webp'
+import skathiAppUsername8 from '../assets/Skathi/Username-8.webp'
+import skathiAppUsername9 from '../assets/Skathi/Username-9.webp'
+import skathiAppUsername10 from '../assets/Skathi/Username-10.webp'
+import skathiAppSubPage from '../assets/Skathi/Sub Page.webp'
+import skathiAppSubPage1 from '../assets/Skathi/Sub Page-1.webp'
+import skathiAppSubPage2 from '../assets/Skathi/Sub Page-2.webp'
+import skathiAppSubPage3 from '../assets/Skathi/Sub Page-3.webp'
+import skathiAppSubPage4 from '../assets/Skathi/Sub Page-4.webp'
+import skathiAppSubPage5 from '../assets/Skathi/Sub Page-5.webp'
+import skathiAppAlbum from '../assets/Skathi/Album.webp'
+import skathiWebHomepage from '../assets/Skathi/Homepage.webp'
+import skathiWebArtist from '../assets/Skathi/Artist.webp'
+import skathiWebAlbum from '../assets/Skathi/Album_web.webp'
+import skathiWebBeats from '../assets/Skathi/Beats.webp'
+import skathiWebBeats1 from '../assets/Skathi/Beats-1.webp'
+import skathiWebBeatsList from '../assets/Skathi/Beats - List.webp'
+import skathiWebBeatsBox from '../assets/Skathi/Beats - Box.webp'
+import skathiWebBeatsDetail from '../assets/Skathi/Beats - Add to Cart or Detail.webp'
+import skathiWebBeatsDetailPlaying from '../assets/Skathi/Beats - Add to Cart or Detail - Playing.webp'
+import skathiWebBeatsLicense from '../assets/Skathi/Beats - License.webp'
+import skathiWebDetailedView from '../assets/Skathi/Detailed View.webp'
+import skathiWebEvent from '../assets/Skathi/Event.webp'
+import skathiWebCart from '../assets/Skathi/Cart.webp'
+import skathiWebBookArtist from '../assets/Skathi/Book Artist Form.webp'
+import skathiWebShop from '../assets/Skathi/Shop.webp'
+import skathiWebShop1 from '../assets/Skathi/Shop-1.webp'
+import skathiCover from '../assets/Skathi/Cover.webp'
 // ─────────────────────────────────────────────────────────────────────────────
 
 export type ProjectSection = {
@@ -67,29 +67,29 @@ const PROJECTS: Project[] = [
     category: "Product Design",
     date: "April 2026",
     intro: "A dual-sided supply chain platform connecting garment factories and buyers — giving factories a clear action queue and buyers real-time shipment visibility with direct customer impact data.",
-    cardImg: '/mockups/ClearPath/Cover.png',
-    coverImg: '/mockups/ClearPath/Cover.png',
+    cardImg: '/mockups/ClearPath/Cover.webp',
+    coverImg: '/mockups/ClearPath/Cover.webp',
     sections: [
       {
         label: "Discovery · Problem Space",
         title: "No one knew what was happening, or whose job it was to fix it.",
         body: "Production updates lived in emails. QC happened over WhatsApp. Buyers only found out about delays after they'd already missed their window. We mapped the full factory-to-buyer workflow and designed around one principle: always show who acts next.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
-        mockupImg: '/mockups/ClearPath/Desktop-8.png',
+        mockupImg: '/mockups/ClearPath/Desktop-8.webp',
       },
       {
         label: "Design · Factory Dashboard",
         title: "Everything urgent, in one place.",
         body: "Pending actions — PO acknowledgements, overdue production updates, QC submissions, document uploads — are ranked and surfaced with counts. Active shipments and POs requiring action sit below, so factories always land on a clear to-do.",
         mockupBg: "linear-gradient(145deg,#fff7f0,#ffeedd)",
-        mockupImg: '/mockups/ClearPath/Fac-11.png',
+        mockupImg: '/mockups/ClearPath/Fac-11.webp',
       },
       {
         label: "Design · Production Updates",
         title: "Per-PO cards with progress, forecast dates, and urgency built in.",
         body: "Each PO shows item count, unit value, a progress bar, and its forecast date. Overdue POs flag in orange. Factories update status and forecast dates in one inline form — no separate screen needed.",
         mockupBg: "linear-gradient(145deg,#fff7f0,#ffeedd)",
-        mockupImg: ['/mockups/ClearPath/Fac-8.png', '/mockups/ClearPath/Fac-9.png'],
+        mockupImg: ['/mockups/ClearPath/Fac-8.webp', '/mockups/ClearPath/Fac-9.webp'],
         mockupLayout: 'landscape',
       },
       {
@@ -97,14 +97,14 @@ const PROJECTS: Project[] = [
         title: "Select open POs, create a shipment batch.",
         body: "The Factory PO Selection List lets factories pick multiple purchase orders and group them into a shipment. A floating summary bar confirms items selected and total units before committing.",
         mockupBg: "linear-gradient(145deg,#f0fff4,#e0ffee)",
-        mockupImg: '/mockups/ClearPath/Fac-10.png',
+        mockupImg: '/mockups/ClearPath/Fac-10.webp',
       },
       {
         label: "Design · Shipment Tracking (Factory)",
         title: "Factories track every shipment's stage and expected arrival.",
         body: "A paginated table shows all shipments with origin, factory, five-dot stage indicator, countdown to arrival, and status badge. Delayed, Overdue, In Transit, Arrived — triaged at a glance.",
         mockupBg: "linear-gradient(145deg,#fff7f0,#ffeedd)",
-        mockupImg: ['/mockups/ClearPath/Fac.png', '/mockups/ClearPath/Fac-12.png'],
+        mockupImg: ['/mockups/ClearPath/Fac.webp', '/mockups/ClearPath/Fac-12.webp'],
         mockupLayout: 'landscape',
       },
       {
@@ -112,7 +112,7 @@ const PROJECTS: Project[] = [
         title: "Four-stage tracker with inspection photos, docs, and transit status.",
         body: "Factories see the same shipment detail view as buyers — progress tracker, inspection photo grid with category labels, and a shipping documents checklist. Quick Actions on the right let them upload docs, add AWB details, or submit QC without leaving the page.",
         mockupBg: "linear-gradient(145deg,#fff7f0,#ffeedd)",
-        mockupImg: ['/mockups/ClearPath/Fac-13.png', '/mockups/ClearPath/Fac-14.png'],
+        mockupImg: ['/mockups/ClearPath/Fac-13.webp', '/mockups/ClearPath/Fac-14.webp'],
         mockupLayout: 'landscape',
       },
       {
@@ -120,28 +120,28 @@ const PROJECTS: Project[] = [
         title: "Docs upload with clear status — uploaded, pending, or missing.",
         body: "Commercial Invoice, Packing List, Air Way Bill, and GSP Certificate each show upload timestamp and an Upload or Update button. Missing documents flag in red. The Docs Upload stage on the progress tracker stays pending until all four are present.",
         mockupBg: "linear-gradient(145deg,#fff7f0,#ffeedd)",
-        mockupImg: '/mockups/ClearPath/Fac-15.png',
+        mockupImg: '/mockups/ClearPath/Fac-15.webp',
       },
       {
         label: "Design · Transit Status (Factory)",
         title: "Carrier, AWB, airports, and a live countdown in one card.",
         body: "The Transit Status card shows carrier name, AWB number, departure airport, expected arrival airport, and a remaining-time bar. Tracking history runs below with timestamped milestones from booking to delivery.",
         mockupBg: "linear-gradient(145deg,#fff7f0,#ffeedd)",
-        mockupImg: '/mockups/ClearPath/Fac-2.png',
+        mockupImg: '/mockups/ClearPath/Fac-2.webp',
       },
       {
         label: "Design · QC Submissions",
         title: "QC status across all POs in one list — by PO or by line item.",
         body: "The QC Submissions list shows every PO with product count, QTY, QC status (In Progress, Ready, Failed), and contract date. Factories can view it by Purchase Order or drill into individual Line Items.",
         mockupBg: "linear-gradient(145deg,#f0fff4,#e0ffee)",
-        mockupImg: '/mockups/ClearPath/Fac-6.png',
+        mockupImg: '/mockups/ClearPath/Fac-6.webp',
       },
       {
         label: "Design · QC Submission Detail",
         title: "Factories upload evidence. Buyers make the call.",
         body: "Per line item, factories upload inspection photos and write notes. The status card shows whether the decision is pending, approved, or needs rework. Buyers are only prompted to decide once evidence is complete — no ambiguity about who acts next.",
         mockupBg: "linear-gradient(145deg,#f0fff4,#e0ffee)",
-        mockupImg: ['/mockups/ClearPath/Fac-1.png', '/mockups/ClearPath/Fac-3.png'],
+        mockupImg: ['/mockups/ClearPath/Fac-1.webp', '/mockups/ClearPath/Fac-3.webp'],
         mockupLayout: 'landscape',
       },
       {
@@ -149,14 +149,14 @@ const PROJECTS: Project[] = [
         title: "Document mismatches caught before they become customs problems.",
         body: "Factories upload Invoice, Packing List, AWB, and Line Items — the system cross-validates all four and flags Weight Mismatches, Carton Count Discrepancies, and HS Code conflicts with exact figures. Errors can be fixed or exported before submission.",
         mockupBg: "linear-gradient(145deg,#fff7f0,#ffeedd)",
-        mockupImg: '/mockups/ClearPath/Fac-7.png',
+        mockupImg: '/mockups/ClearPath/Fac-7.webp',
       },
       {
         label: "Design · QC Review (Buyer)",
         title: "Buyers review factory photos and pass, fail, or request rework.",
         body: "The buyer-side QC Review surfaces factory-uploaded photos with Pass / Fail / Rework decision buttons and a feedback field. Every decision is timestamped, tied to the line item, and visible to both sides.",
         mockupBg: "linear-gradient(145deg,#f0fff4,#e0ffee)",
-        mockupImg: ['/mockups/ClearPath/Fac-4.png', '/mockups/ClearPath/Fac-5.png'],
+        mockupImg: ['/mockups/ClearPath/Fac-4.webp', '/mockups/ClearPath/Fac-5.webp'],
         mockupLayout: 'landscape',
       },
       {
@@ -164,14 +164,14 @@ const PROJECTS: Project[] = [
         title: "Every shipment across every factory — one table.",
         body: "The buyer's shipment tracking view spans all suppliers with five-dot progress indicators and live arrival countdowns. Status badges let buyers triage without opening individual records.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
-        mockupImg: '/mockups/ClearPath/Desktop-7.png',
+        mockupImg: '/mockups/ClearPath/Desktop-7.webp',
       },
       {
         label: "Design · Shipment Detail (Buyer)",
         title: "Stage tracker, carrier info, and customer impact — all on one page.",
         body: "The buyer shipment detail shows the four-stage progress bar, carrier and AWB details, departure and arrival airports, and a remaining-time countdown. A Customer Impact sidebar shows exactly which customers are waiting and the total order value at risk.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
-        mockupImg: ['/mockups/ClearPath/Desktop-3.png', '/mockups/ClearPath/Desktop-6.png'],
+        mockupImg: ['/mockups/ClearPath/Desktop-3.webp', '/mockups/ClearPath/Desktop-6.webp'],
         mockupLayout: 'landscape',
       },
       {
@@ -179,7 +179,7 @@ const PROJECTS: Project[] = [
         title: "Documents timestamped. Photos labelled. Nothing left to chase.",
         body: "Buyers see all uploaded shipping documents with exact timestamps, and a photo grid of pallet integrity images labelled by inspection category. No offline communication needed before the delivery decision.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
-        mockupImg: ['/mockups/ClearPath/Desktop-4.png', '/mockups/ClearPath/Desktop-5.png'],
+        mockupImg: ['/mockups/ClearPath/Desktop-4.webp', '/mockups/ClearPath/Desktop-5.webp'],
         mockupLayout: 'landscape',
       },
       {
@@ -187,14 +187,14 @@ const PROJECTS: Project[] = [
         title: "Five KPIs, all orders, one view.",
         body: "High Fill, Lookahead-Fulfillable, Long-Pending Low Fill, On Hold, and Value Ready to Pick are surfaced as KPI cards. The order table below shows priority decision, recommendation score, fill %, and look-ahead timing across every open order.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
-        mockupImg: '/mockups/ClearPath/Desktop-2.png',
+        mockupImg: '/mockups/ClearPath/Desktop-2.webp',
       },
       {
         label: "Design · Order Detail",
         title: "System recommendations show exactly how long to wait for a better fill.",
         body: "Current fulfillment, a look-ahead projection, and an AI-generated recommendation sit above the line item table. Allocated QTY, free stock, dispatched, and per-SKU status leave nothing ambiguous.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
-        mockupImg: ['/mockups/ClearPath/Order_detail_-_KPIs_Alts.png', '/mockups/ClearPath/Desktop-11.png'],
+        mockupImg: ['/mockups/ClearPath/Order_detail_-_KPIs_Alts.webp', '/mockups/ClearPath/Desktop-11.webp'],
         mockupLayout: 'landscape',
       },
       {
@@ -202,21 +202,21 @@ const PROJECTS: Project[] = [
         title: "Priority score, open orders, and fill rate per customer.",
         body: "Each customer page shows a configurable priority gauge, open order count, total value, and fulfillment rate — with dropdowns for Response Speed, Payment Terms, Fulfillment Preference, and Standing. Orders, Linked Shipments, and Activity Log live in tabs below.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
-        mockupImg: '/mockups/ClearPath/Desktop-1.png',
+        mockupImg: '/mockups/ClearPath/Desktop-1.webp',
       },
       {
         label: "Design · Customer Overview",
         title: "All accounts ranked by priority score and fill rate.",
         body: "The Customer Overview lists every account with priority score, open orders, full-size allocation, aggregate value, and fill percentage. Import and New Order sit top-right so teams can act without navigating away.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
-        mockupImg: '/mockups/ClearPath/Desktop.png',
+        mockupImg: '/mockups/ClearPath/Desktop.webp',
       },
       {
         label: "Design · Picklist & Dispatch",
         title: "Allocated, on order, free stock, and dispatched — side by side.",
         body: "The Picklist shows customer-allocated QTY, QTY on order, free stock, and dispatched figures for every open order. Dispatched Orders confirm full vs partial per SKU with timestamps — one source of truth for what left the building.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
-        mockupImg: ['/mockups/ClearPath/Desktop-9.png', '/mockups/ClearPath/Desktop-10.png'],
+        mockupImg: ['/mockups/ClearPath/Desktop-9.webp', '/mockups/ClearPath/Desktop-10.webp'],
         mockupLayout: 'landscape',
       },
       {
@@ -224,14 +224,14 @@ const PROJECTS: Project[] = [
         title: "Every SKU, its free stock, and its allocation — one table.",
         body: "The Product Stock Table lists SKUs with QTY in stock, free stock, and allocated quantities — filterable by department, category, supplier, and location bin. Five KPI cards keep fulfillment readiness front and centre.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
-        mockupImg: '/mockups/ClearPath/Warehouse.png',
+        mockupImg: '/mockups/ClearPath/Warehouse.webp',
       },
       {
         label: "Design · Business Rules",
         title: "The scoring logic is transparent and editable — no engineering needed.",
         body: "Ops teams set numeric score adjustments for Response Speed, Payment Terms, Fulfillment Flexibility, and Customer Standing. Every allocation and priority recommendation in the platform flows from these rules.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
-        mockupImg: '/mockups/ClearPath/Rules.png',
+        mockupImg: '/mockups/ClearPath/Rules.webp',
       },
     ],
   },
@@ -244,8 +244,8 @@ const PROJECTS: Project[] = [
     date: "April 2026",
     intro:
       "Designed an end-to-end mobile money transfer app for the Australian diaspora — covering onboarding, identity verification, a live-rate home screen, and a four-step send flow with receipt upload, giving senders full visibility from tap to delivery.",
-    cardImg: "/mockups/TransferNet/TransferNet_Cover.png",
-    coverImg: "/mockups/TransferNet/TransferNet_Cover.png",
+    cardImg: "/mockups/TransferNet/TransferNet_Cover.webp",
+    coverImg: "/mockups/TransferNet/TransferNet_Cover.webp",
 
     sections: [
       // ─── DISCOVERY ───────────────────────────────────────────────────────────
@@ -254,7 +254,7 @@ const PROJECTS: Project[] = [
         title: "Sending money abroad was buried in friction, fees, and zero feedback.",
         body: "Existing remittance apps forced users through long verification flows before they could see a rate, hid fees until checkout, and gave no indication of where their money was after sending. We mapped the full sender journey — from first open to delivery confirmation — to identify every point where trust broke down and urgency was lost.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
-        mockupImg: "/mockups/TransferNet/Homepage_-_Alt_4.png",
+        mockupImg: "/mockups/TransferNet/Homepage_-_Alt_4.webp",
       },
 
       // ─── ONBOARDING & SIGN UP ────────────────────────────────────────────────
@@ -264,9 +264,9 @@ const PROJECTS: Project[] = [
         body: "The welcome screen gives new users two clear paths (Get Started / Already have an Account) with no feature lists or rate teasers — just confidence routing. Sign-up collects email, password, and an optional referral code on a single form. An OTP is sent immediately to confirm the account, with a 45-second countdown and a Resend option so users are never locked out. All screens keep the keyboard and primary CTA in frame throughout.",
         mockupBg: "linear-gradient(145deg,#eef2ff,#e4eaff)",
         mockupImg: [
-          "/mockups/TransferNet/Login_flow.png",
-          "/mockups/TransferNet/Sign_Up_2.png",
-          "/mockups/TransferNet/Sign_Up_1.png",
+          "/mockups/TransferNet/Login_flow.webp",
+          "/mockups/TransferNet/Sign_Up_2.webp",
+          "/mockups/TransferNet/Sign_Up_1.webp",
         ],
         mockupLayout: 'portrait',
       },
@@ -278,10 +278,10 @@ const PROJECTS: Project[] = [
         body: "Identity (name, date of birth, country of birth, gender) is collected on one screen with Continue locked until every field is valid — no inline errors, just a reliable signal of completion. Address follows: street, suburb, postal code, state, country, and a proof-of-residence upload zone, keeping compliance visible without making it feel like an interrogation. An 'All done!' screen with a pulsing green check closes the loop cleanly — users arrive at the home screen fully verified, with a single Start Exploring App CTA.",
         mockupBg: "linear-gradient(145deg,#fff7f0,#ffeedd)",
         mockupImg: [
-          "/mockups/TransferNet/Onboard-1.png",
-          "/mockups/TransferNet/Onboard-2.png",
-          "/mockups/TransferNet/Onboard-3.png",
-          "/mockups/TransferNet/Sign_Up_3.png",
+          "/mockups/TransferNet/Onboard-1.webp",
+          "/mockups/TransferNet/Onboard-2.webp",
+          "/mockups/TransferNet/Onboard-3.webp",
+          "/mockups/TransferNet/Sign_Up_3.webp",
         ],
         mockupLayout: 'portrait',
       },
@@ -293,9 +293,9 @@ const PROJECTS: Project[] = [
         body: "The login screen mirrors sign-up's layout (email, password with show/hide, remember me, Forgot Password) to keep repeat visits frictionless. Password recovery issues a fresh OTP then routes to a Create New Password screen with inline character requirements — minimal steps, keyboard always in frame. The home screen leads with the live exchange rate and a trend sparkline before any tap, Small/Large/Tuition tabs to switch transfer type, fees crossed out to zero, and a single Send Now button — backed by social proof and a real-time activity ticker.",
         mockupBg: "linear-gradient(145deg,#0f172a,#1e293b)",
         mockupImg: [
-          "/mockups/TransferNet/Login_flow-1.png",
-          "/mockups/TransferNet/Login_flow-2.png",
-          "/mockups/TransferNet/Homepage_-_Alt_4.png",
+          "/mockups/TransferNet/Login_flow-1.webp",
+          "/mockups/TransferNet/Login_flow-2.webp",
+          "/mockups/TransferNet/Homepage_-_Alt_4.webp",
         ],
         mockupLayout: 'portrait',
       },
@@ -307,9 +307,9 @@ const PROJECTS: Project[] = [
         body: "Step 1 shows the live rate and trend inline, lets users pick delivery method, and breaks out fees and subtotal before they commit. Step 2 surfaces frequent recipients as avatar pills above a searchable list — a New recipient shortcut sits inline so adding someone never breaks flow, and Continue stays grey until a selection is made. Step 3 shows copy-pasteable bank details (account name, BSB, account number) alongside a Required receipt upload zone that keeps Continue locked until evidence is attached, giving ops a full audit trail.",
         mockupBg: "linear-gradient(145deg,#f5f0ff,#ede5ff)",
         mockupImg: [
-          "/mockups/TransferNet/Send_Money_05.png",
-          "/mockups/TransferNet/Send_Money_04.png",
-          "/mockups/TransferNet/Send_Money_03.png",
+          "/mockups/TransferNet/Send_Money_05.webp",
+          "/mockups/TransferNet/Send_Money_04.webp",
+          "/mockups/TransferNet/Send_Money_03.webp",
         ],
         mockupLayout: 'portrait',
       },
@@ -321,8 +321,8 @@ const PROJECTS: Project[] = [
         body: "The confirmation screen shows amount, recipient bank, fee, exchange rate, and the uploaded receipt thumbnail in a single summary before Confirm & Send commits. The success screen that follows surfaces the transfer ID, fee, and delivery method with Back to Home and Track Transfer CTAs — closing the send loop and routing users directly into the live tracking view.",
         mockupBg: "linear-gradient(145deg,#f5f0ff,#ede5ff)",
         mockupImg: [
-          "/mockups/TransferNet/Send_Money_01.png",
-          "/mockups/TransferNet/Send_Money_02.png",
+          "/mockups/TransferNet/Send_Money_01.webp",
+          "/mockups/TransferNet/Send_Money_02.webp",
         ],
         mockupLayout: 'portrait',
       },
@@ -334,8 +334,8 @@ const PROJECTS: Project[] = [
         body: "The transactions screen groups transfers by date with a daily AUD total, filterable across All / Processing / Completed / Failed. Each row shows recipient, transfer ID, amounts, and timestamp with a Track Transfer shortcut. The detail view shows the full transfer above a vertical timeline — Transfer Created → Payment Verified → Sent for Collection → Processing → Delivered — with completed stages in green and the active stage in blue, plus a full details card and sender/recipient side by side.",
         mockupBg: "linear-gradient(145deg,#f0fff4,#e0ffee)",
         mockupImg: [
-          "/mockups/TransferNet/Transaction_4.png",
-          "/mockups/TransferNet/Transaction_3.png",
+          "/mockups/TransferNet/Transaction_4.webp",
+          "/mockups/TransferNet/Transaction_3.webp",
         ],
         mockupLayout: 'portrait',
       },
@@ -347,9 +347,9 @@ const PROJECTS: Project[] = [
         body: "Recipients are shown as a contacts-style list with a direct Send shortcut per row — jumping to step 2 without touching the home screen. The detail view shows full account info with Edit, Remove, and Send from context. The profile screen surfaces three personal stats (TXNs completed, AUD saved, days as member), quick-action tiles for Refer, Help, and Security, and an Essentials list for settings — all in a shallow, scannable hierarchy.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
         mockupImg: [
-          "/mockups/TransferNet/Onboard_30.png",
-          "/mockups/TransferNet/Onboard_29.png",
-          "/mockups/TransferNet/Onboard_31.png",
+          "/mockups/TransferNet/Onboard_30.webp",
+          "/mockups/TransferNet/Onboard_29.webp",
+          "/mockups/TransferNet/Onboard_31.webp",
         ],
         mockupLayout: 'portrait',
       },
@@ -364,7 +364,7 @@ const PROJECTS: Project[] = [
     date: "April 2026",
     intro:
       "Designed a full-stack AI voice agent management platform — giving businesses a single command centre to build agents, run telephony campaigns, track leads and appointments, and manage client billing from one dashboard.",
-    cardImg: "/mockups/Telvox/Tel.png",
+    cardImg: "/mockups/Telvox/Tel.webp",
 
     sections: [
 
@@ -373,7 +373,7 @@ const PROJECTS: Project[] = [
         title: "Businesses deploying AI voice agents had no single place to operate them.",
         body: "Agent configs, call logs, leads, and billing lived across separate tools. We mapped the full operator journey — agent creation to invoice — and unified everything into one platform.",
         mockupBg: "linear-gradient(145deg,#0f0e1a,#1a1828)",
-        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_50_53.png",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_50_53.webp",
       },
 
       {
@@ -381,7 +381,7 @@ const PROJECTS: Project[] = [
         title: "All key metrics on one screen — calls, agents, leads, revenue, and tickets at a glance.",
         body: "The overview surfaces 12 live metrics across calls, agents, messages, leads, appointments, and knowledge bases — plus a weekly consumption chart, billing panel, and open ticket alerts.",
         mockupBg: "linear-gradient(145deg,#f8f6ff,#ede9ff)",
-        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_51_28.png",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_51_28.webp",
       },
 
       {
@@ -389,7 +389,7 @@ const PROJECTS: Project[] = [
         title: "Build and configure every AI agent's voice, greeting, and identity in one panel.",
         body: "The Model tab shows the assigned voice, full system instructions, and live agent status. A Talk to the Agent button lets operators preview the experience before deployment.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
-        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_53_04.png",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_53_04.webp",
       },
 
       {
@@ -398,8 +398,8 @@ const PROJECTS: Project[] = [
         body: "The Analytics tab shows a paginated call table per agent. Clicking any row opens a Call Details modal with audio playback and a turn-by-turn transcript — a complete audit trail for every conversation.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
         mockupImg: [
-          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_53_14.png",
-          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_54_56.png",
+          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_53_14.webp",
+          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_54_56.webp",
         ],
         mockupLayout: 'landscape',
       },
@@ -409,7 +409,7 @@ const PROJECTS: Project[] = [
         title: "Versioned system prompts with one-click rollback.",
         body: "The Instructions tab lets operators edit the agent's full system prompt inline. Every save creates a new version — Load Content on any previous version restores it instantly, making prompt regressions recoverable in seconds.",
         mockupBg: "linear-gradient(145deg,#fff7f0,#ffeedd)",
-        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_53_22.png",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_53_22.webp",
       },
 
       {
@@ -418,8 +418,8 @@ const PROJECTS: Project[] = [
         body: "The Knowledge Base tab manages documents linked to the agent. Settings exposes model name, voice, agent tools, appointment overlap limit, and raw model config key-value pairs — all editable in place.",
         mockupBg: "linear-gradient(145deg,#f0fff4,#e0ffee)",
         mockupImg: [
-          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_53_41.png",
-          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_53_55.png",
+          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_53_41.webp",
+          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_53_55.webp",
         ],
         mockupLayout: 'landscape',
       },
@@ -429,7 +429,7 @@ const PROJECTS: Project[] = [
         title: "Seven voices across four providers — filter by language, gender, and style.",
         body: "The Voices library surfaces all available TTS options with provider, language, and personality tags. Operators pick and assign a voice to any agent without leaving the platform.",
         mockupBg: "linear-gradient(145deg,#f5f0ff,#ede5ff)",
-        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_55_10.png",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_55_10.webp",
       },
 
       {
@@ -437,7 +437,7 @@ const PROJECTS: Project[] = [
         title: "Every custom API integration the agents can call — GET and POST — in one table.",
         body: "Tools are listed with method, endpoint, and description. Agents call these mid-conversation to fetch products, create leads, file support tickets, or book appointments without any human handoff.",
         mockupBg: "linear-gradient(145deg,#fff7f0,#ffeedd)",
-        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_55_31.png",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_55_31.webp",
       },
 
       {
@@ -445,7 +445,7 @@ const PROJECTS: Project[] = [
         title: "Technical issues extracted and logged by AI agents automatically.",
         body: "Tickets are created from call content without operator input. Each ticket surfaces customer, priority, status, and assigned agent — with Open and Resolved tabs keeping active issues front and centre.",
         mockupBg: "linear-gradient(145deg,#fff0f0,#ffe4e4)",
-        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_55_41.png",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_55_41.webp",
       },
 
       {
@@ -453,7 +453,7 @@ const PROJECTS: Project[] = [
         title: "A super admin layer for managing every client org, tier, and account manager.",
         body: "The Clients dashboard shows MRR, active orgs, total agents, and monthly volume at a glance. Each row exposes tier, status, users/agents, usage, MRR, and account manager — with an Export Data option for billing reconciliation.",
         mockupBg: "linear-gradient(145deg,#f0f8ff,#e4f0ff)",
-        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_55_49.png",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_55_49.webp",
       },
 
       {
@@ -461,7 +461,7 @@ const PROJECTS: Project[] = [
         title: "Every inbound and outbound call across all agents — searchable and filterable.",
         body: "The telephony log aggregates 2,420 calls with agent name, IP, timestamp, and duration. Tabs for Transferred, Successful, and Failed let ops triage without touching a filter dropdown.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e8eeff)",
-        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_56_06.png",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_56_06.webp",
       },
 
       {
@@ -469,7 +469,7 @@ const PROJECTS: Project[] = [
         title: "Import, segment, and call leads — individually or as a bulk campaign.",
         body: "Leads are added manually or bulk-imported via CSV, grouped for targeting, and called via the Call Now action or scheduled runs. Contacted, Not Contacted, and Pending tabs keep campaign status clear at all times.",
         mockupBg: "linear-gradient(145deg,#f5f0ff,#ede5ff)",
-        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_56_18.png",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_56_18.webp",
       },
 
       {
@@ -477,7 +477,7 @@ const PROJECTS: Project[] = [
         title: "Automated outbound campaigns with daily or one-time frequency and full run history.",
         body: "Each schedule defines a group, frequency, run time, start and end date, and timezone. The table surfaces last run, status, and enabled state — giving campaign managers a live view of what ran and what's pending.",
         mockupBg: "linear-gradient(145deg,#f0fff4,#e0ffee)",
-        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_56_25.png",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_56_25.webp",
       },
 
       {
@@ -485,7 +485,7 @@ const PROJECTS: Project[] = [
         title: "Every credit top-up and service charge logged with revenue, cost, and margin.",
         body: "The All Transactions view shows total revenue, actual costs, net profit, and average margin across the platform. Each row carries user, type, description, payment method, amount, cost, profit, and date.",
         mockupBg: "linear-gradient(145deg,#fffbf0,#fff3d6)",
-        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_56_44.png",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_56_44.webp",
       },
 
       {
@@ -493,7 +493,7 @@ const PROJECTS: Project[] = [
         title: "Monitor client credit limits, balances, risk scores, and overdue accounts.",
         body: "The Credit Management dashboard surfaces $2.1M total credit limit, $609K outstanding, and flags accounts as Good Standing, Warning, or Exceeded — with a risk score and last payment date per client row.",
         mockupBg: "linear-gradient(145deg,#fff0f0,#ffe4e4)",
-        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_56_52.png",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_56_52.webp",
       },
 
       {
@@ -501,7 +501,7 @@ const PROJECTS: Project[] = [
         title: "A personal credit wallet with current balance and one-tap top-up.",
         body: "Operators see their available credit balance, trigger a Razorpay top-up with one button, and access a full account statement history — keeping spend visible without going through finance.",
         mockupBg: "linear-gradient(145deg,#f8f6ff,#ede9ff)",
-        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_57_19.png",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_57_19.webp",
       },
 
       {
@@ -509,7 +509,7 @@ const PROJECTS: Project[] = [
         title: "A calendar view of every appointment booked by AI agents — with Google Calendar sync.",
         body: "Appointments surfaces a weekly calendar filterable by agent, with a List View toggle for tabular access. Operators can add appointments manually or sync the full calendar to Google Calendar for external visibility.",
         mockupBg: "linear-gradient(145deg,#f0f8ff,#e4f0ff)",
-        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_57_35.png",
+        mockupImg: "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_57_35.webp",
       },
 
       {
@@ -518,8 +518,8 @@ const PROJECTS: Project[] = [
         body: "The client detail page shows subscription tier, minutes consumed, active users, AI agent overview, billing summary with recent invoices, and a full call activity log — with Pause Service and Notify Client actions at the top.",
         mockupBg: "linear-gradient(145deg,#f8f6ff,#ede9ff)",
         mockupImg: [
-          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_58_11.png",
-          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_58_31.png",
+          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_58_11.webp",
+          "/mockups/Telvox/Screen_Shot_2026-04-02_at_10_58_31.webp",
         ],
         mockupLayout: 'landscape',
       },
@@ -725,8 +725,8 @@ const PROJECTS: Project[] = [
     category: "UX Design · Product Design · Research",
     date: "2024–2026",
     intro: "Redesigned the clerk-facing side of OCCS — a multi-tenant call centre platform used by 300+ clerks across multiple client companies. The goal was simple: give clerks everything they need on one screen during a live call, and get out of their way the rest of the time.",
-    cardImg: '/mockups/OCCS/OCCS Cover.png',
-    coverImg: '/mockups/OCCS/OCCS Cover.png',
+    cardImg: '/mockups/OCCS/OCCS Cover.webp',
+    coverImg: '/mockups/OCCS/OCCS Cover.webp',
     docsUrl: 'https://docs.occs.live/introduction.html',
 
     sections: [
@@ -736,7 +736,7 @@ const PROJECTS: Project[] = [
         title: "First login or returning clerk — two states, no dead ends.",
         body: "Sign In collects username, password, and language upfront. Dark/light toggle is accessible before logging in. Returning clerks see a Welcome Back screen with their account pre-loaded — one tap to get in, one link to switch accounts.",
         mockupBg: "linear-gradient(145deg,#f0f5ff,#e8eeff)",
-        mockupImg: ['/mockups/OCCS/occs-signin.png', '/mockups/OCCS/occs-welcome-back.png'],
+        mockupImg: ['/mockups/OCCS/occs-signin.webp', '/mockups/OCCS/occs-welcome-back.webp'],
         mockupLayout: 'landscape',
       },
 
@@ -745,7 +745,7 @@ const PROJECTS: Project[] = [
         title: "Pick your primary project, stack secondaries — then go live.",
         body: "Clerks work across multiple client companies. One project is Primary — it loads the call form, guide, and result codes. Any number can be Secondary for reference. The list is searchable and sortable by last used. Selected primary highlights orange, secondaries blue. The status bar at the bottom shows what's active before hitting LOGIN.",
         mockupBg: "linear-gradient(145deg,#f0fff5,#e0ffee)",
-        mockupImg: ['/mockups/OCCS/occs-project-selection.png', '/mockups/OCCS/occs-project-selection-active.png', '/mockups/OCCS/occs-project-selection-filtered.png'],
+        mockupImg: ['/mockups/OCCS/occs-project-selection.webp', '/mockups/OCCS/occs-project-selection-active.webp', '/mockups/OCCS/occs-project-selection-filtered.webp'],
         mockupLayout: 'landscape',
       },
 
@@ -754,7 +754,7 @@ const PROJECTS: Project[] = [
         title: "Test your mic, speaker, and ringtone before the first call rings.",
         body: "Local Settings lets clerks pick their own audio devices independently. Live input meter shows the mic is actually picking up. TEST, PLAY TEST, and PLAY ECHO let them verify both directions. Changes apply instantly — no save step, no IT ticket.",
         mockupBg: "linear-gradient(145deg,#f5f5f5,#ebebeb)",
-        mockupImg: '/mockups/OCCS/occs-local-settings.png',
+        mockupImg: '/mockups/OCCS/occs-local-settings.webp',
       },
 
       {
@@ -762,7 +762,7 @@ const PROJECTS: Project[] = [
         title: "Where clerks live between calls.",
         body: "The Callbacks dashboard lists every scheduled interaction — project, caller number, customer name, scheduled time — with CALL and RESCHEDULE inline on every row. My Callbacks and Shared Callbacks are tabbed. Search filters by name or number. TODAY shortcut cuts through the noise.",
         mockupBg: "linear-gradient(145deg,#f0f5ff,#e8eeff)",
-        mockupImg: '/mockups/OCCS/occs-callbacks.png',
+        mockupImg: '/mockups/OCCS/occs-callbacks.webp',
       },
 
       {
@@ -770,7 +770,7 @@ const PROJECTS: Project[] = [
         title: "The greeting script shows before the clerk picks up.",
         body: "When a call comes in, a modal interrupts whatever screen is open. It shows the project (Deer Car Sharing), the greeting script the clerk should read, the caller's name and number, then DECLINE and ACCEPT. The clerk knows exactly what to say before they answer — not after.",
         mockupBg: "linear-gradient(145deg,#f0fff5,#e0ffee)",
-        mockupImg: '/mockups/OCCS/occs-incoming-call.png',
+        mockupImg: '/mockups/OCCS/occs-incoming-call.webp',
       },
 
       {
@@ -778,7 +778,7 @@ const PROJECTS: Project[] = [
         title: "Everything on one screen. No tab switching during a live call.",
         body: "The call screen is the hardest surface to get right. Left column: greeting script, problem locations with advice, 8 numbered call handling steps, and 3 special rule cards (Time Adjustment, Email Escalation, Never Do). Centre: live project info and active issues. Right: result codes, notes, Call Logs and Live Transcribe tabs. Top bar: caller name, timer, direction badge, and all call controls — permanent throughout.",
         mockupBg: "linear-gradient(145deg,#f0f5ff,#e8eeff)",
-        mockupImg: '/mockups/OCCS/occs-call-screen.png',
+        mockupImg: '/mockups/OCCS/occs-call-screen.webp',
       },
 
       {
@@ -786,7 +786,7 @@ const PROJECTS: Project[] = [
         title: "Log the outcome before ending the call — not after.",
         body: "The right panel has three tabs: Not Reached, Reached, Successful. Clerks pick a result code, add notes, and hit Save. The button confirms SAVED in green. This happens while still on the call — no second screen, no post-call admin.",
         mockupBg: "linear-gradient(145deg,#fff8f0,#ffeedd)",
-        mockupImg: ['/mockups/OCCS/occs-result-not-selected.png', '/mockups/OCCS/occs-active-call.png'],
+        mockupImg: ['/mockups/OCCS/occs-result-not-selected.webp', '/mockups/OCCS/occs-active-call.webp'],
         mockupLayout: 'landscape',
       },
 
@@ -795,7 +795,7 @@ const PROJECTS: Project[] = [
         title: "Collapse both sidebars when the form needs more room.",
         body: "Both the left nav and right panel collapse independently. When a project has a dense call form, clerks can give the centre content the full width. Expanding either sidebar is one click — nothing is hidden permanently.",
         mockupBg: "linear-gradient(145deg,#f5f5f5,#ebebeb)",
-        mockupImg: '/mockups/OCCS/occs-sidebars-collapsed.png',
+        mockupImg: '/mockups/OCCS/occs-sidebars-collapsed.webp',
       },
 
       {
@@ -803,7 +803,7 @@ const PROJECTS: Project[] = [
         title: "Navigate anywhere during a call — the bar stays.",
         body: "The blue call bar doesn't disappear when a clerk opens Callbacks or another module. It locks to the top of every page with the caller name, timer, and all controls. 'Click to return to call' appears when they're away from the call form — one click brings it back.",
         mockupBg: "linear-gradient(145deg,#f0f5ff,#e8eeff)",
-        mockupImg: '/mockups/OCCS/occs-call-persist.png',
+        mockupImg: '/mockups/OCCS/occs-call-persist.webp',
       },
 
       {
@@ -811,7 +811,7 @@ const PROJECTS: Project[] = [
         title: "Need both hands free? Shrink the call to a pill.",
         body: "The active call collapses to a floating pill — caller name, number, expand arrow — sitting in the bottom corner. The rest of the app is fully usable. Clicking the pill restores the full call screen.",
         mockupBg: "linear-gradient(145deg,#f0fff5,#e0ffee)",
-        mockupImg: '/mockups/OCCS/occs-call-minimized.png',
+        mockupImg: '/mockups/OCCS/occs-call-minimized.webp',
       },
 
       {
@@ -819,7 +819,7 @@ const PROJECTS: Project[] = [
         title: "Schedule a callback without dropping the live call.",
         body: "While on a call, clerks can open the callback scheduler inline. The call continues in the top bar. They pick the time, confirm — done. No modal stack, no context loss.",
         mockupBg: "linear-gradient(145deg,#fff8f0,#ffeedd)",
-        mockupImg: '/mockups/OCCS/occs-callback-select.png',
+        mockupImg: '/mockups/OCCS/occs-callback-select.webp',
       },
 
       {
@@ -827,7 +827,7 @@ const PROJECTS: Project[] = [
         title: "Select an agent, watch it ring, confirm the handoff.",
         body: "The Forward panel shows every available agent — name, status (Available, On Hold, On Break), wait time. Clerk selects one, hits FORWARD. The row flips to Ringing with a live counter. If the call gets through in conditional mode, the top bar shows both legs of the call simultaneously. CANCEL is always there if the transfer needs to be pulled back.",
         mockupBg: "linear-gradient(145deg,#f0f5ff,#e8eeff)",
-        mockupImg: ['/mockups/OCCS/occs-forward-selected.png', '/mockups/OCCS/occs-forward-ringing.png', '/mockups/OCCS/occs-forward-conditional.png'],
+        mockupImg: ['/mockups/OCCS/occs-forward-selected.webp', '/mockups/OCCS/occs-forward-ringing.webp', '/mockups/OCCS/occs-forward-conditional.webp'],
         mockupLayout: 'landscape',
       },
 
@@ -836,7 +836,7 @@ const PROJECTS: Project[] = [
         title: "Confirm before you hang up.",
         body: "Clicking End Call shows a modal with the contact name, number, and result code. Two buttons: CANCEL and END CALL. No accidental disconnects, no fixing a wrong result code after the fact.",
         mockupBg: "linear-gradient(145deg,#fff0f0,#ffeded)",
-        mockupImg: '/mockups/OCCS/occs-end-call.png',
+        mockupImg: '/mockups/OCCS/occs-end-call.webp',
       },
 
       {
@@ -844,7 +844,7 @@ const PROJECTS: Project[] = [
         title: "Look up any customer mid-call without losing your place.",
         body: "Client Search is a tab inside the active call screen. Eight search fields — name, phone, email, address, project, postal code. Results are paginated. SELECT links the record to the call. Call Logs stay visible on the right throughout.",
         mockupBg: "linear-gradient(145deg,#f0fff5,#e0ffee)",
-        mockupImg: '/mockups/OCCS/occs-search.png',
+        mockupImg: '/mockups/OCCS/occs-search.webp',
       },
 
       {
@@ -852,7 +852,7 @@ const PROJECTS: Project[] = [
         title: "4,000+ tickets. Sprint retros every two weeks. ~35% faster response. ~30% less manual coordination.",
         body: "OCCS wasn't a side project — it ran live across multiple client companies with 300+ clerks and thousands of customer interactions. The Jira board shows a real sprint in motion: tickets across To Do, In Progress, Blocked, Review, and Done simultaneously. Every two weeks the team ran structured Miro retrospectives — car metaphors, hunted/hunter formats — to surface blockers and recalibrate. Rule-based workflows, automated mailing, project-level views, and AI-powered voice recognition shipped across the 12-month build. End result: response efficiency up ~35%, manual coordination down ~30%.",
         mockupBg: "linear-gradient(145deg,#1a1f2e,#252d40)",
-        mockupImg: ['/mockups/OCCS/Screen Shot 2026-04-02 at 14.26.30.png', '/mockups/OCCS/7fc570f7-ba76-43a7-85b8-59f575cdab99.png', '/mockups/OCCS/1350a396-df65-49df-a047-951dced0cb1e.jpeg'],
+        mockupImg: ['/mockups/OCCS/Screen Shot 2026-04-02 at 14.26.30.webp', '/mockups/OCCS/7fc570f7-ba76-43a7-85b8-59f575cdab99.webp', '/mockups/OCCS/1350a396-df65-49df-a047-951dced0cb1e.jpeg'],
         mockupLayout: 'landscape',
       },
 
@@ -895,8 +895,8 @@ const PROJECTS: Project[] = [
     category: "Product Design",
     date: "2025",
     intro: "Designed a full-featured career platform connecting job seekers and employers — covering sign-up and profile setup, a personalised home feed, employer dashboards, job posting, proposals, upskilling courses, virtual hiring fairs, and accommodation support for relocating candidates.",
-    cardImg: "/mockups/Jobbicus/Onboard.png",
-    coverImg: "/mockups/Jobbicus/Onboard.png",
+    cardImg: "/mockups/Jobbicus/Onboard.webp",
+    coverImg: "/mockups/Jobbicus/Onboard.webp",
 
     sections: [
       // ─── DISCOVERY ──────────────────────────────────────────────────────────
@@ -905,7 +905,7 @@ const PROJECTS: Project[] = [
         title: "Job boards listed openings. Jobbicus was built to close the gap between wanting a job and being ready for one.",
         body: "Most platforms gave candidates a list and left them to figure out the rest — no skill-building, no way to stand out, no support for relocation. Jobbicus was conceived as a full career launchpad: pairing live opportunities with the courses, connections, and hiring events needed to land them.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e0ecff)",
-        mockupImg: "/mockups/Jobbicus/Onboard.png",
+        mockupImg: "/mockups/Jobbicus/Onboard.webp",
       },
 
       // ─── LANDING PAGE — DESKTOP ──────────────────────────────────────────────
@@ -914,7 +914,7 @@ const PROJECTS: Project[] = [
         title: "Value-first above the fold, everything else earned by scrolling.",
         body: "The desktop landing opens with a bold hero and a single call to action before any scroll. The page continues into feature highlights, social proof, and a second CTA — each block earns the next without burying the entry message.",
         mockupBg: "linear-gradient(145deg,#f0f4ff,#e0ecff)",
-        mockupImg: "/mockups/Jobbicus/Home Page.png",
+        mockupImg: "/mockups/Jobbicus/Home Page.webp",
       },
 
       // ─── LANDING PAGE — MOBILE ───────────────────────────────────────────────
@@ -923,7 +923,7 @@ const PROJECTS: Project[] = [
         title: "Same hierarchy on a smaller screen — nothing hidden or deprioritised on mobile.",
         body: "The mobile landing mirrors the desktop value hierarchy adapted for touch. Every key claim and the primary CTA are reachable in a single thumb scroll, with tap targets sized for comfortable one-handed use.",
         mockupBg: "linear-gradient(145deg,#eef2ff,#dde8ff)",
-        mockupImg: "/mockups/Jobbicus/Home Page_mobiel.png",
+        mockupImg: "/mockups/Jobbicus/Home Page_mobiel.webp",
       },
 
       // ─── SIGN IN & SIGN UP ───────────────────────────────────────────────────
@@ -933,8 +933,8 @@ const PROJECTS: Project[] = [
         body: "Sign-in is a single email + password form with a show/hide toggle and a Forgot Password escape hatch. Sign-up adds confirm password and an optional referral code — nothing more. Both keep the CTA in frame at all times and share the same visual structure so switching between them feels seamless.",
         mockupBg: "linear-gradient(145deg,#fff0f7,#ffe0ec)",
         mockupImg: [
-          "/mockups/Jobbicus/Sign In.png",
-          "/mockups/Jobbicus/Sign Up.png",
+          "/mockups/Jobbicus/Sign In.webp",
+          "/mockups/Jobbicus/Sign Up.webp",
         ],
         mockupLayout: 'landscape',
       },
@@ -946,9 +946,9 @@ const PROJECTS: Project[] = [
         body: "The onboarding flow establishes user type and career goals in single-purpose screens — one decision per step so nothing is skipped. A persistent progress indicator keeps the end in sight throughout.",
         mockupBg: "linear-gradient(145deg,#fff8f0,#ffeedd)",
         mockupImg: [
-          "/mockups/Jobbicus/Onboarding 5.png",
-          "/mockups/Jobbicus/Setup.png",
-          "/mockups/Jobbicus/Setup-1.png",
+          "/mockups/Jobbicus/Onboarding 5.webp",
+          "/mockups/Jobbicus/Setup.webp",
+          "/mockups/Jobbicus/Setup-1.webp",
         ],
         mockupLayout: 'portrait',
       },
@@ -960,9 +960,9 @@ const PROJECTS: Project[] = [
         body: "Setup continues after onboarding with the same single-purpose pattern. Each screen handles one part of the profile so users complete a full, findable record without facing a wall of fields. The Profile screen shows the finished candidate card employers will see.",
         mockupBg: "linear-gradient(145deg,#fff5f0,#ffe8dd)",
         mockupImg: [
-          "/mockups/Jobbicus/Setup-2.png",
-          "/mockups/Jobbicus/Setup-3.png",
-          "/mockups/Jobbicus/Profile.png",
+          "/mockups/Jobbicus/Setup-2.webp",
+          "/mockups/Jobbicus/Setup-3.webp",
+          "/mockups/Jobbicus/Profile.webp",
         ],
         mockupLayout: 'portrait',
       },
@@ -973,7 +973,7 @@ const PROJECTS: Project[] = [
         title: "The personalised home feed at full length — jobs, courses, and events in one view.",
         body: "The logged-in home surfaces job matches, course picks, and upcoming virtual fairs based on the candidate's profile. The full-page view shows how every content type coexists without competing — each section earns its position through relevance rather than editorial priority.",
         mockupBg: "linear-gradient(145deg,#f0fff7,#e0ffed)",
-        mockupImg: "/mockups/Jobbicus/Post Login - Homepage - Subscribed.png",
+        mockupImg: "/mockups/Jobbicus/Post Login - Homepage - Subscribed.webp",
       },
 
       // ─── HOME FEED — STATES & SUBSCRIBE ─────────────────────────────────────
@@ -983,10 +983,10 @@ const PROJECTS: Project[] = [
         body: "Three feed states show how content adapts as the user's subscription status changes. The Subscribe modal appears contextually with a clear value exchange — priority results, exclusive listings, virtual fair access — so the upgrade feels earned rather than forced.",
         mockupBg: "linear-gradient(145deg,#edfff5,#d8ffee)",
         mockupImg: [
-          "/mockups/Jobbicus/Post Login - Homepage - Subscribed-1.png",
-          "/mockups/Jobbicus/Post Login - Homepage - Subscribed-2.png",
-          "/mockups/Jobbicus/Post Login - Homepage - Subscribed-3.png",
-          "/mockups/Jobbicus/Subscribe Popup.png",
+          "/mockups/Jobbicus/Post Login - Homepage - Subscribed-1.webp",
+          "/mockups/Jobbicus/Post Login - Homepage - Subscribed-2.webp",
+          "/mockups/Jobbicus/Post Login - Homepage - Subscribed-3.webp",
+          "/mockups/Jobbicus/Subscribe Popup.webp",
         ],
         mockupLayout: 'landscape',
       },
@@ -997,7 +997,7 @@ const PROJECTS: Project[] = [
         title: "Every active role, applicant count, and recent activity on one scrollable page.",
         body: "The full dashboard scroll shows how employers get a complete picture of their hiring pipeline without switching views — open roles, applicant totals, recent candidate activity, and quick actions all within one continuous layout.",
         mockupBg: "linear-gradient(145deg,#1a1f35,#252d4a)",
-        mockupImg: "/mockups/Jobbicus/Dashboard.png",
+        mockupImg: "/mockups/Jobbicus/Dashboard.webp",
       },
 
       // ─── EMPLOYER DASHBOARD — STATES ────────────────────────────────────────
@@ -1007,9 +1007,9 @@ const PROJECTS: Project[] = [
         body: "Dashboard-1 shows a freshly posted role awaiting applicants. Dashboard-2 and Dashboard-3 show increasingly populated pipelines — giving employers a clear mental model of what the board looks like as candidates apply.",
         mockupBg: "linear-gradient(145deg,#1e2440,#2a3255)",
         mockupImg: [
-          "/mockups/Jobbicus/Dashboard-1.png",
-          "/mockups/Jobbicus/Dashboard-2.png",
-          "/mockups/Jobbicus/Dashboard-3.png",
+          "/mockups/Jobbicus/Dashboard-1.webp",
+          "/mockups/Jobbicus/Dashboard-2.webp",
+          "/mockups/Jobbicus/Dashboard-3.webp",
         ],
         mockupLayout: 'landscape',
       },
@@ -1021,9 +1021,9 @@ const PROJECTS: Project[] = [
         body: "Job posting walks through role details, requirements, and compensation in clearly numbered steps. The View Job Post screen shows the published listing exactly as candidates see it — giving employers a final review moment before candidates start applying.",
         mockupBg: "linear-gradient(145deg,#fff8f0,#ffeedd)",
         mockupImg: [
-          "/mockups/Jobbicus/Job post Step 15.png",
-          "/mockups/Jobbicus/Job post Step 16.png",
-          "/mockups/Jobbicus/Dashboard - View Job Post.png",
+          "/mockups/Jobbicus/Job post Step 15.webp",
+          "/mockups/Jobbicus/Job post Step 16.webp",
+          "/mockups/Jobbicus/Dashboard - View Job Post.webp",
         ],
         mockupLayout: 'landscape',
       },
@@ -1034,7 +1034,7 @@ const PROJECTS: Project[] = [
         title: "A public employer page that candidates discover and trust before they apply.",
         body: "The company profile page shows culture, open roles, team size, and employer reviews in a single scannable view. Candidates evaluate the employer here before committing to a proposal — so the page is designed to answer the questions that would otherwise delay an application.",
         mockupBg: "linear-gradient(145deg,#f0f8ff,#ddeeff)",
-        mockupImg: "/mockups/Jobbicus/Company Profile.png",
+        mockupImg: "/mockups/Jobbicus/Company Profile.webp",
       },
 
       // ─── INVITE CANDIDATES — FULL VIEW ───────────────────────────────────────
@@ -1043,7 +1043,7 @@ const PROJECTS: Project[] = [
         title: "Employers reach matched candidates directly with a targeted, personalised invite.",
         body: "The full Invite Candidates page shows the complete matched-candidate list with filters and preview cards — employers select the best fits before composing an outreach. The flow keeps sourcing inside the platform so every touchpoint is tracked.",
         mockupBg: "linear-gradient(145deg,#1c2138,#272f4e)",
-        mockupImg: "/mockups/Jobbicus/Dashboard - Invite Candidates.png",
+        mockupImg: "/mockups/Jobbicus/Dashboard - Invite Candidates.webp",
       },
 
       // ─── INVITE FLOW ─────────────────────────────────────────────────────────
@@ -1053,8 +1053,8 @@ const PROJECTS: Project[] = [
         body: "After selecting candidates the employer composes a message with role context pre-filled. A confirmation step shows the recipient list before sending — preventing accidental mass outreach and keeping each invite feeling personal.",
         mockupBg: "linear-gradient(145deg,#202540,#2d3558)",
         mockupImg: [
-          "/mockups/Jobbicus/Dashboard - Invite Candidates-1.png",
-          "/mockups/Jobbicus/Dashboard - Invite Candidates - Confirmation.png",
+          "/mockups/Jobbicus/Dashboard - Invite Candidates-1.webp",
+          "/mockups/Jobbicus/Dashboard - Invite Candidates - Confirmation.webp",
         ],
         mockupLayout: 'landscape',
       },
@@ -1066,9 +1066,9 @@ const PROJECTS: Project[] = [
         body: "The proposal flow walks candidates through pitch, relevant experience, and availability in a multi-step form with a visible progress bar. Each step is a single decision point so the submission never feels overwhelming.",
         mockupBg: "linear-gradient(145deg,#f5f0ff,#ede5ff)",
         mockupImg: [
-          "/mockups/Jobbicus/Proposal Flow.png",
-          "/mockups/Jobbicus/Proposal Flow-1.png",
-          "/mockups/Jobbicus/Proposal Flow-3.png",
+          "/mockups/Jobbicus/Proposal Flow.webp",
+          "/mockups/Jobbicus/Proposal Flow-1.webp",
+          "/mockups/Jobbicus/Proposal Flow-3.webp",
         ],
         mockupLayout: 'landscape',
       },
@@ -1079,7 +1079,7 @@ const PROJECTS: Project[] = [
         title: "The full proposal submission page at natural scroll length.",
         body: "Proposal Flow-2 shows the complete proposal form at full page height — capturing the structured pitch, experience summary, and availability fields together. Submitted proposals carry a live status so candidates always know where they stand.",
         mockupBg: "linear-gradient(145deg,#f0ebff,#e6deff)",
-        mockupImg: "/mockups/Jobbicus/Proposal Flow-2.png",
+        mockupImg: "/mockups/Jobbicus/Proposal Flow-2.webp",
       },
 
       // ─── PROPOSALS — MOBILE ──────────────────────────────────────────────────
@@ -1089,9 +1089,9 @@ const PROJECTS: Project[] = [
         body: "The mobile Proposals — Invited screen surfaces all active employer invitations with company, role, and deadline in one list. The Learn tabs show courses organised by skill level with duration and tag visible without opening each card.",
         mockupBg: "linear-gradient(145deg,#f0ebff,#e4d9ff)",
         mockupImg: [
-          "/mockups/Jobbicus/Proposals - Invited.png",
-          "/mockups/Jobbicus/Learn.png",
-          "/mockups/Jobbicus/Learn-1.png",
+          "/mockups/Jobbicus/Proposals - Invited.webp",
+          "/mockups/Jobbicus/Learn.webp",
+          "/mockups/Jobbicus/Learn-1.webp",
         ],
         mockupLayout: 'portrait',
       },
@@ -1102,7 +1102,7 @@ const PROJECTS: Project[] = [
         title: "Course catalogue at full length — categories, difficulty, and duration all visible.",
         body: "The course browse page surfaces the full catalogue with role-based categories and skill-level filters. The full-page view shows how the grid scales across many courses without losing scannability — candidates find the right track without a search.",
         mockupBg: "linear-gradient(145deg,#f0f9ff,#dff0ff)",
-        mockupImg: "/mockups/Jobbicus/Course - Flow.png",
+        mockupImg: "/mockups/Jobbicus/Course - Flow.webp",
       },
 
       // ─── COURSES — BROWSE STATES ────────────────────────────────────────────
@@ -1112,9 +1112,9 @@ const PROJECTS: Project[] = [
         body: "The flow moves from category grid to individual course detail to enrolment confirmation in three screens. Each step answers one question: what's available, is this right for me, and am I committed — without back-and-forth.",
         mockupBg: "linear-gradient(145deg,#e8f4ff,#d5eaff)",
         mockupImg: [
-          "/mockups/Jobbicus/Course - Flow-1.png",
-          "/mockups/Jobbicus/Course - Flow-2.png",
-          "/mockups/Jobbicus/Course - Flow-3.png",
+          "/mockups/Jobbicus/Course - Flow-1.webp",
+          "/mockups/Jobbicus/Course - Flow-2.webp",
+          "/mockups/Jobbicus/Course - Flow-3.webp",
         ],
         mockupLayout: 'landscape',
       },
@@ -1126,9 +1126,9 @@ const PROJECTS: Project[] = [
         body: "The mobile course detail opens with an overview of modules and estimated time. From there the learner picks reading or video mode without being routed to a different course version. Both formats share the same progress state so switching mid-course doesn't lose position.",
         mockupBg: "linear-gradient(145deg,#f0f6ff,#e0eeff)",
         mockupImg: [
-          "/mockups/Jobbicus/Course Detail - Home.png",
-          "/mockups/Jobbicus/Course Detail - Home - Reading.png",
-          "/mockups/Jobbicus/Course Detail - Home - Video.png",
+          "/mockups/Jobbicus/Course Detail - Home.webp",
+          "/mockups/Jobbicus/Course Detail - Home - Reading.webp",
+          "/mockups/Jobbicus/Course Detail - Home - Video.webp",
         ],
         mockupLayout: 'portrait',
       },
@@ -1140,9 +1140,9 @@ const PROJECTS: Project[] = [
         body: "The post-quiz pass screen confirms the skill badge earned and shows the next recommended module — closing the learning loop with forward momentum. The More tab consolidates account, settings, referrals, and accommodations so the main navigation stays focused on the core job-seeking flow.",
         mockupBg: "linear-gradient(145deg,#f8f0ff,#f0e4ff)",
         mockupImg: [
-          "/mockups/Jobbicus/Course Detail - Quiz - Post Take - Pass.png",
-          "/mockups/Jobbicus/More.png",
-          "/mockups/Jobbicus/More-1.png",
+          "/mockups/Jobbicus/Course Detail - Quiz - Post Take - Pass.webp",
+          "/mockups/Jobbicus/More.webp",
+          "/mockups/Jobbicus/More-1.webp",
         ],
         mockupLayout: 'portrait',
       },
@@ -1153,7 +1153,7 @@ const PROJECTS: Project[] = [
         title: "Threaded inbox on desktop — consistent layout and status indicators across both sides.",
         body: "The messages view uses a split-pane layout with thread list on the left and active conversation on the right. Read/unread states and timestamp are visible in the list without opening each message — recruiters and candidates triage quickly.",
         mockupBg: "linear-gradient(145deg,#f0fff8,#e0fff2)",
-        mockupImg: "/mockups/Jobbicus/Messages.png",
+        mockupImg: "/mockups/Jobbicus/Messages.webp",
       },
 
       // ─── MESSAGES — MOBILE ───────────────────────────────────────────────────
@@ -1163,9 +1163,9 @@ const PROJECTS: Project[] = [
         body: "Mobile messaging preserves the same thread context as desktop — no messages are hidden or truncated on smaller screens. The Accommodations — Detail screen surfaces verified housing listings for candidates relocating for a role, integrated into the same app so job and housing search happen together.",
         mockupBg: "linear-gradient(145deg,#e8fff5,#d5ffec)",
         mockupImg: [
-          "/mockups/Jobbicus/Messages Mobile.png",
-          "/mockups/Jobbicus/Message View.png",
-          "/mockups/Jobbicus/Accommodations - Detail.png",
+          "/mockups/Jobbicus/Messages Mobile.webp",
+          "/mockups/Jobbicus/Message View.webp",
+          "/mockups/Jobbicus/Accommodations - Detail.webp",
         ],
         mockupLayout: 'portrait',
       },
@@ -1177,8 +1177,8 @@ const PROJECTS: Project[] = [
         body: "Virtual fairs consolidate what candidates normally do across multiple platforms — research companies, attend talks, and apply for roles — into a single live-event experience. Booth cards surface the key company info and open roles so candidates can apply without leaving the fair.",
         mockupBg: "linear-gradient(145deg,#f0fff8,#ddfff0)",
         mockupImg: [
-          "/mockups/Jobbicus/Virtual Fair.png",
-          "/mockups/Jobbicus/Virtual Fair-1.png",
+          "/mockups/Jobbicus/Virtual Fair.webp",
+          "/mockups/Jobbicus/Virtual Fair-1.webp",
         ],
         mockupLayout: 'landscape',
       },
@@ -1190,8 +1190,8 @@ const PROJECTS: Project[] = [
         body: "Settings uses a grouped list pattern — notifications, privacy, subscription, billing — so users find what they're looking for without a search. The Invoice view gives subscribers a printable record without routing them to an external portal.",
         mockupBg: "linear-gradient(145deg,#f5f5f5,#ebebeb)",
         mockupImg: [
-          "/mockups/Jobbicus/Settings.png",
-          "/mockups/Jobbicus/Settings - Billing and Payments - Invoice.png",
+          "/mockups/Jobbicus/Settings.webp",
+          "/mockups/Jobbicus/Settings - Billing and Payments - Invoice.webp",
         ],
         mockupLayout: 'landscape',
       },
@@ -1202,7 +1202,7 @@ const PROJECTS: Project[] = [
         title: "Every editable profile field on one long form — no pagination, no modal stacks.",
         body: "The My Information edit page surfaces all personal and professional fields in a single continuous form. The decision to use one long page rather than multi-step wizard reflects that users editing existing data move non-linearly — they jump to the field that needs updating rather than stepping through from the top.",
         mockupBg: "linear-gradient(145deg,#f2f2f2,#e8e8e8)",
-        mockupImg: "/mockups/Jobbicus/Settings -  My Information - Edit.png",
+        mockupImg: "/mockups/Jobbicus/Settings -  My Information - Edit.webp",
       },
 
       // ─── STAYS & ACCOMMODATIONS ──────────────────────────────────────────────
@@ -1211,7 +1211,7 @@ const PROJECTS: Project[] = [
         title: "Verified housing listings for candidates relocating for a new role.",
         body: "Stays brings accommodation search inside the platform so candidates don't need to juggle a separate housing service while job hunting. Listings are verified, show commute context to posted roles, and surface key details — price, proximity, lease terms — in a card format consistent with the job browse experience.",
         mockupBg: "linear-gradient(145deg,#fff8f0,#ffeedd)",
-        mockupImg: "/mockups/Jobbicus/Stays.png",
+        mockupImg: "/mockups/Jobbicus/Stays.webp",
       },
     ],
   },

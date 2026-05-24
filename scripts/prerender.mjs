@@ -19,7 +19,7 @@ const PROJECTS = [
     date: 'April 2026',
     intro:
       'A dual-sided supply chain platform connecting garment factories and buyers — giving factories a clear action queue and buyers real-time shipment visibility with direct customer impact data.',
-    cover: '/mockups/ClearPath/Cover.png',
+    cover: '/mockups/ClearPath/Cover.webp',
     keywords: ['supply chain UX', 'B2B platform design', 'garment factory dashboard', 'PO tracking'],
     highlights: [
       'Factory action queue with per-PO progress and urgency',
@@ -35,7 +35,7 @@ const PROJECTS = [
     date: 'April 2026',
     intro:
       'Designed an end-to-end mobile money transfer app for the Australian diaspora — covering onboarding, identity verification, a live-rate home screen, and a four-step send flow with receipt upload, giving senders full visibility from tap to delivery.',
-    cover: '/mockups/TransferNet/Cover.png',
+    cover: '/mockups/TransferNet/Cover.webp',
     keywords: ['mobile money app design', 'fintech UX', 'KYC flow', 'remittance app'],
     highlights: [
       'Three-screen welcome and email verification with no dead ends',
@@ -51,7 +51,7 @@ const PROJECTS = [
     date: 'April 2026',
     intro:
       'Designed a full-stack AI voice agent management platform — giving businesses a single command centre to build agents, run telephony campaigns, track leads and appointments, and manage client billing from one dashboard.',
-    cover: '/mockups/Telvox/Tel.png',
+    cover: '/mockups/Telvox/Tel.webp',
     keywords: ['AI voice agent UX', 'SaaS dashboard design', 'agent builder UI', 'call logs'],
     highlights: [
       'Twelve-KPI overview dashboard for the full operation',
@@ -67,7 +67,7 @@ const PROJECTS = [
     date: 'April 2026',
     intro:
       'Designed the complete Skathi experience across iOS and web — a music platform built for South Asian listeners. The app covers streaming from onboarding to playback. The web extends into beats licensing, artist booking, studio rental, events, and a merch shop.',
-    cover: '/mockups/Skathi/Cover.png',
+    cover: '/mockups/Skathi/Cover.webp',
     keywords: ['music app design', 'streaming UX', 'beats marketplace', 'artist booking platform'],
     highlights: [
       'iOS app: onboarding, genre-filtered home feed, explore, queue, lyrics',
@@ -83,7 +83,7 @@ const PROJECTS = [
     date: '2024–2026',
     intro:
       'Redesigned the clerk-facing side of OCCS — a multi-tenant call centre platform used by 300+ clerks across multiple client companies. The goal was simple: give clerks everything they need on one screen during a live call, and get out of their way the rest of the time.',
-    cover: '/mockups/OCCS/OCCS Cover.png',
+    cover: '/mockups/OCCS/OCCS Cover.webp',
     keywords: ['call centre software UX', 'enterprise dashboard design', 'multi-tenant SaaS'],
     highlights: [
       'Unified active-call screen replacing fragmented legacy modals',
@@ -99,7 +99,7 @@ const PROJECTS = [
     date: '2025',
     intro:
       'Designed a full-featured career platform connecting job seekers and employers — covering sign-up and profile setup, a personalised home feed, employer dashboards, job posting, proposals, upskilling courses, virtual hiring fairs, and accommodation support for relocating candidates.',
-    cover: '/mockups/Jobbicus/Onboard.png',
+    cover: '/mockups/Jobbicus/Onboard.webp',
     keywords: ['career platform design', 'job board UX', 'employer dashboard', 'mobile onboarding'],
     highlights: [
       'Landing page (desktop + mobile), sign-in/up, mobile onboarding',
@@ -314,11 +314,11 @@ function blogShell({ title, description, url, bodyHtml }) {
     <meta property="og:title" content="${escapeHtml(title)}" />
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:url" content="${url}" />
-    <meta property="og:image" content="${ORIGIN}/og.png" />
+    <meta property="og:image" content="${ORIGIN}/og.webp" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(title)}" />
     <meta name="twitter:description" content="${escapeHtml(description)}" />
-    <meta name="twitter:image" content="${ORIGIN}/og.png" />
+    <meta name="twitter:image" content="${ORIGIN}/og.webp" />
     <style>
       body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 60px auto; padding: 0 24px; color: #222; line-height: 1.65; font-size: 17px; }
       h1 { font-size: 34px; line-height: 1.2; margin-bottom: 12px; letter-spacing: -0.01em; }

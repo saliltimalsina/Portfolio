@@ -61,7 +61,7 @@ What's working: sidebar + project nav, story-grouped active sprint board, full b
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![pnpm](https://img.shields.io/badge/pnpm-F69220?style=flat&logo=pnpm&logoColor=white)
 
-→ Live: [arc-api-pi.vercel.app](https://arc-api-pi.vercel.app) · Code: [github.com/saliltimalsina/Arc](https://github.com/saliltimalsina/Arc)
+→ Live: [mantra-arc.mantraideas.com.np](https://mantra-arc.mantraideas.com.np/login) · Code: [github.com/saliltimalsina/Arc](https://github.com/saliltimalsina/Arc)
 
 </td>
 </tr>

@@ -88,7 +88,7 @@ What's working: sidebar + project nav, story-grouped active sprint board, full b
 </td>
 <td width="33%" align="center">
   <a href="https://www.saliltimalsina.com.np/jobbicus">
-    <img src="https://www.saliltimalsina.com.np/mockups/Jobbicus/Homepage.webp" width="100%" alt="Jobbicus" />
+    <img src="https://www.saliltimalsina.com.np/mockups/Jobbicus/Dashboard.webp" width="100%" alt="Jobbicus" />
     <br/><sub><b>Jobbicus</b></sub>
     <br/><sub>Career Platform</sub>
   </a>

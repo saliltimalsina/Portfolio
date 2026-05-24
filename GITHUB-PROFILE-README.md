@@ -8,27 +8,7 @@
 [![Book a 1:1](https://img.shields.io/badge/Book_a_1%3A1-Cal.com-0F0814?style=for-the-badge&labelColor=B73AD6)](https://cal.com/salil-timalsina-a431sp/30min)
 [![Resume](https://img.shields.io/badge/Resume-Drive-FFFFFF?style=for-the-badge&labelColor=222222)](https://drive.google.com/file/d/11S9NlhG-QZdl3wJgFpFwh0vbUCUod9BP/view?usp=drive_link)
 
-</div>
-
 <br/>
-
-<table>
-<tr>
-<td width="36%" valign="top">
-
-#### Now
-
-Designing **Telvox v2** — agent builder, telephony campaigns, lead tracking, and billing in one dashboard.
-
-Vibe coding **Arc** in spare hours — a project management tool I'm building from scratch to test my own design ideas in production.
-
-#### Latest writing
-
-— [Designing B2B SaaS dashboards that earn the third click](https://www.saliltimalsina.com.np/blog/designing-b2b-saas-dashboards)
-
-— [Designing for the South Asian diaspora](https://www.saliltimalsina.com.np/blog/designing-for-south-asian-diaspora)
-
-#### Tools
 
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)
 ![MUI](https://img.shields.io/badge/MUI-007FFF?style=flat&logo=mui&logoColor=white)
@@ -37,10 +17,11 @@ Vibe coding **Arc** in spare hours — a project management tool I'm building fr
 ![Prototyping](https://img.shields.io/badge/Prototyping-0F0814?style=flat)
 ![Design Systems](https://img.shields.io/badge/Design_Systems-0F0814?style=flat)
 
-</td>
-<td width="64%" valign="top">
+</div>
 
-#### Vibe coding
+<br/>
+
+### Vibe coding
 
 > Designing in Figma is one thing. Shipping a real product end-to-end is another. I build small tools as labs — to feel the friction designers usually hand off, and to stress-test my own UX decisions against real engineering constraints.
 
@@ -69,13 +50,9 @@ What's working: sidebar + project nav, story-grouped active sprint board, full b
 
 <sub>More vibe projects coming — this section will grow as I ship.</sub>
 
-</td>
-</tr>
-</table>
-
 <br/>
 
-#### Case studies
+### Case studies
 
 <table>
 <tr>
